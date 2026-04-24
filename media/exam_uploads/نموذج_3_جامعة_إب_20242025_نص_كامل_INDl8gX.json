@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "university_code": "IBB",
+    "college_code": "GEN",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "المصعد في خلية الزئبق:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{HgO}$"},
+        {"identifier": "B", "text": "$\\text{KOH}$"},
+        {"identifier": "C", "text": "$\\text{KOH} + \\text{Zn}$"},
+        {"identifier": "D", "text": "$\\text{MnO}_2$"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (الخلايا الجلفانية)",
+      "explanation": "المصعد (الأنود) في خلية الزئبق يتكون من الخارصين ($\\text{Zn}$) أو ملغمة الخارصين. وتُعتبر الإجابة (C) هي الأقرب في سياق الخيارات لاحتوائها على الخارصين مع الإلكتروليت ($\\text{KOH}$)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "أقوى عامل مؤكسد هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Li}$"},
+        {"identifier": "B", "text": "$\\text{F}_2$"},
+        {"identifier": "C", "text": "$\\text{O}_2$"},
+        {"identifier": "D", "text": "$\\text{Cl}_2$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهالوجينات (الكيمياء الكهربية)",
+      "explanation": "غاز الفلور ($\\text{F}_2$) هو أقوى اللافلزات وأعلاها في السالبية الكهربية، لذا يمتلك أكبر جهد اختزال قياسي ويعتبر أقوى عامل مؤكسد في الجدول الدوري."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "يتفاعل إيثيل أمين مع حمض النيتروز ويتكون:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "إيثاناميد"},
+        {"identifier": "B", "text": "إيثانول"},
+        {"identifier": "C", "text": "كحول الميثيل"},
+        {"identifier": "D", "text": "بنزاميد"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات الأمينات",
+      "explanation": "تفاعل الأمينات الأليفاتية الأولية (مثل إيثيل أمين) مع حمض النيتروز ($\\text{HNO}_2$) يؤدي إلى استبدال مجموعة الأمين بمجموعة هيدروكسيل لينتج الكحول المقابل (إيثانول) مع تصاعد غاز النيتروجين."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "من الزيوت الطيارة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "زيت الذرة"},
+        {"identifier": "B", "text": "زيت القطن"},
+        {"identifier": "C", "text": "زيت القرفة"},
+        {"identifier": "D", "text": "زيت الزيتون"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (الليبيدات والزيوت)",
+      "explanation": "الزيوت الطيارة (العطرية) هي زيوت تُستخلص من أجزاء نباتية وتتميز برائحة نفاذة وقابلية عالية للتطاير دون أن تتحلل، مثل زيت القرفة والنعناع والقرنفل. الزيوت الأخرى المذكورة هي زيوت ثابتة."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "تتميز أشعة جاما بأنها:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "موجات كهرومغناطيسية"},
+        {"identifier": "B", "text": "لها شحنة سالبة"},
+        {"identifier": "C", "text": "إلكترونات"},
+        {"identifier": "D", "text": "لها شحنة موجبة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (الإشعاعات النووية)",
+      "explanation": "أشعة جاما ($\\gamma$) عبارة عن فوتونات أو موجات كهرومغناطيسية عالية الطاقة، ليس لها كتلة سكونية ولا تحمل أي شحنة كهربائية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "يسمى المركب $\\text{CH}_3-\\text{COOH}$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "إيثيل أمين"},
+        {"identifier": "B", "text": "أسيتاميد"},
+        {"identifier": "C", "text": "بروبانول"},
+        {"identifier": "D", "text": "حمض الأسيتيك"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تسمية الأحماض الكربوكسيلية",
+      "explanation": "المركب $\\text{CH}_3\\text{COOH}$ يحتوي على مجموعة الكربوكسيل الوظيفية ($-\\text{COOH}$)، وهو الحمض العضوي المعروف شائعاً باسم حمض الأسيتيك (أو الخليك)، ومنهجياً باسم حمض الإيثانويك."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "يعتبر عامل مؤكسد:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{FeSO}_4$"},
+        {"identifier": "B", "text": "$\\text{H}_2\\text{S}$"},
+        {"identifier": "C", "text": "$\\text{Al}$"},
+        {"identifier": "D", "text": "$\\text{KMnO}_4$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (الأكسدة والاختزال)",
+      "explanation": "برمنجنات البوتاسيوم ($\\text{KMnO}_4$) من أقوى العوامل المؤكسدة شيوعاً؛ لاحتوائه على المنجنيز في أعلى حالة تأكسد له ($+7$)، مما يجعله يميل بقوة لاكتساب الإلكترونات (الاختزال)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عناصر السلسلة الانتقالية الثالثة تنتهي بعنصر:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Pd}$"},
+        {"identifier": "B", "text": "$\\text{K}$"},
+        {"identifier": "C", "text": "$\\text{Cl}$"},
+        {"identifier": "D", "text": "$\\text{Hg}$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (تصنيف السلاسل)",
+      "explanation": "السلسلة الانتقالية الرئيسية الثالثة تقع في الدورة السادسة، وتبدأ بعنصر اللانثانم ($\\text{La}$) وتنتهي بعنصر الزئبق ($\\text{Hg}$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "المجموعة الفعالة في الكحولات هي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الكربوكسيل"},
+        {"identifier": "B", "text": "الهيدروكسيل"},
+        {"identifier": "C", "text": "الكربونيل"},
+        {"identifier": "D", "text": "الفينول"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "المجموعات الوظيفية في الكيمياء العضوية",
+      "explanation": "الكحولات هي مركبات عضوية تتميز بوجود مجموعة الهيدروكسيل ($-\\text{OH}$) كمجموعة وظيفية (فعالة) مرتبطة بشق ألكيل."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "التفاعلات التي يحدث فيها تغيير لأنوية الذرات الداخلة في التفاعل تعرف بالتفاعلات:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الحرارية"},
+        {"identifier": "B", "text": "الكيميائية"},
+        {"identifier": "C", "text": "النووية"},
+        {"identifier": "D", "text": "الأكسدة والاختزال"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية",
+      "explanation": "التفاعلات النووية تمس تركيب نواة الذرة نفسها وتغير من أعداد بروتوناتها أو نيوتروناتها (وقد تحول العنصر لعنصر آخر)، بينما التفاعلات الكيميائية تقتصر على إعادة ترتيب إلكترونات التكافؤ."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "من المذيبات العضوية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ثنائي إيثيل إيثر"},
+        {"identifier": "B", "text": "برومو ميثان"},
+        {"identifier": "C", "text": "حمض النيتريك"},
+        {"identifier": "D", "text": "حمض الكبريتيك"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الإيثرات (الخواص الفيزيائية)",
+      "explanation": "الإيثرات، مثل ثنائي إيثيل إيثر (الإيثر المعتاد)، هي سوائل طيارة تُستخدم على نطاق واسع جداً كمذيبات للمركبات العضوية لضعف قطبيتها وخمولها الكيميائي."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عدد التأكسد للحديد في $\\text{FeCl}_3$ يساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$+2$"},
+        {"identifier": "B", "text": "$-3$"},
+        {"identifier": "C", "text": "$+3$"},
+        {"identifier": "D", "text": "صفر"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (أعداد التأكسد)",
+      "explanation": "في هاليدات المعادن، عدد تأكسد الهالوجين (الكلور) هو $-1$. وبما أن المركب متعادل، فإن المجموع الجبري يساوي صفراً: $\\text{Fe} + 3(-1) = 0$، مما يعني أن عدد تأكسد الحديد $\\text{Fe} = +3$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "الصيغة الكيميائية لأكسيد الحديد المغناطيسي هي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Fe}_4\\text{O}_3$"},
+        {"identifier": "B", "text": "$\\text{Fe}_2\\text{O}_3$"},
+        {"identifier": "C", "text": "$\\text{FeO}$"},
+        {"identifier": "D", "text": "$\\text{Fe}_3\\text{O}_4$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (خامات الحديد)",
+      "explanation": "أكسيد الحديد المغناطيسي (المعروف بالماجنيتيت) هو أكسيد مختلط يجمع بين أكسيد الحديد الثنائي وأكسيد الحديد الثلاثي، وصيغته الكيميائية المعبرة عنه هي $\\text{Fe}_3\\text{O}_4$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "عند تفاعل الأحماض الكربوكسيلية مع الأمينات يتكون:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الإسترات"},
+        {"identifier": "B", "text": "الأنهيدريدات"},
+        {"identifier": "C", "text": "النيتريلات"},
+        {"identifier": "D", "text": "الأميدات"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مشتقات الأحماض الكربوكسيلية",
+      "explanation": "تفاعل الحمض الكربوكسيلي مع الأمين يؤدي لتكوين ملح أمونيومي، وبالتسخين يُنزع جزيء ماء وتتكون رابطة أميدية لينتج مركب 'الأميد'."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عند إضافة محلول حديدوسيانييد البوتاسيوم إلى محلول $\\text{Fe}^{3+}$ يتكون راسب لونه:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أحمر دموي"},
+        {"identifier": "B", "text": "بني"},
+        {"identifier": "C", "text": "أزرق قاتم"},
+        {"identifier": "D", "text": "أزرق باهت"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (الكشف عن الأيونات)",
+      "explanation": "يُستخدم محلول حديدوسيانيد البوتاسيوم (سداسي سيانو حديدات البوتاسيوم الثنائي) للكشف عن أيون الحديد الثلاثي ($\\text{Fe}^{3+}$)، حيث ينتج معقداً لونه أزرق قاتم يُعرف باسم 'أزرق بروسيا'."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "تتميز الفواكه بشدة حلاوتها لاحتوائها على سكر:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الجلوكوز"},
+        {"identifier": "B", "text": "الفركتوز"},
+        {"identifier": "C", "text": "المالتوز"},
+        {"identifier": "D", "text": "اللاكتوز"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (الكربوهيدرات)",
+      "explanation": "الفركتوز هو سكر أحادي يُعرف باسم 'سكر الفاكهة' نظراً لتواجده بوفرة في الفواكه، وهو يتميز بأنه أشد السكريات الطبيعية حلاوة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "تقاس الطاقة الحرارية بوحدة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "المول/لتر"},
+        {"identifier": "B", "text": "الجول"},
+        {"identifier": "C", "text": "الجرام"},
+        {"identifier": "D", "text": "كيلوجول/مول"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية",
+      "explanation": "في النظام الدولي للوحدات (SI)، تُقاس الطاقة بكافة أشكالها – بما في ذلك الطاقة الحرارية والشغل – بوحدة الجول (Joule)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عند كتابة التوزيع الإلكتروني لعناصر السلسلة الانتقالية الأولى تملأ الإلكترونات المستويات:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$4\\text{s}$ ثم $3\\text{d}$"},
+        {"identifier": "B", "text": "$4\\text{s}$ ثم $4\\text{d}$"},
+        {"identifier": "C", "text": "$3\\text{d}$ ثم $4\\text{s}$"},
+        {"identifier": "D", "text": "$4\\text{d}$ ثم $3\\text{s}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "التوزيع الإلكتروني للعناصر الانتقالية",
+      "explanation": "وفقاً لمبدأ البناء التصاعدي (أوفباو)، يُملأ المستوى الفرعي $4\\text{s}$ بالإلكترونات أولاً لأنه أقل طاقة من المستوى الفرعي $3\\text{d}$، ثم يليه $3\\text{d}$. (ملاحظة: تم تصحيح ترتيب الخيارات عن النص الأصلي لتعكس التسلسل العلمي الصحيح)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "العملية الكيميائية التي يحدث فيها اكتساب الإلكترون أو أكثر أثناء التفاعل الكيميائي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأكسدة"},
+        {"identifier": "B", "text": "الهلجنة"},
+        {"identifier": "C", "text": "الاختزال"},
+        {"identifier": "D", "text": "البلمرة"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (الأكسدة والاختزال)",
+      "explanation": "الاختزال هو العملية الكيميائية التي تكتسب فيها الذرة أو الأيون إلكتروناً أو أكثر، مما يصاحبه انخفاض في عدد التأكسد."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "تتحول الليبيدات عند تفاعلها مع القواعد القوية إلى:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أحماض دهنية"},
+        {"identifier": "B", "text": "جلسيرول"},
+        {"identifier": "C", "text": "بروتينات"},
+        {"identifier": "D", "text": "صابون"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (تصبن الليبيدات)",
+      "explanation": "تتفاعل الليبيدات (الدهون والزيوت) مع القواعد القوية (مثل هيدروكسيد الصوديوم) في عملية تعرف بالتميؤ القاعدي أو 'التصبن'، وينتج عنها أملاح الأحماض الدهنية والتي تعرف كيميائياً وتجارياً بـ 'الصابون'."
+    }
+  ]
+}

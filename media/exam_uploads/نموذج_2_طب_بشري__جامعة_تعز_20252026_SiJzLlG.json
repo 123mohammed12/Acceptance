@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "university_code": "TU",
+    "college_code": "MED",
+    "subject_code": "CHE",
+    "exam_year": 2025,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "topic": "الهالوجينات",
+      "text": "تفاعل محلول مركز ساخن من هيدروكسيد الصوديوم مع الكلور ينتج ما يلي ما عدا:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "NaClO"},
+        {"identifier": "B", "text": "NaCl"},
+        {"identifier": "C", "text": "NaClO₃"},
+        {"identifier": "D", "text": "H₂O"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "explanation": "عند تفاعل الكلور مع القلويات المركزة الساخنة تتكون الكلورات NaClO₃ والماء وكلوريد الصوديوم، بينما يتكون الهيبوكلوريت NaClO في الوسط البارد المخفف."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "topic": "عناصر المجموعة الثانية",
+      "text": "تتكون أكسيد الألومنيوم في معادلته الموزونة من تفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ذرة ألومنيوم وجزيئين أكسجين"},
+        {"identifier": "B", "text": "ذرتين ألومنيوم وثلاث جزيئات أكسجين"},
+        {"identifier": "C", "text": "أربع ذرات ألومنيوم وثلاث جزيئات أكسجين"},
+        {"identifier": "D", "text": "ذرة ألومنيوم وجزيء أكسجين"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "explanation": "المعادلة الموزونة لتكوين أكسيد الألومنيوم هي 4Al + 3O₂ → 2Al₂O₃ حيث يتفاعل 4 مول من الألومنيوم مع 3 مول من جزيئات الأكسجين."
+    }
+  ]
+}

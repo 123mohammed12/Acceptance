@@ -1,0 +1,317 @@
+{
+  "metadata": {
+    "university_code": "21S",
+    "college_code": "DEN",
+    "subject_code": "CHE",
+    "exam_year": 2025,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "يُختزل الأسيتالدهيد إلى:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كحول أولي"},
+        {"identifier": "B", "text": "كحول ثانوي"},
+        {"identifier": "C", "text": "كحول ثالثي"},
+        {"identifier": "D", "text": "جميع الإجابات خاطئة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات الألدهيدات (الاختزال)",
+      "explanation": "اختزال الألدهيدات (مثل الأسيتالدهيد) ينتج دائماً كحولات أولية (الإيثانول في هذه الحالة)، بينما اختزال الكيتونات ينتج كحولات ثانوية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "كل التفاعلات التالية تحدث على الروابط المزدوجة في الزيوت ما عدا:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأكسدة"},
+        {"identifier": "B", "text": "الهلجنة"},
+        {"identifier": "C", "text": "الهدرجة"},
+        {"identifier": "D", "text": "التصبن"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الليبيدات (تفاعلات الزيوت والدهون)",
+      "explanation": "التصبن هو تفاعل تميؤ للإستر في وسط قاعدي، ويحدث على 'مجموعة الإستر' نفسها لكسرها، وليس على الروابط الكربونية المزدوجة في السلسلة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "عند تفاعل الكحول مع الأحماض الكربوكسيلية ينتج:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كيتون"},
+        {"identifier": "B", "text": "إستر"},
+        {"identifier": "C", "text": "إيثر"},
+        {"identifier": "D", "text": "أمين"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات الكحولات (الأسترة)",
+      "explanation": "تفاعل الأسترة هو تفاعل حمض كربوكسيلي مع كحول لإنتاج إستر وماء."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "ينتج التولوين من تفاعل البنزين بواسطة تفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الهلجنة"},
+        {"identifier": "B", "text": "الألكلة"},
+        {"identifier": "C", "text": "النترة"},
+        {"identifier": "D", "text": "السلفنة"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (ألكلة فريدل-كرافتس)",
+      "explanation": "تفاعل البنزين مع هاليد الألكيل (مثل كلوريد الميثيل CH₃Cl) في وجود عامل حفاز ينتج ألكيل بنزين (التولوين)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "من هو العنصر الذي نصف قطره أصغر:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "Na"},
+        {"identifier": "B", "text": "P"},
+        {"identifier": "C", "text": "Al"},
+        {"identifier": "D", "text": "Cl"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تدرج خواص العناصر (نصف القطر الذري)",
+      "explanation": "هذه العناصر تقع في نفس الدورة (الدورة الثالثة). في الدورة الواحدة يقل نصف القطر بزيادة العدد الذري من اليسار إلى اليمين لزيادة شحنة النواة الفعالة، والكلور هو الأبعد يميناً."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "عنصر عدده الذري 50 يوجد في:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الدورة الرابعة، المجموعة الثالثة عشرة"},
+        {"identifier": "B", "text": "الدورة الخامسة، المجموعة الرابعة عشرة"},
+        {"identifier": "C", "text": "الدورة الثالثة، المجموعة الخامسة عشرة"},
+        {"identifier": "D", "text": "الدورة السادسة، المجموعة الثانية عشرة"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تحديد موقع العنصر في الجدول الدوري",
+      "explanation": "العنصر 50 هو القصدير (Sn). توزيعه الإلكتروني ينتهي بـ 5s² 4d¹⁰ 5p²، مما يعني أنه يقع في الدورة الخامسة (أكبر عدد كم رئيسي n=5) والمجموعة 14 (مجموع إلكترونات s و p مع 10 = 14)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "عند تفاعل حمض الميثانويك مع الإيثانول ينتج:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "إيثانوات الميثيل"},
+        {"identifier": "B", "text": "إيثانوات الإيثيل"},
+        {"identifier": "C", "text": "ميثانوات الإيثيل"},
+        {"identifier": "D", "text": "ميثانوات الميثيل"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تسمية الإسترات",
+      "explanation": "في تسمية الإسترات، يُكتب اسم الشق الحمضي أولاً (ميثانوات من حمض الميثانويك) متبوعاً بشق الألكيل القادم من الكحول (الإيثيل من الإيثانول)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "عند احتراق غاز الأسيتيلين في كمية غير كافية من الأكسجين يتكون:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ثاني أكسيد الكربون وماء"},
+        {"identifier": "B", "text": "ماء وأكسجين"},
+        {"identifier": "C", "text": "ثاني أكسيد الكربون وكربون"},
+        {"identifier": "D", "text": "ثاني أكسيد الكربون وماء وطاقة حرارية"}
+      ],
+      "correct_identifier": "C",
+      "certain": "0",
+      "Potential_identifier": "C",
+      "topic": "تفاعلات الألكاينات (الاحتراق)",
+      "explanation": "الاحتراق غير التام للأسيتيلين (نقص الأكسجين) ينتج عنه لهب مدخن بسبب ترسب الكربون (C) غير المحترق. (ملاحظة: النواتج الفعلية تشمل CO و H₂O و C، ولكن الفهرس المرفق اعتمد الخيار ج كدلالة على تكون الكربون)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "النسبة بين عدد ذرات الكربون إلى عدد ذرات الهيدروجين في الهكسين الحلقي هي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "1:2"},
+        {"identifier": "B", "text": "1:1"},
+        {"identifier": "C", "text": "5:3"},
+        {"identifier": "D", "text": "5:2"}
+      ],
+      "correct_identifier": "C",
+      "certain": "0",
+      "Potential_identifier": "",
+      "topic": "الألكينات الحلقية",
+      "explanation": "الصيغة الجزيئية للهكسين الحلقي هي C₆H₁₀. نسبة الكربون إلى الهيدروجين هي 6:10 والتي تبسط رياضياً إلى 3:5. (الخيار ج يقرأ النسبة بصيغة 5:3، وهو المعتمد في نموذج الإجابة، ربما باعتبارها نسبة H إلى C)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "عنصر يوجد في الدورة الثالثة يمتلك طاقة تأين عالية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "Al"},
+        {"identifier": "B", "text": "P"},
+        {"identifier": "C", "text": "S"},
+        {"identifier": "D", "text": "Na"}
+      ],
+      "correct_identifier": "D",
+      "certain": "0",
+      "Potential_identifier": "B, C",
+      "topic": "تدرج خواص العناصر (جهد التأين)",
+      "explanation": "يوجد خلل علمي في صياغة السؤال. طاقة التأين 'الأولى' للصوديوم (Na) هي الأقل، ولكن طاقة تأينه 'الثانية' عالية جداً لكسره مستوى طاقة مكتمل. الفهرس اعتمد (د)، ولعل المقصود طاقة التأين الثانية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "المركب الذي تسميته بنزوات الإيثيل ينتج من تفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حمض البنزويك والإيثانول"},
+        {"identifier": "B", "text": "حمض الإيثانويك والبنزين"},
+        {"identifier": "C", "text": "فينول وح حمض الإيثانويك"},
+        {"identifier": "D", "text": "كحول البنزيل وحمض الإيثانويك"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تحضير الإسترات الأروماتية",
+      "explanation": "إستر بنزوات الإيثيل ينتج من تفاعل الأسترة بين حمض البنزويك (الذي يوفر شق البنزوات) وكحول الإيثانول (الذي يوفر شق الإيثيل)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "عند تفاعل الميثانول عند درجة حرارة 180 °C في وجود حمض الكبريتيك ينتج:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الإيثان"},
+        {"identifier": "B", "text": "الإيثين"},
+        {"identifier": "C", "text": "الإيثاين"},
+        {"identifier": "D", "text": "الإيثر"}
+      ],
+      "correct_identifier": "B",
+      "certain": "0",
+      "Potential_identifier": "",
+      "topic": "تفاعلات الكحولات (نزع الماء)",
+      "explanation": "هناك خطأ مطبعي في السؤال الأساسي؛ المقصود هو 'الإيثانول' وليس الميثانول. نزع الماء من الإيثانول بواسطة H₂SO₄ المركز عند 180 °C ينتج غاز الإيثين (ألكين)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "للحصول على بروبانوات الميثيل يتم تفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ميثانول وحمض البروبانويك"},
+        {"identifier": "B", "text": "حمض الميثانويك والبروبانول"},
+        {"identifier": "C", "text": "حمض البروبانويك والإيثانول"},
+        {"identifier": "D", "text": "إيثانول وحمض الميثانويك"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تحضير الإسترات",
+      "explanation": "الإستر يتكون من شق حمضي وشق كحولي. 'بروبانوات' تأتي من حمض البروبانويك، و 'الميثيل' تأتي من كحول الميثانول."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "صيغة ألومينات البوتاسيوم هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "KAlO₂"},
+        {"identifier": "B", "text": "KAlO"},
+        {"identifier": "C", "text": "AlOK"},
+        {"identifier": "D", "text": "جميع الإجابات خاطئة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مركبات الألومنيوم",
+      "explanation": "مجموعة الميتا-ألومينات (AlO₂⁻) أحادية التكافؤ، والبوتاسيوم (K⁺) أحادي التكافؤ، لذلك تتحد بنسبة 1:1 لتكوين KAlO₂."
+    },
+    {
+      "grade_level": 10,
+      "unit": 2,
+      "text": "ما هي صيغة نترات الألومنيوم:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "AlNO₃"},
+        {"identifier": "B", "text": "Al(NO₃)₂"},
+        {"identifier": "C", "text": "Al(NO₃)₃"},
+        {"identifier": "D", "text": "Al(NO₃)₄"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "كتابة الصيغ الكيميائية",
+      "explanation": "الألومنيوم فلز ثلاثي التكافؤ (Al³⁺)، ومجموعة النترات أحادية التكافؤ (NO₃⁻)، وبمبادلة التكافؤات تُصبح الصيغة الصحيحة Al(NO₃)₃."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "ثابت حاصل الإذابة يشمل للمركبات:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "عديمة الذوبان"},
+        {"identifier": "B", "text": "تامة الذوبان"},
+        {"identifier": "C", "text": "شحيحة الذوبان"},
+        {"identifier": "D", "text": "عالية الذوبان"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الأيوني (حاصل الإذابة Ksp)",
+      "explanation": "ثابت حاصل الإذابة (Ksp) هو تعبير يُطبق خصيصاً على الأملاح والمركبات شحيحة (قليلة) الذوبان في الماء لتحديد مدى ذوبانيتها."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "إن التغير في تراكيز المتفاعلات والنواتج يؤثر في .......... التفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حرارة"},
+        {"identifier": "B", "text": "لون"},
+        {"identifier": "C", "text": "نوع"},
+        {"identifier": "D", "text": "اتزان"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الكيميائي (قاعدة لوشاتيليه)",
+      "explanation": "حسب مبدأ لوشاتيليه، التغير في التركيز يزيح موضع الاتزان الكيميائي (نحو النواتج أو المتفاعلات) للتخفيف من أثر هذا التغير."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "يسمى المحلول الذي يكون فيه تركيز أيونات الهيدروكسيد أكبر من تركيز أيونات الهيدروجين محلولاً:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "متعادلاً"},
+        {"identifier": "B", "text": "قاعدياً"},
+        {"identifier": "C", "text": "حمضياً"},
+        {"identifier": "D", "text": "ملحياً"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الأحماض والقواعد (الرقم الهيدروجيني)",
+      "explanation": "المحلول القاعدي (القلوي) يتميز بأن تركيز أيونات الهيدروكسيد السالبة [OH⁻] فيه أعلى من تركيز أيونات الهيدروجين الموجبة [H⁺]."
+    }
+  ]
+}

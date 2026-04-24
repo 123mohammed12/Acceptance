@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "PHA",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "عند احتراق المغنيسيوم $\\text{Mg}$ في جو من ثاني أكسيد الكربون $\\text{CO}_2$ ينتج:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "هيدروكسيد المغنيسيوم وكربون"},
+        {"identifier": "B", "text": "كربونات المغنيسيوم"},
+        {"identifier": "C", "text": "أكسيد المغنيسيوم وكربون"},
+        {"identifier": "D", "text": "المغنيسيوم وثاني أكسيد الكربون"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة s (تفاعلات المغنيسيوم)",
+      "explanation": "المغنيسيوم فلز نشط جداً، عند احتراقه في جو من غاز ثاني أكسيد الكربون ينتزع الأكسجين مكوناً أكسيد المغنيسيوم (مسحوق أبيض) ويترسب الكربون (هباب أسود). التفاعل: $2\\text{Mg} + \\text{CO}_2 \\rightarrow 2\\text{MgO} + \\text{C}$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "في الخلية الجلفانية الآتية: $\\text{Zn} / \\text{Zn}^{2+} // \\text{Cu}^{2+} / \\text{Cu}$ فإن قطب المهبط هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Cu}$"},
+        {"identifier": "B", "text": "$\\text{Cu}^{2+}$"},
+        {"identifier": "C", "text": "$\\text{Zn}$"},
+        {"identifier": "D", "text": "$\\text{Zn}^{2+}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (الرمز الاصطلاحي للخلية الجلفانية)",
+      "explanation": "في الرمز الاصطلاحي للخلية الجلفانية، يُكتب نصف خلية الكاثود (المهبط) دائماً على اليمين وهو القطب الذي يحدث عنده الاختزال. في هذا الترتيب، قطب النحاس الصلب ($\\text{Cu}$) هو المهبط."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "في تكرير النفط أقل درجة غليان لـ:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "البرافين"},
+        {"identifier": "B", "text": "الكيروسين"},
+        {"identifier": "C", "text": "زيت الغاز الخفيف"},
+        {"identifier": "D", "text": "الجازولين"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تكرير النفط (التقطير التجزيئي)",
+      "explanation": "في أبراج التقطير التجزيئي، تُفصل مكونات النفط حسب درجة الغليان. الجازولين يحتوي على أقل عدد من ذرات الكربون بين هذه الخيارات $(\\text{C}_5 - \\text{C}_{10})$، وبالتالي يمتلك أقل درجة غليان."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "محلول $\\text{NaOH}$ تركيزه $0.0001$ فكم سيكون $[\\text{H}^+]$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$10^{-10}$"},
+        {"identifier": "B", "text": "$10^{-12}$"},
+        {"identifier": "C", "text": "$10^{-8}$"},
+        {"identifier": "D", "text": "$10^{-1.8}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الأيوني (حساب الرقم الهيدروجيني)",
+      "explanation": "$\\text{NaOH}$ قاعدة قوية تتأين كلياً، لذا تركيز أيونات $[\\text{OH}^-] = 0.0001 = 10^{-4}$ مولار. ولأن $[\\text{H}^+][\\text{OH}^-] = 10^{-14}$، فإن تركيز أيونات الهيدروجين $[\\text{H}^+] = 10^{-14} / 10^{-4} = 10^{-10}$ مولار."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "كتلة الجسيمات المكونة للذرة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$1836$ $\\text{H}^+$ و $1$ $\\text{e}^-$"},
+        {"identifier": "B", "text": "$1836$ $\\text{p}$ و $1$ $\\text{e}^-$"},
+        {"identifier": "C", "text": "$1836$ $\\text{n}$ و $1$ $\\text{e}^-$"},
+        {"identifier": "D", "text": "جميع ما سبق صحيح"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "بنية الذرة (كتل الجسيمات الذرية)",
+      "explanation": "كتلة البروتون $(\\text{p})$ أو النيوترون $(\\text{n})$ أو أيون الهيدروجين $(\\text{H}^+$، الذي هو بروتون) متقاربة جداً وتساوي تقريباً $1836$ ضعف كتلة الإلكترون $(\\text{e}^-)$. لذا جميع الخيارات تعبر بشكل رياضي سليم عن هذه النسبة."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "أكاسيد عناصر المجموعة الرئيسية الثالثة التي تلي الألومنيوم $\\text{Al}$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "جميعها حمضية"},
+        {"identifier": "B", "text": "بعضها قاعدية"},
+        {"identifier": "C", "text": "جميعها قاعدية"},
+        {"identifier": "D", "text": "أمفوتيرية"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (المجموعة الثالثة)",
+      "explanation": "في المجموعة الثالثة، البورون شبه فلز أكسيده حمضي، والألومنيوم أكسيده أمفوتيري (متردد). أما العناصر التي تليه (الجاليوم، الإنديوم، الثاليوم) فتزداد فيها الصفة الفلزية بوضوح وتصبح أكاسيدها قاعدية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "حرارة الاحتراق قد تساوي حرارة التكوين لـ:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "بعض المركبات العضوية"},
+        {"identifier": "B", "text": "المركبات غير العضوية"},
+        {"identifier": "C", "text": "المركبات العضوية"},
+        {"identifier": "D", "text": "بعض المركبات غير العضوية"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية",
+      "explanation": "في بعض تفاعلات المواد غير العضوية، تكون حرارة الاحتراق القياسية مطابقة لحرارة التكوين القياسية. مثال: التفاعل $(\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2)$ هو احتراق للكربون وتكوين لثاني أكسيد الكربون في آن واحد."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "تنتقل الحرارة من المادة الأعلى إلى المادة الأقل في درجة الحرارة بطريقة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "طردية"},
+        {"identifier": "B", "text": "عكسية"},
+        {"identifier": "C", "text": "تلقائية"},
+        {"identifier": "D", "text": "غير تلقائية"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية (العمليات التلقائية)",
+      "explanation": "حسب القانون الثاني للديناميكا الحرارية، انتقال الحرارة من الجسم الساخن إلى الجسم البارد يحدث ذاتياً ومن تلقاء نفسه (عملية تلقائية) دون الحاجة لتدخل طاقة خارجية."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يسمى ملح نترات الصوديوم $\\text{NaNO}_3$ بـ:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حجر جهنم"},
+        {"identifier": "B", "text": "ملح البارود"},
+        {"identifier": "C", "text": "ملح بارود شيلي"},
+        {"identifier": "D", "text": "ملح النطرون"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة s (مركبات الصوديوم)",
+      "explanation": "تُعرف نترات الصوديوم $(\\text{NaNO}_3)$ تجارياً باسم 'ملح بارود شيلي' لانتشارها في تشيلي، بينما نترات البوتاسيوم هي 'ملح البارود'، ونترات الفضة تُسمى 'حجر جهنم'."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "حضر ماء الذهب هو العالم:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الرازي"},
+        {"identifier": "B", "text": "الجلدي"},
+        {"identifier": "C", "text": "ابن حيان"},
+        {"identifier": "D", "text": "دالتون"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "علم الكيمياء عبر العصور",
+      "explanation": "العالم المسلم جابر بن حيان هو من حضر 'الماء الملكي' (وهو خليط من حمض النيتريك وحمض الهيدروكلوريك) والذي أسماه 'ماء الذهب' لقدرته الفائقة على إذابة الذهب."
+    },
+    {
+      "grade_level": 11,
+      "unit": 1,
+      "text": "اتفق مع رذرفورد في وجود جزء ثقيل في مركز الذرة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "دالتون"},
+        {"identifier": "B", "text": "بوهر"},
+        {"identifier": "C", "text": "تومسون"},
+        {"identifier": "D", "text": "شرودنجر"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "بنية الذرة (تطور النموذج الذري)",
+      "explanation": "نموذج نيلز بوهر بُني على أساس نموذج رذرفورد، واتفق معه في أن الذرة تحتوي على نواة مركزية ثقيلة موجبة الشحنة تدور حولها الإلكترونات."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "حرارة الاحتراق:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "طاردة"},
+        {"identifier": "B", "text": "ماصة"},
+        {"identifier": "C", "text": "طاردة وماصة"},
+        {"identifier": "D", "text": "ليس مما سبق"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية",
+      "explanation": "عملية الاحتراق هي تفاعل المادة مع الأكسجين، وهي تفاعلات يصاحبها دائماً انطلاق كمية من الطاقة (الحرارة) إلى الوسط المحيط، لذا فهي دائماً عمليات طاردة للحرارة ($\\Delta H$ سالبة)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "يسمى المركب الآتي: $\\text{Ph}-\\text{CO}-\\text{CH}_3$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "فينيل"},
+        {"identifier": "B", "text": "تولوين"},
+        {"identifier": "C", "text": "أسيتوفينون"},
+        {"identifier": "D", "text": "بنزالدهيد"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تسمية مشتقات الهيدروكربونات (الكيتونات)",
+      "explanation": "المركب هو كيتون أروماتي يربط مجموعة الكاربونيل $(\\text{C}=\\text{O})$ بشق ميثيل وشق فينيل $(\\text{Ph})$. الاسم الشائع والمعتمد له هو الأسيتوفينون."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "تسمى عناصر المجموعة الرئيسية الرابعة بمجموعة عنصر:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الكربون"},
+        {"identifier": "B", "text": "الأكسجين"},
+        {"identifier": "C", "text": "النيتروجين"},
+        {"identifier": "D", "text": "ليس مما سبق"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الجدول الدوري وعناصر الفئة p",
+      "explanation": "المجموعة الرئيسية الرابعة تبدأ بعنصر الكربون، لذلك غالباً ما يُطلق عليها في المراجع العلمية اسم 'عائلة الكربون' أو مجموعة الكربون."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "أكبر العناصر التالية من حيث الحجم الذري:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Ne}$"},
+        {"identifier": "B", "text": "$\\text{Ar}$"},
+        {"identifier": "C", "text": "$\\text{Kr}$"},
+        {"identifier": "D", "text": "$\\text{Xe}$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تدرج الخواص (الحجم الذري)",
+      "explanation": "في المجموعة الواحدة في الجدول الدوري (مجموعة الغازات النبيلة في هذا السؤال)، يزداد الحجم الذري بالانتقال من أعلى إلى أسفل لزيادة عدد مستويات الطاقة الرئيسية. الزينون ($\\text{Xe}$) يقع أسفل الخيارات المذكورة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "في التحليل الكهربي لمصهور $\\text{NaCl}$ العامل المؤكسد هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Na}^+$ لأنه اكتسب إلكترونات"},
+        {"identifier": "B", "text": "$\\text{Cl}$ لأنه اكتسب إلكترونات"},
+        {"identifier": "C", "text": "$\\text{Cl}$ لأنه فقد إلكترونات"},
+        {"identifier": "D", "text": "$\\text{Na}$ لأنه فقد إلكترونات"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (التحليل الكهربي)",
+      "explanation": "في التحليل الكهربي لمصهور كلوريد الصوديوم، تتجه أيونات الصوديوم الموجبة ($\\text{Na}^+$) نحو الكاثود (المهبط) وتكتسب إلكترونات (تختزل) لتتحول إلى ذرات صوديوم. المادة التي تعاني اختزالاً هي العامل المؤكسد."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "تحول البروتون إلى نيوترون يصاحبه انطلاق:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\beta^-$"},
+        {"identifier": "B", "text": "$^1_0\\text{n}$"},
+        {"identifier": "C", "text": "$\\alpha$"},
+        {"identifier": "D", "text": "$\\beta^+$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (التحلل الإشعاعي)",
+      "explanation": "لضبط نسبة النيوترونات إلى البروتونات $(n/p)$ في النظائر الغنية بالبروتونات، يتحول بروتون داخل النواة إلى نيوترون، ويصاحب ذلك انبعاث جسيم موجب الشحنة يسمى البوزيترون ($\\beta^+$ أو $_{+1}\\text{e}^0$)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 1,
+      "text": "صاحب نظرية المسارات الذرية الدائرية هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "بوهر"},
+        {"identifier": "B", "text": "دالتون"},
+        {"identifier": "C", "text": "تومسون"},
+        {"identifier": "D", "text": "شرودنجر"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "بنية الذرة (نموذج بوهر)",
+      "explanation": "العالم نيلز بوهر افترض في نموذجه الذري أن الإلكترونات تدور حول النواة في مسارات (مدارات) دائرية ثابتة ومحددة الطاقة، وسمّاها مستويات الطاقة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "بدأت المرحلة الخامسة في نهاية القرن:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "15"},
+        {"identifier": "B", "text": "16"},
+        {"identifier": "C", "text": "17"},
+        {"identifier": "D", "text": "18"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "علم الكيمياء عبر العصور",
+      "explanation": "وفقاً للتقسيم التاريخي لتطور الكيمياء في المنهج، المرحلة الخامسة (مرحلة الكيمياء الحديثة والكمية التي تزعمها لافوازييه) بدأت في أواخر القرن الثامن عشر الميلادي."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يعتبر أكسيد الألومنيوم $\\text{Al}_2\\text{O}_3$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حمضي"},
+        {"identifier": "B", "text": "أمفوتيري"},
+        {"identifier": "C", "text": "قاعدي"},
+        {"identifier": "D", "text": "متعادل"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (خواص الأكاسيد)",
+      "explanation": "أكسيد الألومنيوم هو مركب متردد (أمفوتيري) يتفاعل مع الأحماض القوية كأنه قاعدة، ومع القواعد القوية كأنه حمض. ملاحظة: تم تعديل الرمز في السؤال من $\\text{Al}$ إلى الصيغة الصحيحة $\\text{Al}_2\\text{O}_3$ للتوضيح."
+    }
+  ]
+}

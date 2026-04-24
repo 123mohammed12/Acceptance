@@ -1,0 +1,436 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "MED",
+    "subject_code": "CHE",
+    "exam_year": 2025,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "ناتج تفاعل الكالسيوم مع حمض النيتريك:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "CaNO₃"},
+        {"identifier": "B", "text": "Ca(NO₃)₂"},
+        {"identifier": "C", "text": "Ca(NO₃)₃"},
+        {"identifier": "D", "text": "Ca₂NO₃"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مركبات المجموعة الثانية (الفلزات القلوية الأرضية)",
+      "explanation": "الكالسيوم فلز ثنائي التكافؤ، وحمض النيتريك يعطي شق النترات الأحادي، لذا فالصيغة الصحيحة للملح الناتج هي نترات الكالسيوم Ca(NO₃)₂."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "عناصر المجموعة الرئيسية الثامنة (الخاملة) أنصاف أقطار .......... عناصر المجموعة الرئيسية السابعة (الهالوجينات):",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أكبر من"},
+        {"identifier": "B", "text": "تساوي"},
+        {"identifier": "C", "text": "أصغر من"},
+        {"identifier": "D", "text": "كل الإجابات خاطئة"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تدرج خواص العناصر في الجدول الدوري",
+      "explanation": "في الدورة الواحدة، يقل نصف القطر الذري بزيادة العدد الذري من اليسار إلى اليمين. وبما أن الغازات الخاملة تلي الهالوجينات، فإن أنصاف أقطارها أصغر."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "عناصر المجموعة الرئيسية السابعة (الهالوجينات) أنصاف أقطار .......... عناصر المجموعة الرئيسية الثامنة (الخاملة):",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أكبر من"},
+        {"identifier": "B", "text": "تساوي"},
+        {"identifier": "C", "text": "أصغر من"},
+        {"identifier": "D", "text": "كل الإجابات خاطئة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تدرج خواص العناصر في الجدول الدوري",
+      "explanation": "عكس السؤال السابق، الهالوجينات تسبق الغازات الخاملة في الدورة، وبالتالي تمتلك أنصاف أقطار أكبر."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "يكون التفاعل ماص للحرارة إذا كانت حرارة تكوين المتفاعلات .......... وحرارة تكوين النواتج ..........:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "سالبة وموجبة"},
+        {"identifier": "B", "text": "موجبة وسالبة"},
+        {"identifier": "C", "text": "سالبة أو موجبة"},
+        {"identifier": "D", "text": "موجبة أو سالبة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية",
+      "explanation": "يكون التفاعل ماصاً (ΔH موجب) عندما يكون المحتوى الحراري للنواتج أكبر من المتفاعلات، فإذا كانت حرارة المتفاعلات سالبة والنواتج موجبة سيكون التغير الكلي موجباً."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يتكون غاز أكسيد النيتريك باتحاد النيتروجين مع الأكسجين عند توفر الظروف التالية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "في وجود عامل حفاز وتحت ضغط مرتفع أو بفعل شرارة كهربائية"},
+        {"identifier": "B", "text": "في وجود عامل حفاز وبفعل الشرارة الكهربائية"},
+        {"identifier": "C", "text": "تحت ضغط مرتفع وبفعل الشرارة الكهربائية"},
+        {"identifier": "D", "text": "عند درجة حرارة 2000 درجة مئوية بتأثير القوس الكهربائي"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر المجموعة الخامسة (النيتروجين)",
+      "explanation": "الرابطة الثلاثية في النيتروجين قوية جداً، ولا يتم التفاعل مع الأكسجين لتكوين NO إلا في ظروف طاقة عالية مثل القوس الكهربائي (برق) أو درجات حرارة تصل لـ 2000-3000 مئوية."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يسمى ملح نترات البوتاسيوم KNO₃:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حجر جهنم"},
+        {"identifier": "B", "text": "ملح البارود"},
+        {"identifier": "C", "text": "ملح بارود شيلي"},
+        {"identifier": "D", "text": "الجير الحي"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مركبات المجموعة الأولى",
+      "explanation": "نترات البوتاسيوم تعرف بـ 'ملح البارود'، بينما نترات الصوديوم تعرف بـ 'بارود شيلي'، ونترات الفضة 'حجر جهنم'."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يتحد النيتروجين مع العديد من اللافلزات مكوناً مركبات:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أيونية"},
+        {"identifier": "B", "text": "تساهمية"},
+        {"identifier": "C", "text": "أيونية وتساهمية"},
+        {"identifier": "D", "text": "تساهمية قطبية"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الروابط الكيميائية ومركبات النيتروجين",
+      "explanation": "الروابط التي تنشأ بين عنصرين لافلزات (كالنيتروجين مع الأكسجين أو الهيدروجين) تكون في الغالب روابط تساهمية عن طريق المشاركة الإلكترونية."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "من أدلة التعادل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الفينولفثالين"},
+        {"identifier": "B", "text": "النشا"},
+        {"identifier": "C", "text": "اليود"},
+        {"identifier": "D", "text": "برمنجنات البوتاسيوم"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الأيوني (المعايرة والأدلة)",
+      "explanation": "الفينولفثالين (Ph.Ph) هو أحد أهم الأدلة المستخدمة في معايرات التعادل (حمض-قاعدة)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "الأملاح عند ذوبانها في الماء تتفكك إلى:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أيونات موجبة"},
+        {"identifier": "B", "text": "أيونات سالبة"},
+        {"identifier": "C", "text": "ذرات"},
+        {"identifier": "D", "text": "أيونات موجبة وسالبة"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "المحاليل الإلكتروليتية",
+      "explanation": "المركبات الأيونية كالأملاح تتأين (تتفكك) في المحاليل المائية لتعطي شقوقاً موجبة (كاتيونات) وشقوقاً سالبة (أنيونات)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "عند درجة حرارة ثابتة، يتناسب معدل سرعة التفاعل الكيميائي تناسباً طردياً مع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "التركيز"},
+        {"identifier": "B", "text": "الكتلة"},
+        {"identifier": "C", "text": "عدد المولات والكتلة"},
+        {"identifier": "D", "text": "كل الإجابات صحيحة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الحركية الكيميائية (قانون فعل الكتلة)",
+      "explanation": "حسب قانون فعل الكتلة، تتناسب سرعة التفاعل الكيميائي طردياً مع تراكيز المواد المتفاعلة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "مركب عضوي يحترق في الهواء بلهب مضيء وعند احتراقه ينتج دخان:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "بنزين"},
+        {"identifier": "B", "text": "إيثيلين"},
+        {"identifier": "C", "text": "تولوين"},
+        {"identifier": "D", "text": "إيثين"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات الأروماتية",
+      "explanation": "البنزين يحترق بلهب مدخن وذلك بسبب ارتفاع نسبة الكربون مقارنة بالهيدروجين في تركيبته (C₆H₆)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يعد الكالسيوم أكثر نشاطاً كيميائياً من:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "المغنيسيوم"},
+        {"identifier": "B", "text": "الاسترانشيوم"},
+        {"identifier": "C", "text": "الباريوم"},
+        {"identifier": "D", "text": "الراديوم"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مركبات المجموعة الثانية",
+      "explanation": "في مجموعة الأقلاء الأرضية، يزداد النشاط الكيميائي بالنزول إلى أسفل المجموعة. فالكالسيوم أنشط من المغنيسيوم الذي يعلوه، وأقل نشاطاً من السترونشيوم والباريوم."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "يتفاعل البنزين مع الكلور في الظلام في وجود عامل حفاز من حمض لويس لينتج كلوروبنزين بتفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "استبدال"},
+        {"identifier": "B", "text": "إضافة"},
+        {"identifier": "C", "text": "هدرجة"},
+        {"identifier": "D", "text": "أكسدة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (الاستبدال الإليكتروفيلي)",
+      "explanation": "في غياب الضوء (الظلام) ووجود حمض لويس كعامل حفاز، لا تنكسر الحلقة العطرية بل يحدث تفاعل استبدال (إحلال) لإحدى ذرات الهيدروجين."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "يتفاعل البنزين مع الكلور في ضوء الشمس المباشر وينتج عن هذا التفاعل مبيد حشري معروف بالجامكسان بتفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أكسدة"},
+        {"identifier": "B", "text": "اقتران"},
+        {"identifier": "C", "text": "إضافة"},
+        {"identifier": "D", "text": "استبدال"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (الإضافة)",
+      "explanation": "الأشعة فوق البنفسجية في ضوء الشمس توفر طاقة كافية لكسر الروابط المضاعفة للحلقة، فيتفاعل البنزين إضافة مع 3 جزيئات كلور لينتج سداسي كلورو حلقي الهكسان (الجامكسان)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "تعتمد القنبلة الهيدروجينية على تفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الانشطار النووي"},
+        {"identifier": "B", "text": "الاندماج النووي"},
+        {"identifier": "C", "text": "التحلل النووي"},
+        {"identifier": "D", "text": "التفكك النووي"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية",
+      "explanation": "القنبلة الهيدروجينية هي تطبيق على الاندماج النووي حيث تندمج نوى نظائر الهيدروجين الخفيفة تحت درجات حرارة هائلة منتجة طاقة ضخمة."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "تميل العناصر التي تقع أسفل حزام الاستقرار إلى إطلاق (يقصد بها العناصر الثقيلة التي تقع أسفل الحزام):",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "بيتا"},
+        {"identifier": "B", "text": "بروتون"},
+        {"identifier": "C", "text": "ألفا"},
+        {"identifier": "D", "text": "نيوترون"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية",
+      "explanation": "العناصر الثقيلة جداً غير المستقرة (غالباً ما تكون خارج نهايات الحزام) تميل إلى إطلاق جسيمات ألفا لتخفيف كتلتها والوصول إلى الاستقرار."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "عدد الكم الرئيسي يمكن أن يكون عدد:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كسري"},
+        {"identifier": "B", "text": "صحيح"},
+        {"identifier": "C", "text": "موجب"},
+        {"identifier": "D", "text": "كل الإجابات صحيحة"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "أعداد الكم",
+      "explanation": "عدد الكم الرئيسي (n) الذي يحدد مستويات الطاقة الرئيسية يأخذ قيماً صحيحة موجبة فقط بدءاً من 1."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "التوزيع الإلكتروني للأيون الموجب لذرة العنصر يشبه الغاز الخامل الذي يقع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "في نهاية الدورة السابقة"},
+        {"identifier": "B", "text": "في نهاية الدورة نفسها"},
+        {"identifier": "C", "text": "في نهاية الدورة التالية"},
+        {"identifier": "D", "text": "في بداية الدورة السابقة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "التوزيع الإلكتروني والأيونات",
+      "explanation": "عندما تفقد الذرة إلكترونات لتكوين أيون موجب (مثل Na⁺)، يتبقى التركيب الإلكتروني مشابهاً للغاز النبيل الذي يسبقها مباشرة في الدورة السابقة (مثل النيون Ne)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "الصيغة العامة للسكريات الأحادية هي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "Cₙ(H₂O)ₙ"},
+        {"identifier": "B", "text": "CₙH₂ₙOₙ"},
+        {"identifier": "C", "text": "(CH₂O)ₙ"},
+        {"identifier": "D", "text": "كل الإجابات صحيحة"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكربوهيدرات",
+      "explanation": "تتميز السكريات الأحادية بأن نسبة الهيدروجين إلى الأكسجين فيها هي 2:1، وجميع الصيغ المذكورة تعبر رياضياً عن هذه النسبة بطرق متكافئة."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "تمتلك عناصر المجموعة الرئيسية الخامسة التركيب الإلكتروني الآتي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ns² np⁵"},
+        {"identifier": "B", "text": "ns⁰ np⁵"},
+        {"identifier": "C", "text": "ns² np³"},
+        {"identifier": "D", "text": "ns² np⁴"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p",
+      "explanation": "عناصر المجموعة الخامسة (مثل النيتروجين والفوسفور) تمتلك 5 إلكترونات في غلافها الخارجي موزعة: 2 في المستوى s، و3 في المستوى p."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "واحد مما يأتي من مميزات جدول مندليف:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تم من خلاله التوصل للقانون الدوري"},
+        {"identifier": "B", "text": "لم يترك أماكن فارغة"},
+        {"identifier": "C", "text": "أفرد دورة كاملة للهيدروجين"},
+        {"identifier": "D", "text": "وضع النحاس ضمن الفلزات القلوية"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تطور الجدول الدوري",
+      "explanation": "اكتشاف مندليف للقانون الدوري (ترتيب العناصر حسب الكتلة الذرية ودورية الخواص) كان الإسهام الأساسي لجدوله، وتوقع من خلاله خواص عناصر لم تكن مكتشفة."
+    },
+    {
+      "grade_level": 11,
+      "unit": 1,
+      "text": "سُمّيت نظريته بنظرية المسارات الذرية الدائرية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تشادويك"},
+        {"identifier": "B", "text": "دالتون"},
+        {"identifier": "C", "text": "بوهر"},
+        {"identifier": "D", "text": "تومسون"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تطور النموذج الذري",
+      "explanation": "نيلز بور افترض في نموذجه أن الإلكترونات تدور حول النواة في مسارات (مدارات) دائرية محددة ذات طاقة ثابتة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "العالم الذي قام بتقسيم العناصر إلى أحجار ومواد قابلة للانصهار وكبريت وأملاح:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الهمداني"},
+        {"identifier": "B", "text": "الرازي"},
+        {"identifier": "C", "text": "ابن سينا"},
+        {"identifier": "D", "text": "عز الدين الجلدي"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تطور الكيمياء عبر العصور",
+      "explanation": "يعود الفضل للعالم ابن سينا في تصنيف المعادن في العصور الإسلامية إلى أربع فئات (أحجار، مواد قابلة للانصهار، كبريتيات، وأملاح)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "احسب عدد وحدات الفاراداي اللازمة لترسيب 7.6 جم من النحاس (Cu²⁺ = 63.5):",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "1 فاراد"},
+        {"identifier": "B", "text": "0.5 فاراد"},
+        {"identifier": "C", "text": "0.24 فاراد"},
+        {"identifier": "D", "text": "1.5 فاراد"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "قوانين فاراداي (التحليل الكهربي)",
+      "explanation": "الكتلة المكافئة للنحاس = 63.5 ÷ 2 = 31.75 جم. كمية الكهربية = الكتلة المترسبة ÷ الكتلة المكافئة = 7.6 ÷ 31.75 ≈ 0.24 فاراداي."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "تعتمد الطاقة الكيميائية على:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الطاقة الحرارية"},
+        {"identifier": "B", "text": "الطاقة النووية"},
+        {"identifier": "C", "text": "الطاقة الإشعاعية"},
+        {"identifier": "D", "text": "كل الإجابات صحيحة"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية",
+      "explanation": "التفاعلات الكيميائية الاعتيادية تعتمد طاقتها الكامنة أو المنطلقة في الأساس على التغيرات في الطاقة الحرارية للنظام (الإنثالبي)."
+    }
+  ]
+}

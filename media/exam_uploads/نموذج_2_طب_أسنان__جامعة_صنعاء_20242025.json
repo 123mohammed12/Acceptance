@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "DEN",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "يتفاعل الكلور مع البنزين في ضوء الشمس المباشر بعملية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأكسدة"},
+        {"identifier": "B", "text": "الإضافة"},
+        {"identifier": "C", "text": "الاستبدال"},
+        {"identifier": "D", "text": "احتراق"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (الإضافة)",
+      "explanation": "في وجود ضوء الشمس المباشر (الأشعة فوق البنفسجية) تتكسر الروابط باي ($\\pi$) في حلقة البنزين، ويتفاعل إضافةً مع 3 جزيئات من الكلور لتكوين سداسي كلورو حلقي الهكسان (الجامكسان)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "العنصر الذي عدده الذري 19:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "يفقد إلكترون"},
+        {"identifier": "B", "text": "يكتسب إلكترون"},
+        {"identifier": "C", "text": "يفقد إلكترونين"},
+        {"identifier": "D", "text": "يكتسب إلكترونين"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "التوزيع الإلكتروني وتكوين الأيونات",
+      "explanation": "العنصر هو البوتاسيوم ($\\text{K}$) وتوزيعه الإلكتروني (2, 8, 8, 1) أو $[\\text{Ar}] 4\\text{s}^1$، لذا فإنه يميل لفقد إلكترون التكافؤ الوحيد للوصول إلى تركيب الغاز النبيل المستقر (أيون موجب $\\text{K}^+$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "المركب الذي يحتوي على مجموعتين أمين:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أرجنين"},
+        {"identifier": "B", "text": "جلايسين"},
+        {"identifier": "C", "text": "سيستين"},
+        {"identifier": "D", "text": "ليس أي مما سبق"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (الأحماض الأمينية)",
+      "explanation": "الأرجينين يصنف من الأحماض الأمينية القاعدية (ثنائية الأمين أحادية الكربوكسيل) لاحتوائه على أكثر من مجموعة نيتروجينية قاعدية (مجموعة جوانيدينو) في سلسلته الجانبية."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "قابلية ذوبان النيتروجين في الماء:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تفوق قابلية ذوبان الأكسجين"},
+        {"identifier": "B", "text": "أقل من قابلية ذوبان الأكسجين"},
+        {"identifier": "C", "text": "تفوق قابلية ذوبان الأرجون"},
+        {"identifier": "D", "text": "تساوي قابلية ذوبان الأكسجين"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (النيتروجين)",
+      "explanation": "غاز النيتروجين ($\\text{N}_2$) شحيح جداً في الذوبان في الماء، وقابليته للذوبان أقل من قابلية ذوبان غاز الأكسجين ($\\text{O}_2$) تحت نفس الظروف من الضغط ودرجة الحرارة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "الذي يتحكم بتوزيع الإلكترونات في الأفلاك:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "مبدأ الثبات والبناء"},
+        {"identifier": "B", "text": "قاعدة هوند"},
+        {"identifier": "C", "text": "مبدأ باولي للاستبعاد"},
+        {"identifier": "D", "text": "جميع ما سبق صحيح"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "قواعد التوزيع الإلكتروني",
+      "explanation": "التوزيع الإلكتروني الصحيح للذرة يخضع للقواعد الثلاث مجتمعة: مبدأ البناء التصاعدي (أوفباو)، قاعدة هوند (توزيع فرادى أولاً)، ومبدأ باولي للاستبعاد (لا يتفق إلكترونان في الأعداد الكمية الأربعة)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "العنصر غير المشع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "مستقر"},
+        {"identifier": "B", "text": "غير مستقر"},
+        {"identifier": "C", "text": "يصدر عنه إشعاعات"},
+        {"identifier": "D", "text": "مشع ومستقر"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (الاستقرار النووي)",
+      "explanation": "العناصر غير المشعة هي عناصر تمتلك أنوية مستقرة (نسبة النيوترونات إلى البروتونات $(n/p)$ فيها ضمن حزام الاستقرار)، ولذا لا تضمحل ذاتياً ولا تصدر إشعاعات نووية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "طبقاً لنظام IUPAC فإن اسم المركب الآتي: $\\text{HO}-\\text{CH}_2-\\text{CH}_2-\\text{OH}$ هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كحول الجليكول"},
+        {"identifier": "B", "text": "1,2-إيثان دايول"},
+        {"identifier": "C", "text": "بروبانول"},
+        {"identifier": "D", "text": "1,2,3-بروبان ترايول"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تسمية الكحولات (نظام الأيوباك)",
+      "explanation": "المركب يتكون من سلسة كربونية ثنائية (إيثان)، وتحتوي على مجموعتي هيدروكسيل في ذرتي الكربون 1 و 2، فيضاف المقطع 'دايول' ليصبح الاسم: 1,2-إيثان دايول. (بينما الإيثيلين جليكول هو اسمه الشائع)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "عند درجة حرارة ثابتة فإن سرعة التفاعل تتناسب طردياً مع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "التركيز"},
+        {"identifier": "B", "text": "عدد المولات"},
+        {"identifier": "C", "text": "عدد المولات والكتل الفعالة"},
+        {"identifier": "D", "text": "عدد المولات"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الحركية الكيميائية (قانون فعل الكتلة)",
+      "explanation": "ينص قانون فعل الكتلة لجولدبرج وفاج على أن سرعة التفاعل الكيميائي تتناسب طردياً مع حاصل ضرب التراكيز المولارية (أو الكتل الفعالة) للمواد المتفاعلة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "ظهرت النظرية .......... في المرحلة السادسة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "النووية"},
+        {"identifier": "B", "text": "الجزيئية"},
+        {"identifier": "C", "text": "الذرية"},
+        {"identifier": "D", "text": "ليس مما سبق"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تطور علم الكيمياء",
+      "explanation": "وفقاً لتسلسل المنهج اليمني، المرحلة السادسة (مرحلة الكيمياء الحديثة) ارتبطت بظهور وازدهار 'النظرية الذرية' لجون دالتون وبداية الفهم الدقيق لتركيب المادة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 2,
+      "text": "من علاقة الكتلة الجزيئية بالجرام يعني أن المول الواحد من المركب يساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الكتلة الجزيئية بالجرام"},
+        {"identifier": "B", "text": "نصف الكتلة الجزيئية بالجرام"},
+        {"identifier": "C", "text": "ثلث الكتلة الجزيئية بالجرام"},
+        {"identifier": "D", "text": "ربع الكتلة الجزيئية بالجرام"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "المول والكتلة المولية",
+      "explanation": "المول (أو المول الجزيئي) لأي مادة يُعرف رياضياً وعملياً على أنه كتلته الجزيئية معبراً عنها بوحدة الجرام."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "تكافؤ الذرة مسبوقاً بإشارته:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "عدد التأكسد"},
+        {"identifier": "B", "text": "الوزن الذري"},
+        {"identifier": "C", "text": "العدد الذري"},
+        {"identifier": "D", "text": "العدد الكتلي"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (أعداد التأكسد)",
+      "explanation": "عدد التأكسد هو مصطلح يمثل الشحنة الكهربية (موجبة أو سالبة) التي تبدو على الذرة أو الأيون في المركب، وهو يعادل قيمة التكافؤ مع تحديد نوع الشحنة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 2,
+      "text": "إذا كان: $\\text{Na} = 23$ ، $\\text{O} = 16$ ، $\\text{H} = 1 \\text{ g/mol}$ فإن الكتلة الجزيئية بالجرام من $\\text{NaOH}$ تساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "40 جرام من المركب"},
+        {"identifier": "B", "text": "1 مول من المركب"},
+        {"identifier": "C", "text": "1 جرام من المركب"},
+        {"identifier": "D", "text": "40 مول من المركب"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "حساب الكتلة الجزيئية (المولية)",
+      "explanation": "الكتلة الجزيئية لهيدروكسيد الصوديوم ($\\text{NaOH}$) = 23 + 16 + 1 = 40. وبما أن المطلوب 'الكتلة الجزيئية بالجرام' (وهي كتلة المول الواحد)، إذن هي تساوي 40 جراماً."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "القاعدة وفقاً لمفهوم لويس:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تكتسب زوج $\\text{e}^-$"},
+        {"identifier": "B", "text": "تفقد زوج $\\text{e}^-$"},
+        {"identifier": "C", "text": "تكتسب زوج $\\text{p}^+$"},
+        {"identifier": "D", "text": "تفقد زوج $\\text{p}^+$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "نظريات الأحماض والقواعد (مفهوم لويس)",
+      "explanation": "قاعدة لويس هي المادة التي تمتلك زوجاً من الإلكترونات الحرة ($\\text{e}^-$) وتستطيع منحه (التعبير هنا بكلمة 'تفقد' بمعنى تمنح أو تشارك به) لتكوين رابطة تناسقية مع حمض لويس الذي يكتسبه."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "ينتج التولوين من تفاعل البنزين مع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كلوريد الإيثيل"},
+        {"identifier": "B", "text": "البروم في الظلام"},
+        {"identifier": "C", "text": "حمض النيتريك في وجود حمض الكبريتيك"},
+        {"identifier": "D", "text": "لا شيء مما سبق"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (ألكلة فريدل-كرافتس)",
+      "explanation": "التولوين (ميثيل بنزين) ينتج من تفاعل ألكلة البنزين مع هاليد الميثيل (مثل 'كلوريد الميثيل' $\\text{CH}_3\\text{Cl}$). تفاعله مع كلوريد الإيثيل (الخيار أ) ينتج إيثيل بنزين، لذا جميع الخيارات المعطاة خاطئة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "في ضوء نظرية الكربيد فإن الذي ينتج من تفاعل كربيد الكالسيوم مع الماء ($\\text{CaC}_2 + \\text{H}_2\\text{O}$) هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "هيدروكربونات حلقية"},
+        {"identifier": "B", "text": "هيدروكربونات مشبعة"},
+        {"identifier": "C", "text": "هيدروكربونات غير مشبعة"},
+        {"identifier": "D", "text": "هيدروكربونات ذات أوزان جزيئية عالية"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات غير المشبعة (تحضير الألكاينات)",
+      "explanation": "التحلل المائي لكربيد الكالسيوم ($\\text{CaC}_2 + 2\\text{H}_2\\text{O}$) ينتج غاز الأسيتيلين (الإيثاين $\\text{C}_2\\text{H}_2$)، والأسيتيلين ينتمي إلى الألكاينات وهي صنف من الهيدروكربونات غير المشبعة لاحتوائها على رابطة ثلاثية ($\\text{C}\\equiv\\text{C}$)."
+    }
+  ]
+}

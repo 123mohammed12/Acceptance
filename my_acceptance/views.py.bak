@@ -1,0 +1,931 @@
+from rest_framework import viewsets, permissions, status
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
+from django.db.models import Count, Avg, Q
+from rest_framework_simplejwt.tokens import RefreshToken
+import random
+
+from .models import University, College, Subject, Question, Option, PDFResource, TestSession, StudentAnswer, FavoriteQuestion, ActivationCode, Deck, Flashcard, UserFlashcardProgress
+from .serializers import (
+    UniversitySerializer,
+    CollegeSerializer,
+    SubjectSerializer,
+    QuestionSerializer,
+    PDFResourceSerializer,
+    TestSessionSerializer,
+    FavoriteQuestionSerializer,
+    DeckSerializer,
+    FlashcardSerializer,
+)
+
+# -----------------------------------------------
+# ViewSets عامة (القراءة فقط)
+# -----------------------------------------------
+
+class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = University.objects.filter(is_active=True).order_by('id')
+    serializer_class = UniversitySerializer
+    permission_classes = [permissions.AllowAny]
+
+class CollegeViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = College.objects.filter(is_active=True).order_by('id')
+    serializer_class = CollegeSerializer
+    permission_classes = [permissions.AllowAny]
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        university_id = self.request.query_params.get('university')
+        category = self.request.query_params.get('category')
+        search = self.request.query_params.get('search')
+        if university_id:
+            queryset = queryset.filter(university_id=university_id)
+        if category:
+            queryset = queryset.filter(category=category)
+        if search:
+            queryset = queryset.filter(name__icontains=search)
+        return queryset
+
+class SubjectViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Subject.objects.filter(is_active=True).order_by('id')
+    serializer_class = SubjectSerializer
+    permission_classes = [permissions.AllowAny]
+
+class PDFResourceViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = PDFResource.objects.all().order_by('-year')
+    serializer_class = PDFResourceSerializer
+    permission_classes = [permissions.AllowAny]
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        college_id = self.request.query_params.get('college')
+        subject_id = self.request.query_params.get('subject')
+        year = self.request.query_params.get('year')
+        university_id = self.request.query_params.get('university')
+        if college_id:
+            try:
+                college = College.objects.get(id=college_id)
+                # جلب جميع الجامعات التي لديها نفس هذا التخصص (كود الكلية)
+                related_uni_ids = College.objects.filter(code=college.code).values_list('university_id', flat=True)
+                
+                queryset = queryset.filter(
+                    Q(college__code=college.code) |
+                    Q(college__isnull=True, university_id__in=related_uni_ids)
+                )
+            except College.DoesNotExist:
+                queryset = queryset.filter(college_id=college_id)
+        if subject_id:
+            queryset = queryset.filter(subject_id=subject_id)
+        if year:
+            queryset = queryset.filter(year=year)
+        if university_id:
+            queryset = queryset.filter(college__university_id=university_id)
+        return queryset
+
+
+# -----------------------------------------------
+# Auth & Security Endpoints
+# -----------------------------------------------
+@api_view(['POST'])
+@permission_classes([permissions.AllowAny])
+def register_user(request):
+    """
+    إنشاء حساب جديد.
+    المطلوب: username + password + device_id
+    اختياري: email, phone_number, full_name
+    """
+    from .models import UserProfile
+    import re
+
+    username = request.data.get('username', '').strip()
+    password = request.data.get('password', '').strip()
+    email = request.data.get('email', '').strip()
+    phone = request.data.get('phone_number', '').strip()
+    full_name = request.data.get('full_name', '').strip()
+    device_id = request.data.get('device_id', '').strip()
+
+    # التحقق من الحقول الإجبارية
+    if not username or not password or not device_id:
+        return Response({'detail': 'يرجى ملء جميع الحقول المطلوبة (اسم المستخدم، كلمة المرور، بصمة الجهاز).'}, status=status.HTTP_400_BAD_REQUEST)
+
+    # تحقق اسم المستخدم (أحرف + أرقام + _ فقط)
+    if not re.match(r'^[a-zA-Z0-9_]{3,30}$', username):
+        return Response({'detail': 'اسم المستخدم يجب أن يكون 3-30 حرف (أحرف إنجليزية وأرقام و _ فقط).'}, status=status.HTTP_400_BAD_REQUEST)
+
+    if len(password) < 6:
+        return Response({'detail': 'كلمة المرور يجب أن تكون 6 أحرف على الأقل.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    # تحقق التكرار
+    if User.objects.filter(username=username).exists():
+        return Response({'detail': 'اسم المستخدم مستخدم بالفعل. جرّب اسماً آخر.'}, status=status.HTTP_409_CONFLICT)
+
+    if email and User.objects.filter(email=email).exists():
+        return Response({'detail': 'يوجد حساب مسجل بهذا البريد الإلكتروني.'}, status=status.HTTP_409_CONFLICT)
+
+    if phone and UserProfile.objects.filter(phone_number=phone).exists():
+        return Response({'detail': 'يوجد حساب مسجل بهذا الرقم بالفعل.'}, status=status.HTTP_409_CONFLICT)
+
+    # إنشاء المستخدم
+    user = User.objects.create_user(
+        username=username,
+        password=password,
+        email=email,
+        first_name=full_name,
+    )
+
+    profile, _ = UserProfile.objects.get_or_create(user=user)
+    profile.phone_number = phone if phone else None
+    profile.device_id = device_id
+    profile.save()
+
+    refresh = RefreshToken.for_user(user)
+    return Response({
+        'detail': 'تم إنشاء الحساب بنجاح!',
+        'access': str(refresh.access_token),
+        'refresh': str(refresh),
+        'is_premium': False,
+        'full_name': full_name,
+        'free_past_exam_remaining': 2,
+        'free_challenge_remaining': 2,
+    }, status=status.HTTP_201_CREATED)
+
+
+@api_view(['POST'])
+@permission_classes([permissions.AllowAny])
+def login_with_device(request):
+    """
+    تسجيل الدخول باسم المستخدم أو البريد أو رقم الهاتف مع بصمة الجهاز.
+    """
+    from .models import UserProfile
+    identifier = request.data.get('identifier', '').strip()
+    password = request.data.get('password', '').strip()
+    device_id = request.data.get('device_id', '').strip()
+
+    if not identifier or not password or not device_id:
+        return Response({'detail': 'يرجى توفير بيانات الدخول وبصمة الجهاز.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    # البحث باسم المستخدم أولاً، ثم الإيميل، ثم رقم الهاتف
+    user = User.objects.filter(username=identifier).first()
+    if not user:
+        user = User.objects.filter(email=identifier).first()
+    if not user:
+        profile_match = UserProfile.objects.filter(phone_number=identifier).first()
+        if profile_match:
+            user = profile_match.user
+
+    if not user or not user.check_password(password):
+        return Response({'detail': 'بيانات الدخول غير صحيحة.'}, status=status.HTTP_401_UNAUTHORIZED)
+
+    profile, created = UserProfile.objects.get_or_create(user=user)
+
+    if profile.device_id and profile.device_id != device_id:
+        return Response({
+            'detail': 'هذا الحساب مسجّل دخوله حالياً من جهاز آخر. يرجى تسجيل الخروج من الجهاز الآخر أولاً.',
+            'code': 'DEVICE_CONFLICT'
+        }, status=status.HTTP_403_FORBIDDEN)
+
+    profile.device_id = device_id
+    profile.save()
+
+    refresh = RefreshToken.for_user(user)
+    return Response({
+        'access': str(refresh.access_token),
+        'refresh': str(refresh),
+        'is_premium': profile.is_premium,
+        'full_name': user.first_name,
+        'free_past_exam_remaining': max(0, 2 - profile.free_past_exam_trials),
+        'free_challenge_remaining': max(0, 2 - profile.free_challenge_trials),
+    })
+
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def logout_user(request):
+    """
+    تسجيل الخروج: يمسح بصمة الجهاز من الحساب.
+    """
+    from .models import UserProfile
+    profile, _ = UserProfile.objects.get_or_create(user=request.user)
+    profile.device_id = None
+    profile.save()
+    return Response({'detail': 'تم تسجيل الخروج بنجاح. يمكنك الآن الدخول من أي جهاز.'})
+
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def activate_premium(request):
+    """
+    تفعيل الاشتراك بكود تفعيل.
+    الكود يُستخدم مرة واحدة فقط.
+    يتم مقارنة SHA-256 hash بدل الكود الأصلي للحماية.
+    """
+    code_input = request.data.get('code', '').strip().upper()
+
+    if not code_input:
+        return Response({'detail': 'يرجى إدخال كود التفعيل.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    if len(code_input) < 6 or len(code_input) > 16:
+        return Response({'detail': 'كود غير صالح.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    code_hash = ActivationCode.hash_code(code_input)
+    activation = ActivationCode.objects.filter(code_hash=code_hash, is_used=False).first()
+
+    if not activation:
+        return Response({'detail': 'كود التفعيل غير صالح أو مُستخدم مسبقاً.'}, status=status.HTTP_404_NOT_FOUND)
+
+    try:
+        activation.activate_for_user(request.user)
+    except ValueError as e:
+        return Response({'detail': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    return Response({
+        'detail': 'تم تفعيل اشتراكك بنجاح! 🎉 يمكنك الآن الوصول لجميع الاختبارات.',
+        'is_premium': True,
+        'duration_days': activation.duration_days,
+    })
+
+
+# -----------------------------------------------
+# سجل الاختبارات
+# -----------------------------------------------
+class TestSessionViewSet(viewsets.ReadOnlyModelViewSet):
+    serializer_class = TestSessionSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        return TestSession.objects.filter(student=self.request.user).order_by('-created_at')
+
+
+# -----------------------------------------------
+# قائمة النماذج التفاعلية المتاحة (Available Templates)
+# -----------------------------------------------
+@api_view(['GET'])
+@permission_classes([permissions.AllowAny])
+def available_templates(request):
+    """
+    يعرض تجميعاً للنماذج المتاحة حسب (المادة + السنة + الجامعة المصدر) مع عدد الأسئلة.
+    يُستخدم لعرض قائمة "اختبارات القبول التفاعلية للأعوام السابقة".
+    فلاتر: college (إجباري)، subject، exam_year، source_university
+    """
+    college_id = request.query_params.get('college')
+    subject_id = request.query_params.get('subject')
+    exam_year = request.query_params.get('exam_year')
+    source_uni = request.query_params.get('source_university')
+
+    if not college_id:
+        return Response({'error': 'يرجى تحديد الكلية'}, status=status.HTTP_400_BAD_REQUEST)
+
+    # جلب مواد هذه الكلية
+    try:
+        college = College.objects.get(id=college_id)
+    except College.DoesNotExist:
+        return Response({'error': 'الكلية غير موجودة'}, status=status.HTTP_404_NOT_FOUND)
+
+    college_subjects = college.subjects.all()
+
+    # جلب جميع الجامعات التي لديها نفس هذا التخصص (كود الكلية)
+    college_code = college.code
+    related_uni_ids = College.objects.filter(code=college_code).values_list('university_id', flat=True)
+
+    # الأسئلة المرتبطة بهذه الكلية كمصدر أساسي في أي جامعة
+    qs = Question.objects.filter(
+        exam_year__isnull=False,
+        source_university__isnull=False,
+    )
+
+    # فلترة: إما السؤال يتبع الكلية حصراً عبر كودها، أو لا يتبع لأي كلية لكن يتبع لجامعة تمتلك هذا التخصص
+    qs = qs.filter(
+        Q(source_college__code=college_code) |
+        Q(source_college__isnull=True, source_university_id__in=related_uni_ids)
+    )
+
+    if subject_id:
+        qs = qs.filter(subject_id=subject_id)
+    if exam_year:
+        qs = qs.filter(exam_year=exam_year)
+    if source_uni:
+        qs = qs.filter(source_university_id=source_uni)
+
+    # تجميع حسب (مادة + سنة + جامعة مصدر)
+    templates = qs.values(
+        'subject__id', 'subject__name',
+        'exam_year',
+        'source_university__id', 'source_university__name',
+    ).annotate(
+        question_count=Count('id')
+    ).order_by('-exam_year', 'subject__name')
+
+    result = []
+    for t in templates:
+        result.append({
+            'subject_id': t['subject__id'],
+            'subject_name': t['subject__name'],
+            'exam_year': t['exam_year'],
+            'university_id': t['source_university__id'],
+            'university_name': t['source_university__name'],
+            'question_count': t['question_count'],
+        })
+
+    return Response(result)
+
+
+# -----------------------------------------------
+# توليد الاختبار الذكي
+# -----------------------------------------------
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def generate_exam(request):
+    """
+    توليد اختبار ذكي يدعم أنماط متعددة.
+    exam_category: 'past_exam' (لاختبارات القبول) أو 'challenge' (للتحديات) — لتحديد أي عداد مجاني يُستخدم.
+    """
+    from .models import UserProfile
+
+    test_type = request.query_params.get('test_type')
+    college_id = request.query_params.get('college')
+    subject_id = request.query_params.get('subject')
+    grade_level = request.query_params.get('grade_level')
+    unit_num = request.query_params.get('unit')
+    exam_year = request.query_params.get('exam_year')
+    source_uni = request.query_params.get('source_university')
+    years_str = request.query_params.get('years')
+    limit = int(request.query_params.get('limit', 50))
+    shuffle_q = request.query_params.get('shuffle', 'true') == 'true'
+    exam_category = request.query_params.get('exam_category', 'past_exam')
+
+    # --- نظام التراخيص المنفصل (Freemium) ---
+    profile, _ = UserProfile.objects.get_or_create(user=request.user)
+    if not profile.is_premium:
+        if exam_category == 'past_exam':
+            if profile.free_past_exam_trials >= 2:
+                return Response({
+                    'detail': 'لقد استنفدت المحاولات المجانية لاختبارات القبول التفاعلية. يرجى الاشتراك للوصول إلى كافة الاختبارات.',
+                    'code': 'PAYMENT_REQUIRED'
+                }, status=status.HTTP_403_FORBIDDEN)
+            profile.free_past_exam_trials += 1
+            profile.save()
+        elif exam_category == 'challenge':
+            if profile.free_challenge_trials >= 2:
+                return Response({
+                    'detail': 'لقد استنفدت المحاولات المجانية للتحديات. يرجى الاشتراك للوصول إلى كافة التحديات.',
+                    'code': 'PAYMENT_REQUIRED'
+                }, status=status.HTTP_403_FORBIDDEN)
+            profile.free_challenge_trials += 1
+            profile.save()
+
+    questions = []
+
+    # === النمط: year_sim — محاكاة نموذج قبول حقيقي (مادة + سنة + جامعة) ===
+    if test_type == 'year_sim' and subject_id:
+        filters = {'subject_id': subject_id}
+        if exam_year:
+            filters['exam_year'] = exam_year
+        if source_uni:
+            filters['source_university_id'] = source_uni
+            
+        qs = Question.objects.filter(**filters)
+        
+        # إضافة فلترة الكلية لضمان جلب الأسئلة الخاصة بهذا التخصص فقط (مثلاً طب بشري)
+        if college_id:
+            try:
+                college = College.objects.get(id=college_id)
+                related_uni_ids = College.objects.filter(code=college.code).values_list('university_id', flat=True)
+                qs = qs.filter(
+                    Q(source_college__code=college.code) |
+                    Q(source_college__isnull=True, source_university_id__in=related_uni_ids)
+                )
+            except College.DoesNotExist:
+                pass
+                
+        qs_list = list(qs)
+        if shuffle_q:
+            random.shuffle(qs_list)
+            
+        # في محاكاة السنوات السابقة، يفضل جلب كامل النموذج المتوفر
+        questions = qs_list[:max(limit, 100)]
+
+    # === النمط: mock — محاكاة قبول شاملة ===
+    elif test_type == 'mock' and college_id:
+        college = College.objects.filter(id=college_id).first()
+        if not college:
+            return Response({'error': 'الكلية غير موجودة'}, status=status.HTTP_404_NOT_FOUND)
+            
+        # جلب جميع المواد المرتبطة بهذا التخصص (كود الكلية) عبر كل الجامعات
+        from .models import Subject
+        subjects = Subject.objects.filter(colleges__code=college.code).distinct()
+        
+        all_questions = []
+        # لمحاكاة حقيقية، نأخذ عينة من كل مادة
+        questions_per_subject = limit // subjects.count() if subjects.exists() else 20
+        
+        for sub in subjects:
+            # نسحب أسئلة هذه المادة التي تتبع هذا التخصص في أي جامعة
+            sub_qs = list(Question.objects.filter(
+                subject=sub,
+                source_college__code=college.code
+            ))
+            if not sub_qs:
+                 # fallback: إذا لم تكن مرتبطة بكلية محددة، نسحب أي أسئلة للمادة
+                 sub_qs = list(Question.objects.filter(subject=sub))
+                 
+            random.shuffle(sub_qs)
+            all_questions.extend(sub_qs[:questions_per_subject])
+            
+        if shuffle_q:
+            random.shuffle(all_questions)
+        questions = all_questions[:limit]
+
+    # === النمط: unit — اختبار وحدة ===
+    elif test_type == 'unit' and subject_id and unit_num:
+        filters = {'subject_id': subject_id, 'unit': unit_num}
+        if grade_level:
+            filters['grade_level'] = grade_level
+        qs = list(Question.objects.filter(**filters))
+        if shuffle_q:
+            random.shuffle(qs)
+        questions = qs[:limit]
+
+    # === النمط: most_repeated — الأكثر تكراراً ===
+    elif test_type == 'most_repeated' and subject_id:
+        filters = {'subject_id': subject_id}
+        if unit_num:
+            filters['unit'] = unit_num
+        qs = list(Question.objects.filter(**filters).order_by('-times_appeared'))
+        questions = qs[:limit]
+
+    # === النمط: bank — بنك أسئلة مخصص ===
+    elif test_type == 'bank' and subject_id and years_str:
+        try:
+            years_list = [int(y.strip()) for y in years_str.split(',')]
+        except ValueError:
+            return Response({'error': 'صيغة السنوات غير صحيحة.'}, status=status.HTTP_400_BAD_REQUEST)
+        qs = list(Question.objects.filter(subject_id=subject_id, exam_year__in=years_list))
+        if shuffle_q:
+            random.shuffle(qs)
+        questions = qs[:limit]
+
+    # === النمط: subject_all — كل أسئلة مادة ===
+    elif test_type == 'subject_all' and subject_id:
+        qs = list(Question.objects.filter(subject_id=subject_id))
+        if shuffle_q:
+            random.shuffle(qs)
+        questions = qs[:limit]
+
+    # === النمط: favorites — اختبار من المفضلة ===
+    elif test_type == 'favorites':
+        fav_q_ids = FavoriteQuestion.objects.filter(user=request.user).values_list('question_id', flat=True)
+        qs = list(Question.objects.filter(id__in=fav_q_ids))
+        if subject_id:
+            qs = [q for q in qs if q.subject_id == int(subject_id)]
+        if shuffle_q:
+            random.shuffle(qs)
+        questions = qs[:limit]
+
+    # === النمط القديم: book ===
+    elif test_type == 'book' and subject_id and grade_level:
+        qs = list(Question.objects.filter(subject_id=subject_id, grade_level=grade_level))
+        if shuffle_q:
+            random.shuffle(qs)
+        questions = qs[:40]
+
+    else:
+        return Response({'error': 'معاملات غير صحيحة. راجع أنماط الاختبارات المدعومة.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    shuffle_opts = request.query_params.get('shuffle_options', 'true') == 'true'
+    serializer = QuestionSerializer(questions, many=True, context={'request': request, 'shuffle_options': shuffle_opts})
+    return Response(serializer.data)
+
+
+# -----------------------------------------------
+# تسليم الاختبار
+# -----------------------------------------------
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def submit_exam(request):
+    """
+    استقبال إجابات الطالب وإنشاء TestSession و StudentAnswer
+    """
+    data = request.data
+    test_type = data.get('test_type')
+    college_id = data.get('college_id')
+    exam_mode = data.get('exam_mode', 'instant')
+    answers = data.get('answers', [])
+
+    total_questions = len(answers)
+    correct_count = 0
+
+    for ans in answers:
+        option_id = ans.get('option_id')
+        if option_id:
+            try:
+                opt = Option.objects.get(id=option_id)
+                if opt.is_correct:
+                    correct_count += 1
+            except Option.DoesNotExist:
+                pass
+
+    score_percentage = (correct_count / total_questions * 100) if total_questions > 0 else 0
+
+    college = College.objects.filter(id=college_id).first() if college_id else None
+
+    session = TestSession.objects.create(
+        student=request.user,
+        college=college,
+        test_type=test_type,
+        exam_mode=exam_mode,
+        total_questions=total_questions,
+        correct_answers_count=correct_count,
+        score_percentage=score_percentage
+    )
+
+    for ans in answers:
+        q_id = ans.get('question_id')
+        opt_id = ans.get('option_id')
+        if q_id:
+            try:
+                opt = Option.objects.get(id=opt_id) if opt_id else None
+                is_correct = opt.is_correct if opt else False
+                StudentAnswer.objects.create(
+                    session=session,
+                    question_id=q_id,
+                    selected_option=opt,
+                    is_correct=is_correct
+                )
+            except Exception:
+                continue
+
+    serializer = TestSessionSerializer(session)
+    return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+# -----------------------------------------------
+# نظام المفضلة (Favorites)
+# -----------------------------------------------
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def list_favorites(request):
+    """عرض كل أسئلة المفضلة للطالب الحالي"""
+    favs = FavoriteQuestion.objects.filter(user=request.user).select_related('question', 'question__subject').order_by('-created_at')
+    serializer = FavoriteQuestionSerializer(favs, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def toggle_favorite(request):
+    """إضافة/إزالة سؤال من المفضلة (Toggle)"""
+    question_id = request.data.get('question_id')
+    if not question_id:
+        return Response({'error': 'يرجى تحديد رقم السؤال'}, status=status.HTTP_400_BAD_REQUEST)
+
+    try:
+        question = Question.objects.get(id=question_id)
+    except Question.DoesNotExist:
+        return Response({'error': 'السؤال غير موجود'}, status=status.HTTP_404_NOT_FOUND)
+
+    fav, created = FavoriteQuestion.objects.get_or_create(user=request.user, question=question)
+    if not created:
+        # كان موجوداً بالفعل → نحذفه (toggle off)
+        fav.delete()
+        return Response({'status': 'removed', 'is_favorited': False})
+
+    return Response({'status': 'added', 'is_favorited': True})
+
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def favorites_count(request):
+    """عدد الأسئلة المفضلة مصنفة حسب المادة"""
+    counts = FavoriteQuestion.objects.filter(user=request.user).values(
+        'question__subject__id', 'question__subject__name'
+    ).annotate(count=Count('id')).order_by('-count')
+
+    result = []
+    total = 0
+    for item in counts:
+        c = item['count']
+        total += c
+        result.append({
+            'subject_id': item['question__subject__id'],
+            'subject_name': item['question__subject__name'],
+            'count': c,
+        })
+
+    return Response({'total': total, 'by_subject': result})
+
+
+# -----------------------------------------------
+# إحصائيات الأداء المتقدمة
+# -----------------------------------------------
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def performance_stats(request):
+    """
+    إحصائيات أداء شاملة للطالب:
+    - المعدل العام
+    - عدد الاختبارات
+    - الأداء حسب المادة
+    - آخر 10 نتائج (للرسم البياني)
+    - عدد المفضلة
+    """
+    sessions = TestSession.objects.filter(student=request.user)
+
+    total_exams = sessions.count()
+    if total_exams == 0:
+        return Response({
+            'total_exams': 0,
+            'overall_average': 0,
+            'by_subject': [],
+            'recent_scores': [],
+            'favorites_count': 0,
+            'total_questions_answered': 0,
+            'total_correct': 0,
+        })
+
+    overall_avg = sessions.aggregate(avg=Avg('score_percentage'))['avg'] or 0
+
+    # الأداء حسب نوع الاختبار (يعكس المواد تقريباً)
+    # لتحقيق الأداء حسب المادة بدقة، نحتاج لربط الـ session بالمادة
+    # سنستخدم student_answers لتجميع حسب المادة
+    from django.db.models import Case, When, IntegerField, Value
+    subject_stats = StudentAnswer.objects.filter(
+        session__student=request.user
+    ).values(
+        'question__subject__id', 'question__subject__name'
+    ).annotate(
+        total=Count('id'),
+        correct=Count(Case(When(is_correct=True, then=1))),
+    ).order_by('-total')
+
+    by_subject = []
+    for s in subject_stats:
+        total = s['total']
+        correct = s['correct']
+        pct = round((correct / total * 100), 1) if total > 0 else 0
+        by_subject.append({
+            'subject_id': s['question__subject__id'],
+            'subject_name': s['question__subject__name'],
+            'total_questions': total,
+            'correct_answers': correct,
+            'percentage': pct,
+        })
+
+    # آخر 10 نتائج للرسم البياني
+    recent = sessions.order_by('-created_at')[:10].values('score_percentage', 'created_at', 'test_type')
+    recent_scores = list(recent)
+
+    # عدد المفضلة
+    favs = FavoriteQuestion.objects.filter(user=request.user).count()
+
+    # إجماليات
+    total_q = StudentAnswer.objects.filter(session__student=request.user).count()
+    total_correct = StudentAnswer.objects.filter(session__student=request.user, is_correct=True).count()
+
+    return Response({
+        'total_exams': total_exams,
+        'overall_average': round(overall_avg, 1),
+        'by_subject': by_subject,
+        'recent_scores': recent_scores,
+        'favorites_count': favs,
+        'total_questions_answered': total_q,
+        'total_correct': total_correct,
+    })
+
+
+# -----------------------------------------------
+# تحليل تكرار الأسئلة
+# -----------------------------------------------
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def question_analysis(request):
+    """
+    تحليل تكرار الأسئلة لمادة معينة في كلية معينة.
+    يعرض: الوحدات الأكثر تكراراً، توزيع الأسئلة حسب الصف، أكثر الأسئلة تكراراً.
+    فلاتر: subject (إجباري)، college (اختياري)، exam_year (اختياري)
+    """
+    subject_id = request.query_params.get('subject')
+    college_id = request.query_params.get('college')
+    exam_year = request.query_params.get('exam_year')
+
+    if not subject_id:
+        return Response({'error': 'يرجى تحديد المادة'}, status=status.HTTP_400_BAD_REQUEST)
+
+    qs = Question.objects.filter(subject_id=subject_id)
+
+    # فلترة حسب الكلية
+    if college_id:
+        try:
+            college = College.objects.get(id=college_id)
+            related_uni_ids = College.objects.filter(code=college.code).values_list('university_id', flat=True)
+            qs = qs.filter(
+                Q(source_college__code=college.code) |
+                Q(source_college__isnull=True, source_university_id__in=related_uni_ids)
+            )
+        except College.DoesNotExist:
+            pass
+
+    if exam_year:
+        qs = qs.filter(exam_year=exam_year)
+
+    # 1) توزيع الأسئلة حسب الوحدة
+    by_unit = list(qs.values('unit').annotate(
+        count=Count('id'),
+        avg_times=Avg('times_appeared'),
+    ).order_by('-count'))
+
+    # 2) توزيع الأسئلة حسب الصف الدراسي
+    by_grade = list(qs.values('grade_level').annotate(
+        count=Count('id'),
+    ).order_by('grade_level'))
+
+    grade_labels = {9: 'التاسع', 10: 'أول ثانوي', 11: 'ثاني ثانوي', 12: 'ثالث ثانوي'}
+    for item in by_grade:
+        item['grade_name'] = grade_labels.get(item['grade_level'], f"الصف {item['grade_level']}")
+
+    # 3) السنوات المتاحة
+    available_years = list(
+        qs.filter(exam_year__isnull=False)
+        .values_list('exam_year', flat=True)
+        .distinct()
+        .order_by('-exam_year')
+    )
+
+    # 4) أكثر الأسئلة تكراراً (أعلى 10)
+    top_repeated = list(
+        qs.filter(times_appeared__gt=1)
+        .order_by('-times_appeared')
+        .values('id', 'text', 'unit', 'grade_level', 'times_appeared')[:10]
+    )
+
+    # 5) إجماليات
+    total_questions = qs.count()
+    total_units = qs.values('unit').distinct().count()
+
+    return Response({
+        'total_questions': total_questions,
+        'total_units': total_units,
+        'by_unit': by_unit,
+        'by_grade': by_grade,
+        'available_years': available_years,
+        'top_repeated': top_repeated,
+    })
+
+
+# -----------------------------------------------
+# نظام البطاقات التعليمية (Flashcards API)
+# -----------------------------------------------
+
+@api_view(['GET'])
+@permission_classes([permissions.AllowAny])
+def flashcard_decks(request):
+    """
+    عرض مجموعات البطاقات المتاحة لمادة معينة.
+    فلتر: ?subject=<id>
+    """
+    subject_id = request.query_params.get('subject')
+    qs = Deck.objects.all()
+    if subject_id:
+        qs = qs.filter(subject_id=subject_id)
+    serializer = DeckSerializer(qs, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def flashcard_due_cards(request):
+    """
+    جلب البطاقات المستحقة للمراجعة اليوم لمجموعة معينة.
+    فلتر: ?deck=<id>
+    ميزة مدفوعة: يجب أن يكون المستخدم Premium.
+    """
+    from .models import UserProfile
+    from django.utils import timezone
+
+    # فحص الاشتراك
+    profile, _ = UserProfile.objects.get_or_create(user=request.user)
+    if not profile.is_premium:
+        return Response({
+            'detail': 'هذه الميزة متاحة للمشتركين فقط. يرجى تفعيل اشتراكك للوصول لنظام المراجعة الذكية.',
+            'code': 'PAYMENT_REQUIRED'
+        }, status=status.HTTP_403_FORBIDDEN)
+
+    deck_id = request.query_params.get('deck')
+
+    today = timezone.now().date()
+    
+    if deck_id:
+        cards = Flashcard.objects.filter(deck_id=deck_id)
+    else:
+        # المراجعة الشاملة: جلب كل البطاقات (يمكن تحسينها لاحقاً لجلب عدد محدد لتخفيف الحمل)
+        cards = Flashcard.objects.all()
+
+    due_cards = []
+    new_count = 0
+    due_count = 0
+    learn_count = 0
+
+    for card in cards:
+        progress, created = UserFlashcardProgress.objects.get_or_create(
+            user=request.user, flashcard=card
+        )
+
+        if created or progress.repetitions == 0:
+            # بطاقة جديدة
+            new_count += 1
+            due_cards.append((card, progress))
+        elif progress.next_review_date <= today:
+            if progress.interval < 1:
+                # قيد التعلم (تم مراجعتها مسبقاً لكنها ما زالت في نفس اليوم)
+                learn_count += 1
+            else:
+                # مستحقة للمراجعة
+                due_count += 1
+            due_cards.append((card, progress))
+
+    # تجهيز البيانات مع الفترات المتوقعة
+    response_data = []
+    for card, progress in due_cards:
+        card_data = FlashcardSerializer(card).data
+        card_data['projected_intervals'] = {
+            'hard': progress.simulate_sm2(2),
+            'good': progress.simulate_sm2(3),
+            'easy': progress.simulate_sm2(5),
+        }
+        response_data.append(card_data)
+
+    return Response({
+        'session_stats': {
+            'new_count': new_count,
+            'learn_count': learn_count,
+            'due_count': due_count,
+            'total_due': len(due_cards),
+        },
+        'total_count': cards.count(),
+        'cards': response_data,
+    })
+
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def flashcard_review(request):
+    """
+    تسجيل مراجعة بطاقة وتطبيق خوارزمية SM-2.
+    المطلوب: flashcard_id, quality (hard/good/easy)
+    """
+    from .models import UserProfile
+
+    # فحص الاشتراك
+    profile, _ = UserProfile.objects.get_or_create(user=request.user)
+    if not profile.is_premium:
+        return Response({
+            'detail': 'هذه الميزة متاحة للمشتركين فقط.',
+            'code': 'PAYMENT_REQUIRED'
+        }, status=status.HTTP_403_FORBIDDEN)
+
+    flashcard_id = request.data.get('flashcard_id')
+    quality_str = request.data.get('quality', '').lower()
+
+    quality_map = {'hard': 2, 'good': 3, 'easy': 5}
+    quality = quality_map.get(quality_str)
+
+    if not flashcard_id or quality is None:
+        return Response({'error': 'يرجى إرسال flashcard_id و quality (hard/good/easy)'}, status=status.HTTP_400_BAD_REQUEST)
+
+    try:
+        card = Flashcard.objects.get(id=flashcard_id)
+    except Flashcard.DoesNotExist:
+        return Response({'error': 'البطاقة غير موجودة'}, status=status.HTTP_404_NOT_FOUND)
+
+    progress, _ = UserFlashcardProgress.objects.get_or_create(
+        user=request.user,
+        flashcard=card,
+    )
+
+    progress.apply_sm2(quality)
+
+    return Response({
+        'status': 'ok',
+        'next_review_date': str(progress.next_review_date),
+        'interval': progress.interval,
+        'ease_factor': round(progress.ease_factor, 2),
+        'repetitions': progress.repetitions,
+    })
+
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def flashcard_summary(request):
+    """إحصائيات سريعة للبطاقات: كم بطاقة متبقية للمراجعة اليوم"""
+    from django.utils import timezone
+    today = timezone.now().date()
+    
+    # جلب كل البطاقات المستحقة للمستخدم
+    due_count = UserFlashcardProgress.objects.filter(
+        user=request.user,
+        next_review_date__lte=today
+    ).count()
+    
+    return Response({
+        'due_today_count': due_count,
+    })

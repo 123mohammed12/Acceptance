@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "LAB",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "عدد ذرات الكربون في البنتان:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "4"},
+        {"identifier": "B", "text": "5"},
+        {"identifier": "C", "text": "6"},
+        {"identifier": "D", "text": "7"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات الأليفاتية (الألكانات)",
+      "explanation": "البنتان هو الألكان الخامس في السلسلة المتماثلة للألكانات، والمقطع 'بنت' (Pent) يشير إلى احتوائه على 5 ذرات كربون، وصيغته الجزيئية هي $\\text{C}_5\\text{H}_{12}$."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "تعتبر من القذائف النووية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$^1_0\\text{n}$"},
+        {"identifier": "B", "text": "$^1_1\\text{p}$"},
+        {"identifier": "C", "text": "$^4_2\\text{He}$"},
+        {"identifier": "D", "text": "جميع ما سبق"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (التحول النووي الاصطناعي)",
+      "explanation": "في التفاعلات النووية الاصطناعية، تُستخدم جسيمات خفيفة وسريعة كقذائف لضرب الأنوية الهدف، ومن أهمها: النيوترونات ($^1_0\\text{n}$)، البروتونات ($^1_1\\text{p}$)، وجسيمات ألفا ($^4_2\\text{He}$)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "إذا كان عدد الكم المغناطيسي يساوي صفر فإن عدد الكم الثانوي يكون:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "0"},
+        {"identifier": "B", "text": "+1"},
+        {"identifier": "C", "text": "-1"},
+        {"identifier": "D", "text": "جميع ما سبق"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "أعداد الكم الذرية",
+      "explanation": "إذا كان مستوى الطاقة الفرعي لا يمتلك سوى قيمة واحدة لعدد الكم المغناطيسي وهي ($m_l = 0$)، فهذا يعني أنه يحتوي على فلك (أوربيتال) واحد فقط، وهذا ينطبق حصرياً على المستوى الفرعي (s) الذي قيمة عدد كمه الثانوي ($l = 0$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "الأمين الذي يتم استبدال جميع ذرات الهيدروجين على مجموعته الوظيفية هو الأمين:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأولي"},
+        {"identifier": "B", "text": "الثانوي"},
+        {"identifier": "C", "text": "الثلاثي"},
+        {"identifier": "D", "text": "الرباعي"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مشتقات الهيدروكربونات (الأمينات)",
+      "explanation": "الأمينات تشتق من الأمونيا ($\\text{NH}_3$). عندما تُستبدل ذرة هيدروجين واحدة ينتج أمين أولي، وذرتين أمين ثانوي، وعند استبدال جميع ذرات الهيدروجين الثلاث بمجموعات ألكيل أو أريل، ينتج الأمين الثلاثي."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يمكن تحضير الأكسجين $\\text{O}_2$ من تسخين:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أكسيد الذهب"},
+        {"identifier": "B", "text": "أكسيد الزئبق"},
+        {"identifier": "C", "text": "أكسيد الفضة"},
+        {"identifier": "D", "text": "أكسيد الزئبق وأكسيد الفضة"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (الأكسجين)",
+      "explanation": "أكاسيد الفلزات النبيلة أو الثقيلة (مثل أكسيد الزئبق $\\text{HgO}$ وأكسيد الفضة $\\text{Ag}_2\\text{O}$) تكون غير مستقرة حرارياً، وتنحل بسهولة عند تسخينها لتعطي الفلز النقي ويتصاعد غاز الأكسجين."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "المحاليل غير الإلكترونية (غير الإلكتروليتية):",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تتأين جزئياً"},
+        {"identifier": "B", "text": "تتأين كلياً"},
+        {"identifier": "C", "text": "لا تتأين"},
+        {"identifier": "D", "text": "تتفكك كلياً"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "المحاليل الإلكتروليتية وغير الإلكتروليتية",
+      "explanation": "المحاليل غير الإلكتروليتية (مثل محلول السكر أو الكحول في الماء) تذوب على هيئة جزيئات كاملة ولا تتأين إلى أيونات موجبة وسالبة، ولذلك فهي لا توصل التيار الكهربائي."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "محلول يكون المذيب فيه سائل والمذاب سائل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كلوريد الصوديوم في الماء"},
+        {"identifier": "B", "text": "الكحول في الماء"},
+        {"identifier": "C", "text": "الكبريت في الماء"},
+        {"identifier": "D", "text": "الكربون في الماء"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "أنواع المحاليل",
+      "explanation": "الكحول الإيثيلي هو سائل يذوب في الماء وهو سائل أيضاً، فيمثل محلولاً من نوع (سائل في سائل)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "تكافؤ عناصر المجموعة الرئيسية السادسة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أحادي"},
+        {"identifier": "B", "text": "ثنائي"},
+        {"identifier": "C", "text": "ثلاثي"},
+        {"identifier": "D", "text": "رباعي"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "التوزيع الإلكتروني والتكافؤ",
+      "explanation": "عناصر المجموعة السادسة (مثل الأكسجين والكبريت) تحتوي على 6 إلكترونات في غلاف تكافؤها الخارجي، وتحتاج إلى إلكترونين (بالاكتساب أو المشاركة) للوصول لقاعدة الثمانيات، لذا تكافؤها الشائع ثنائي."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "يتفاعل الكلور مع البنزين في الظلام بعملية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأكسدة"},
+        {"identifier": "B", "text": "الإضافة"},
+        {"identifier": "C", "text": "الاستبدال"},
+        {"identifier": "D", "text": "الاحتراق"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (الهلجنة)",
+      "explanation": "في غياب ضوء الشمس (في الظلام) وبوجود عامل حفاز (مثل كلوريد الحديد الثلاثي $\\text{FeCl}_3$)، يتفاعل البنزين مع الكلور بتفاعل استبدال (إحلال) حيث تحل ذرة كلور محل ذرة هيدروجين لإنتاج كلوروبنزين."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "لتحضير واحد مول من المادة يتم إذابة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الوزن الجزيئي بالجرام في نصف لتر من الماء"},
+        {"identifier": "B", "text": "الوزن الجزيئي بالجرام في لتر من الماء"},
+        {"identifier": "C", "text": "الوزن الجزيئي بالجرام في 1000 مل من الماء"},
+        {"identifier": "D", "text": "B و C صحيحين"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "طرق التعبير عن التركيز (المولارية)",
+      "explanation": "المحلول المولاري هو المحلول الذي يحتوي لتر واحد منه على مول واحد من المذاب (وهو الوزن الجزيئي مقدراً بالجرامات). وبما أن 1 لتر = 1000 ملليلتر، فإن الخيارين B و C كلاهما صحيح."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "عند تفاعل الكلور مع الماء ينتج:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حمض الهيدروكلوريك + حمض الهيبوكلوروز"},
+        {"identifier": "B", "text": "حمض الهيدروكلوريك + حمض الكلوروز"},
+        {"identifier": "C", "text": "حمض الهيدروكلوريك + حمض الكلوريك"},
+        {"identifier": "D", "text": "حمض الهيدروكلوريك + حمض البيركلوريك"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهالوجينات (تفاعلات الكلور)",
+      "explanation": "يذوب الكلور في الماء ويتفاعل معه جزئياً ليعطي خليطاً من حمض الهيدروكلوريك ($\\text{HCl}$) وحمض الهيبوكلوروز الضعيف ($\\text{HClO}$) وفق المعادلة: $\\text{Cl}_2 + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HCl} + \\text{HClO}$."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "الرازي عرف الكبريت والزئبق والزئبق (والزرنيخ) بأنها:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أحجار"},
+        {"identifier": "B", "text": "الزاجات"},
+        {"identifier": "C", "text": "النيتَر"},
+        {"identifier": "D", "text": "أرواح"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "علم الكيمياء عبر العصور",
+      "explanation": "في تصنيف العالم المسلم أبو بكر الرازي للمواد، قسّم المواد القابلة للتطاير بالحرارة (مثل الكبريت، الزئبق، الزرنيخ، والنشادر) وأطلق عليها اسم 'الأرواح'."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "أول من ذكر قاعدة بقاء المادة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ابن حيان"},
+        {"identifier": "B", "text": "المجرطي"},
+        {"identifier": "C", "text": "ابن سينا"},
+        {"identifier": "D", "text": "الرازي"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "علم الكيمياء عبر العصور",
+      "explanation": "العالم الأندلسي 'مسلمة المجريطي' هو أول من لاحظ وأشار إلى قانون بقاء المادة (حفظ الكتلة) من خلال تجاربه على أكسيد الزئبق، وسبق بذلك العالم الفرنسي لافوازييه."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "الأكسينات تعني:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "مواد نيتروجينية"},
+        {"identifier": "B", "text": "أملاح معدنية"},
+        {"identifier": "C", "text": "مواد عضوية"},
+        {"identifier": "D", "text": "مواد غير عضوية"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء العضوية (الهرمونات النباتية)",
+      "explanation": "الأكسينات (Auxins) هي فئة من الهرمونات النباتية التي تنظم نمو واستطالة الخلايا في النبات، وهي عبارة عن مركبات 'عضوية' كيميائية معقدة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "افترض فرانسيس بيكون أن حركة الجسيمات الصغيرة جداً في المادة قد ينتج عنها:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تفاعل كيميائي"},
+        {"identifier": "B", "text": "روابط جديدة"},
+        {"identifier": "C", "text": "حرارة"},
+        {"identifier": "D", "text": "مواد جديدة"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تطور الكيمياء (الحرارة والحركة)",
+      "explanation": "الفيلسوف الإنجليزي فرانسيس بيكون افترض وربط بين حركة الجسيمات الدقيقة في المادة وبين تولد الطاقة الحرارية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "عند تفاعل فلز الصوديوم مع الإيثانول يتكون:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "إيثوكسيد الصوديوم"},
+        {"identifier": "B", "text": "ميثوكسيد الصوديوم"},
+        {"identifier": "C", "text": "أكسيد الصوديوم"},
+        {"identifier": "D", "text": "إيثوكسيد الصوديوم + $\\text{Na}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات الكحولات (حامضية الكحولات)",
+      "explanation": "تحل الفلزات القلوية النشطة كالصوديوم محل هيدروجين مجموعة الهيدروكسيل في الكحولات. تفاعله مع الإيثانول ينتج ألكوكسيد الفلز وهو (إيثوكسيد الصوديوم $\\text{C}_2\\text{H}_5\\text{ONa}$) ويتصاعد غاز الهيدروجين."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "درجة الانصهار في عناصر المجموعة الرئيسية الخامسة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تقل في المجموعة"},
+        {"identifier": "B", "text": "تزداد في المجموعة"},
+        {"identifier": "C", "text": "تقل في الدورة"},
+        {"identifier": "D", "text": "تزداد ثم تقل"}
+      ],
+      "correct_identifier": "B",
+      "certain": "0",
+      "Potential_identifier": "D",
+      "topic": "عناصر الفئة p (المجموعة الخامسة)",
+      "explanation": "منهجياً، تتدرج الحالة الفيزيائية لعناصر المجموعة الخامسة من غازية للنيتروجين إلى صلبة في باقي العناصر، وبشكل عام أُعتبر في النموذج أن درجة الانصهار تزداد بالانتقال من أعلى المجموعة لأسفلها لزيادة الكتلة الجزيئية للصفات اللافلزية، (رغم وجود شذوذ كيميائي بانخفاضها في العناصر الفلزية السفلية)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "عمل الحفاز في التفاعل المتزن:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "يؤثر على حالة الاتزان"},
+        {"identifier": "B", "text": "يؤثر ويسرّع من حالة الاتزان"},
+        {"identifier": "C", "text": "لا يؤثر على حالة الاتزان"},
+        {"identifier": "D", "text": "لا يؤثر ويسرّع من حالة الاتزان"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الكيميائي (العوامل المؤثرة)",
+      "explanation": "العامل الحفاز لا يؤثر على موضع حالة الاتزان ولا على قيمة ثابت الاتزان، ولكنه يسرّع من معدل التفاعلين (الطردي والعكسي) معاً، مما يقلل من الزمن اللازم (يُسرّع) للوصول إلى حالة الاتزان."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "عنصر مشع يستخدم في علاج السرطان بالإشعاع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{I}$"},
+        {"identifier": "B", "text": "$\\text{P}$"},
+        {"identifier": "C", "text": "$\\text{Co}$"},
+        {"identifier": "D", "text": "$\\text{Ra}$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (التطبيقات الطبية)",
+      "explanation": "الراديوم المشع ($\\text{Ra}$) كان من أوائل وأشهر العناصر المشعة التي استُخدمت طبياً في العلاج الإشعاعي الموجه لتدمير الخلايا السرطانية (كما يُستخدم الكوبالت-60 أيضاً لنفس الغرض حالياً)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "من الخواص الفيزيائية للبلاستيك:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "لا تذوب في الماء"},
+        {"identifier": "B", "text": "انخفاض درجة انصهارها"},
+        {"identifier": "C", "text": "تذوب في المذيبات العضوية"},
+        {"identifier": "D", "text": "جميع ما سبق"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الصناعات الكيميائية (البوليمرات والبلاستيك)",
+      "explanation": "المواد البلاستيكية (البوليمرات العضوية) تتميز كيميائياً وفيزيائياً بأنها لا تذوب في المذيبات القطبية كالماء ولكنها تذوب في بعض المذيبات العضوية، كما تنصهر عند درجات حرارة منخفضة مقارنة بالمعادن."
+    }
+  ]
+}

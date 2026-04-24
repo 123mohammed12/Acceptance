@@ -1,0 +1,487 @@
+{
+  "metadata": {
+    "university_code": "21SU",
+    "college_code": "GEN",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "تفاعل البنزين مع الكلور في ضوء الشمس المباشر يعتبر تفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "استبدال"},
+        {"identifier": "B", "text": "إضافة"},
+        {"identifier": "C", "text": "حذف"},
+        {"identifier": "D", "text": "إعادة تشكيل"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (الإضافة)",
+      "explanation": "في وجود ضوء الشمس المباشر (الأشعة فوق البنفسجية) تتكسر الروابط المضاعفة في حلقة البنزين، ويتفاعل إضافة مع ثلاثة جزيئات من الكلور لتكوين مركب سداسي كلورو حلقي الهكسان (الجامكسان)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "حمض أميني ثنائي الأمينو أحادي الكربوكسيل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أرجنين"},
+        {"identifier": "B", "text": "ميثيونين"},
+        {"identifier": "C", "text": "جلايسين"},
+        {"identifier": "D", "text": "جلوتاميك"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (تصنيف الأحماض الأمينية)",
+      "explanation": "الأرجينين من الأحماض الأمينية القاعدية، حيث يمتلك مجموعة كربوكسيل واحدة وأكثر من مجموعة نيتروجينية قاعدية (أمين/جوانيدينو) في سلسلته الجانبية."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "العنصر الذي عدده الذري $19$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "يفقد إلكترون"},
+        {"identifier": "B", "text": "يكتسب إلكترون"},
+        {"identifier": "C", "text": "يفقد إلكترونين"},
+        {"identifier": "D", "text": "يكتسب إلكترونين"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "التوزيع الإلكتروني للأيونات",
+      "explanation": "العنصر $19$ هو البوتاسيوم ($\\text{K}$)، وتوزيعه الإلكتروني ينتهي بـ $4\\text{s}^1$. للوصول إلى حالة الاستقرار المشابهة للغاز النبيل (الأرجون)، يميل إلى فقد هذا الإلكترون وتكوين أيون أحادي موجب ($\\text{K}^+$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "تنتج الليبيدات من تفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "جلسيرول مع حمض أميني"},
+        {"identifier": "B", "text": "جلوكوز مع حمض أميني"},
+        {"identifier": "C", "text": "جلسيرول مع حمض دهني"},
+        {"identifier": "D", "text": "إيثانول مع حمض دهني"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (تركيب الليبيدات)",
+      "explanation": "الليبيدات البسيطة (الدهون والزيوت) هي عبارة عن إسترات ناتجة من تفاعل كحول ثلاثي الهيدروكسيل (الجليسرول) مع ثلاثة جزيئات من الأحماض الدهنية العضوية طويلة السلسلة."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "عنصر شبه فلز:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "البولونيوم"},
+        {"identifier": "B", "text": "التيلوريوم"},
+        {"identifier": "C", "text": "الأكسجين"},
+        {"identifier": "D", "text": "الكبريت"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (المجموعة السادسة)",
+      "explanation": "في المجموعة السادسة (VIA)، الأكسجين والكبريت لافلزات، والبولونيوم فلز مشع، بينما التيلوريوم ($\\text{Te}$) يُصنف ضمن أشباه الفلزات."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "أي من التالي صحيح في خلايا التحليل الكهربائي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تحدث عملية الأكسدة عند المصعد والنوع الذي جهد اختزاله أقل يختزل أولاً"},
+        {"identifier": "B", "text": "تحدث عملية الاختزال عند المصعد والنوع الذي جهد اختزاله أقل يختزل أولاً"},
+        {"identifier": "C", "text": "تحدث عملية الأكسدة عند المصعد والنوع الذي جهد اختزاله أقل يتأكسد أولاً"},
+        {"identifier": "D", "text": "تحدث عملية الاختزال عند المهبط والنوع الذي جهد اختزاله أقل يختزل أولاً"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (التحليل الكهربي)",
+      "explanation": "عند المصعد (الأنود) تحدث عملية الأكسدة للأيونات السالبة. الأيون الذي يمتلك جهد اختزال أقل (أي جهد أكسدة أعلى) يكون ميله لفقد الإلكترونات أكبر، لذا يتأكسد أولاً."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "تتحلل بيكربونات الصوديوم عند درجة حرارة 100 °C لتعطي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كربونات الصوديوم"},
+        {"identifier": "B", "text": "كربونات الصوديوم وماء"},
+        {"identifier": "C", "text": "كربونات الصوديوم وثاني أكسيد كربون"},
+        {"identifier": "D", "text": "كربونات الصوديوم وماء وثاني أكسيد كربون"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة s (مركبات الصوديوم)",
+      "explanation": "بالتسخين، تنحل بيكربونات الصوديوم وفق المعادلة: $2\\text{NaHCO}_3 \\rightarrow \\text{Na}_2\\text{CO}_3 + \\text{CO}_2 + \\text{H}_2\\text{O}$، لينتج كربونات الصوديوم وماء وغاز ثاني أكسيد الكربون."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "عنصر يوجد في الدورة الثالثة والمجموعة الرئيسية الخامسة ينتهي توزيعه الإلكتروني بـ:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$3\\text{p}^5$"},
+        {"identifier": "B", "text": "$3\\text{p}^3$"},
+        {"identifier": "C", "text": "$3\\text{d}^3$"},
+        {"identifier": "D", "text": "$3\\text{f}^3$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تحديد موقع العنصر بالجدول الدوري",
+      "explanation": "رقم الدورة ($3$) يحدد الغلاف الرئيسي $(n=3)$. والمجموعة الخامسة تعني وجود $5$ إلكترونات في غلاف التكافؤ ($\\text{s}$ و $\\text{p}$)، أي أن توزيعه ينتهي بـ $3\\text{s}^2 3\\text{p}^3$."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "العنصر الذي عدده الذري $53$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "يفقد إلكترون"},
+        {"identifier": "B", "text": "يكتسب إلكترون"},
+        {"identifier": "C", "text": "يفقد إلكترونين"},
+        {"identifier": "D", "text": "يكتسب إلكترونين"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تدرج الخواص (الهالوجينات)",
+      "explanation": "العنصر $53$ هو اليود ($\\text{I}$)، وهو من الهالوجينات (المجموعة السابعة). غلافه الأخير يحتوي على $7$ إلكترونات، ويميل لاكتساب إلكترون واحد ليصبح أيوناً سالباً مستقراً ($\\text{I}^-$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "الماء في تفاعلات التحليل الكهربائي في الخلايا الإلكتروليتية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "يتأكسد"},
+        {"identifier": "B", "text": "يختزل"},
+        {"identifier": "C", "text": "لا يتأكسد ولا يختزل"},
+        {"identifier": "D", "text": "قد يتأكسد وقد يختزل"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (التحليل الكهربي للمحاليل)",
+      "explanation": "في المحاليل المائية، يدخل الماء في منافسة عند الأقطاب. قد يتأكسد عند الأنود ليعطي غاز الأكسجين، وقد يختزل عند الكاثود ليعطي غاز الهيدروجين، وذلك يعتمد على جهود أقطاب الأيونات المذابة المنافسة له."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عدد التأكسد للمنجنيز في $\\text{KMnO}_4$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$+5$"},
+        {"identifier": "B", "text": "$-5$"},
+        {"identifier": "C", "text": "$+7$"},
+        {"identifier": "D", "text": "$-7$"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "حساب أعداد التأكسد",
+      "explanation": "المجموع الجبري للمركب = صفر. $\\text{K} = +1$، و $\\text{O} = -2$. إذن: $(+1) + \\text{Mn} + 4(-2) = 0 \\rightarrow \\text{Mn} - 7 = 0 \\rightarrow \\text{Mn} = +7$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "الاسم المنهجي للمركب: $\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{O}-\\text{CH}_2-\\text{CH}_3$",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ميثوكسي بروبان"},
+        {"identifier": "B", "text": "إيثوكسي بروبان"},
+        {"identifier": "C", "text": "بروبوكسي إيثان"},
+        {"identifier": "D", "text": "ميثوكسي إيثان"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تسمية الإيثرات (الأيوباك)",
+      "explanation": "في نظام الأيوباك للإيثرات، تُسمى السلسلة الأقصر كمجموعة ألكوكسي (إيثوكسي) متصلة بالسلسلة الكربونية الأطول التي تسمى كألكان (بروبان). الاسم هو إيثوكسي بروبان."
+    },
+    {
+      "grade_level": 10,
+      "unit": 2,
+      "text": "الكتلة المولية لـ $\\text{Na}_2\\text{HPO}_4$ ($\\text{Na}=23 , \\text{O}=16 , \\text{H}=1 , \\text{P}=31$):",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$142$"},
+        {"identifier": "B", "text": "$119$"},
+        {"identifier": "C", "text": "$165$"},
+        {"identifier": "D", "text": "$120$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "حساب الكتلة المولية",
+      "explanation": "الكتلة المولية = (2 × 23) + (1 × 1) + (1 × 31) + (4 × 16) = 46 + 1 + 31 + 64 = 142 جرام/مول."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "وفقاً للمعادلة: $2\\text{CO} + \\text{O}_2 \\rightarrow 2\\text{CO}_2$ ، $\\Delta H = -566 \\text{ kJ/mol}$ ، حرارة تكوين مول واحد من $\\text{CO}$ تساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$-221$"},
+        {"identifier": "B", "text": "$-110.5$"},
+        {"identifier": "C", "text": "$+110.5$"},
+        {"identifier": "D", "text": "$+221$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية (قانون هس وحرارة التكوين)",
+      "explanation": "باحتساب أن حرارة تكوين $\\text{CO}_2$ القياسية هي $-393.5 \\text{ kJ/mol}$. التغير في المحتوى الحراري للتفاعل $\\Delta H$ = مجموع حرارة تكوين النواتج - المتفاعلات. $-566 = 2(-393.5) - 2(\\Delta H_f \\text{ لـ } \\text{CO})$. $-566 = -787 - 2(\\Delta H_f \\text{ CO})$. إذن $2(\\Delta H_f \\text{ CO}) = -221$، ومنه حرارة تكوين المول الواحد من $\\text{CO} = -110.5 \\text{ kJ/mol}$."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "نوع الرابطة في $\\text{Li}_3\\text{N}$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أيونية"},
+        {"identifier": "B", "text": "تساهمية أحادية"},
+        {"identifier": "C", "text": "تساهمية ثنائية"},
+        {"identifier": "D", "text": "تساهمية ثلاثية"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الروابط الكيميائية",
+      "explanation": "نيتريد الليثيوم يتكون من اتحاد فلز قلوي نشط (الليثيوم $\\text{Li}$) مع لافلز (النيتروجين $\\text{N}$)، والفرق في الكهروسالبية بينهما يؤدي لانتقال الإلكترونات وتكوين رابطة أيونية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "عند تفاعل فلز الصوديوم $\\text{Na}$ مع الميثانول يتكون:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{CH}_3-\\text{CH}_2-\\text{ONa}$"},
+        {"identifier": "B", "text": "$\\text{CH}_3-\\text{ONa}$"},
+        {"identifier": "C", "text": "$\\text{CH}_3-\\text{Na}$"},
+        {"identifier": "D", "text": "$\\text{CH}_3-\\text{CH}_2-\\text{OH}$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات الكحولات",
+      "explanation": "الصوديوم يحل محل ذرة هيدروجين مجموعة الهيدروكسيل في الميثانول ($\\text{CH}_3\\text{OH}$) لتكوين مركب ميثوكسيد الصوديوم الأيوني ($\\text{CH}_3\\text{ONa}$) ويتصاعد غاز الهيدروجين."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "يتأكسد كحول الأيزوبروبانول إلى:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كحول أولي"},
+        {"identifier": "B", "text": "كحول ثانوي"},
+        {"identifier": "C", "text": "كيتون"},
+        {"identifier": "D", "text": "ألدهيد"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات أكسدة الكحولات",
+      "explanation": "الأيزوبروبانول (2-بروبانول) هو كحول ثانوي. أكسدة الكحولات الثانوية بواسطة العوامل المؤكسدة تُنتج الكيتونات (وفي هذه الحالة يُنتج الأسيتون)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 2,
+      "text": "في المعادلة: $\\text{Al}_2(\\text{SO}_4)_3 + x \\text{NaOH} \\rightarrow y \\text{Al(OH)}_3 + z \\text{Na}_2\\text{SO}_4$ المعاملات تساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$x=2 , y=2 , z=3$"},
+        {"identifier": "B", "text": "$x=4 , y=2 , z=2$"},
+        {"identifier": "C", "text": "$x=6 , y=2 , z=3$"},
+        {"identifier": "D", "text": "$x=3 , y=2 , z=6$"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "وزن المعادلات الكيميائية",
+      "explanation": "بموازنة الألومنيوم ($\\text{Al}_2$)، يكون $y=2$. وبموازنة الكبريتات ($\\text{SO}_4)_3$， يكون $z=3$. هذا يعني وجود $6$ أيونات صوديوم ($3 \\times 2$) في النواتج، مما يستلزم أن يكون $x=6$. فتصبح: $\\text{Al}_2(\\text{SO}_4)_3 + 6\\text{NaOH} \\rightarrow 2\\text{Al(OH)}_3 + 3\\text{Na}_2\\text{SO}_4$."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "العدد الذري $20$ ينتمي إلى التكتل أو الفئة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{s}$"},
+        {"identifier": "B", "text": "$\\text{p}$"},
+        {"identifier": "C", "text": "$\\text{d}$"},
+        {"identifier": "D", "text": "$\\text{f}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الجدول الدوري وفئات العناصر",
+      "explanation": "العنصر ذو العدد الذري $20$ هو الكالسيوم ($\\text{Ca}$). توزيعه الإلكتروني: $1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2 3\\text{p}^6 4\\text{s}^2$. بما أن آخر إلكتروناته تقع في المستوى الفرعي $\\text{s}$، فهو من عناصر الفئة $\\text{s}$."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "أي المركبات التالية غير قابل للذوبان في الماء:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{NaOH}$"},
+        {"identifier": "B", "text": "$\\text{KOH}$"},
+        {"identifier": "C", "text": "$\\text{Ca(OH)}_2$"},
+        {"identifier": "D", "text": "$\\text{Al(OH)}_3$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "ذوبانية المركبات",
+      "explanation": "هيدروكسيدات الأقلاء ($\\text{NaOH}, \\text{KOH}$) تذوب بقوة، وهيدروكسيدات الأقلاء الأرضية مثل $\\text{Ca(OH)}_2$ تذوب بشكل مقبول لتكوين محاليل قلوية، بينما هيدروكسيد الألومنيوم $\\text{Al(OH)}_3$ مركب متردد شحيح الذوبان جداً ويشكل راسباً جيلاتينياً في الماء."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "مركب صيغته الكيميائية: $\\text{Fe}_2\\text{O}_3 \\cdot \\text{H}_2\\text{O}$ هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الهيماتيت"},
+        {"identifier": "B", "text": "الماجنيتيت"},
+        {"identifier": "C", "text": "الليمونيت"},
+        {"identifier": "D", "text": "السيدريت"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (خامات الحديد)",
+      "explanation": "خام الليمونيت هو أكسيد الحديد الثلاثي المتهدرت. صيغته الكيميائية التفصيلية هي $2\\text{Fe}_2\\text{O}_3 \\cdot 3\\text{H}_2\\text{O}$، وتُبسط أحياناً في بعض المناهج أو الأسئلة إلى $\\text{Fe}_2\\text{O}_3 \\cdot \\text{H}_2\\text{O}$ للدلالة على الهدرجة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "عدد مجموعات الهيدروكسيل في السكروز:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "12 مجموعة"},
+        {"identifier": "B", "text": "11 مجموعة"},
+        {"identifier": "C", "text": "10 مجموعات"},
+        {"identifier": "D", "text": "8 مجموعات"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (تركيب السكريات الثنائية)",
+      "explanation": "السكروز ($\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}$) ينتج من اتحاد جلوكوز وفركتوز. الجلوكوز والفركتوز (كل منهما $\\text{C}_6\\text{H}_{12}\\text{O}_6$) يحتويان على 5 مجموعات هيدروكسيل، ولكن مجموعة واحدة من كل سكر تشارك في تكوين الرابطة الجليكوسيدية ونزع جزيء ماء، فيتبقى (4+4) = 8 مجموعات هيدروكسيل حرة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "أحد الأحماض الآتية يؤدي إلى خمول الحديد فور تفاعله معه:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{HCl}$ مركز"},
+        {"identifier": "B", "text": "$\\text{HCl}$ مخفف"},
+        {"identifier": "C", "text": "$\\text{H}_2\\text{SO}_4$ مخفف"},
+        {"identifier": "D", "text": "$\\text{HNO}_3$ مركز"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (تفاعلات الحديد والخمول)",
+      "explanation": "تفاعل الحديد مع حمض النيتريك ($\\text{HNO}_3$) المركز يسبب ظاهرة 'الخمول الكيميائي'، حيث تتكون طبقة رقيقة غير مسامية من الأكسيد على سطح الفلز تمنع استمرار التفاعل."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "أكسيد قاعدي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Al}_2\\text{O}_3$"},
+        {"identifier": "B", "text": "$\\text{Na}_2\\text{O}$"},
+        {"identifier": "C", "text": "$\\text{SO}_3$"},
+        {"identifier": "D", "text": "$\\text{CO}_2$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "خواص أكاسيد العناصر",
+      "explanation": "أكسيد الصوديوم ($\\text{Na}_2\\text{O}$) هو أكسيد فلزي نشط، وعند ذوبانه في الماء يكوّن قاعدة قوية ($\\text{NaOH}$)، لذا فهو أكسيد قاعدي. بينما $\\text{CO}_2$ و $\\text{SO}_3$ أكاسيد حمضية، و $\\text{Al}_2\\text{O}_3$ أمفوتيري."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "أي من التالي ليس من الكربوهيدرات:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "النفثالين"},
+        {"identifier": "B", "text": "الصمغ"},
+        {"identifier": "C", "text": "الأنيولين"},
+        {"identifier": "D", "text": "النشا"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تصنيف الكربوهيدرات",
+      "explanation": "النفثالين ($\\text{C}_{10}\\text{H}_8$) هو هيدروكربون أروماتي ثنائي الحلقة لا يحتوي على أكسجين. أما الصمغ العربي والأنيولين والنشا فهي جميعها بوليمرات لسكريات متعددة (كربوهيدرات)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "عدد الإلكترونات في أيون $\\text{S}^{2-}$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "يساوي عدد البروتونات"},
+        {"identifier": "B", "text": "يساوي عدد النيوترونات"},
+        {"identifier": "C", "text": "أكبر من عدد البروتونات"},
+        {"identifier": "D", "text": "أكبر من عدد النيوترونات"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الأيونات وبنية الذرة",
+      "explanation": "الكبريت المتعادل ($\\text{S}$) يمتلك 16 بروتوناً و 16 إلكتروناً. عندما يكتسب إلكترونين ليصبح الأيون السالب $\\text{S}^{2-}$، يرتفع عدد الإلكترونات إلى 18، فيصبح أكبر من عدد البروتونات الثابت (16)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "معادلة التحليل الكهربائي لمصهور $\\text{CaCl}_2$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{CaCl}_2 \\rightarrow \\text{Ca} + \\text{Cl}_2$"},
+        {"identifier": "B", "text": "$\\text{CaCl}_2 \\rightarrow \\text{Ca}^+ + \\text{Cl}_2^-$"},
+        {"identifier": "C", "text": "$\\text{CaCl}_2 \\rightarrow \\text{Ca}^{2+} + 2\\text{Cl}^-$"},
+        {"identifier": "D", "text": "$\\text{CaCl}_2 \\rightarrow \\text{Ca} + 2\\text{Cl}^-$"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (التأين في المصاهير)",
+      "explanation": "الخطوة الأولى في التحليل الكهربي هي التفكك الأيوني للمصهور لتكوين أيونات حرة ناقلة للتيار. مصهور $\\text{CaCl}_2$ يتأين معطياً أيون كالسيوم ثنائي الموجبية وأيونين من الكلوريد الأحادي السالب: $\\text{CaCl}_2 \\rightarrow \\text{Ca}^{2+} + 2\\text{Cl}^-$."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "تتحلل نترات الأمونيوم $\\text{NH}_4\\text{NO}_3$ بالحرارة إلى:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{N}_2 + \\text{H}_2\\text{O}$"},
+        {"identifier": "B", "text": "$\\text{HNO}_3 + \\text{H}_2\\text{O}$"},
+        {"identifier": "C", "text": "$\\text{NH}_3 + \\text{N}$"},
+        {"identifier": "D", "text": "$\\text{N}_2\\text{O} + \\text{H}_2\\text{O}$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات مركبات النيتروجين",
+      "explanation": "بالتسخين المعتدل، تنحل نترات الأمونيوم حرارياً منتجة غاز أكسيد النيتروز ($\\text{N}_2\\text{O}$ - غاز الضحك) وبخار الماء ($\\text{H}_2\\text{O}$) وفق المعادلة: $\\text{NH}_4\\text{NO}_3 \\rightarrow \\text{N}_2\\text{O} + 2\\text{H}_2\\text{O}$."
+    }
+  ]
+}

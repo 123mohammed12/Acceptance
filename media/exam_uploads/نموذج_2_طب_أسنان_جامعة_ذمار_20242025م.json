@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "university_code": "TU",
+    "college_code": "DEN",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "درجة انصهار الحديد تساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$1535 ^\\circ\\text{C}$"},
+        {"identifier": "B", "text": "$1553 ^\\circ\\text{C}$"},
+        {"identifier": "C", "text": "$2000 ^\\circ\\text{C}$"},
+        {"identifier": "D", "text": "$2750 ^\\circ\\text{C}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (الخواص الفيزيائية للحديد)",
+      "explanation": "يتميز الحديد النقي بخواص فلزية نموذجية، ودرجة انصهاره مرتفعة نسبياً وتساوي $1535 ^\\circ\\text{C}$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "يُحضَّر الأسيتالدهيد من تفاعل الإيثيلين مع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{CH}_3-\\text{COOH}$"},
+        {"identifier": "B", "text": "$\\text{NH}_3$"},
+        {"identifier": "C", "text": "$\\text{C}_6\\text{H}_6$"},
+        {"identifier": "D", "text": "$\\text{CH}_3-\\text{CO}-\\text{O}-\\text{CO}-\\text{CH}_3$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "0",
+      "Potential_identifier": "",
+      "topic": "تفاعلات البنزين (أسيلة فريدل-كرافتس)",
+      "explanation": "هناك خطأ مطبعي واضح في ورقة الاختبار الأصلية. السياق الصحيح للسؤال هو: 'يُحضَّر الأسيتوفينون من تفاعل البنزين مع أنهيدريد الأسيتيك' وهو تفاعل أسيلة لفريدل-كرافتس."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "إذا تحولت نواة $^{14}_{7}\\text{N}$ إلى نواة $^{14}_{6}\\text{C}$ فإن النواة تكون قد فقدت:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\beta^-$"},
+        {"identifier": "B", "text": "$^1_0\\text{n}$"},
+        {"identifier": "C", "text": "$\\beta^+$"},
+        {"identifier": "D", "text": "$^1_1\\text{p}$"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (التحلل الإشعاعي)",
+      "explanation": "تحول النيتروجين-14 إلى كربون-14 يترافق مع نقصان العدد الذري بمقدار $1$ (من $7$ إلى $6$) وثبات العدد الكتلي ($14$)، وهذا يحدث نتيجة انبعاث البوزيترون ($\\beta^+$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "العنصر الانتقالي الذي يمتلك حالة تأكسد $+5$ هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{Ti } (22)$"},
+        {"identifier": "B", "text": "$\\text{V } (23)$"},
+        {"identifier": "C", "text": "$\\text{Cr } (24)$"},
+        {"identifier": "D", "text": "$\\text{Fe } (26)$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (حالات التأكسد)",
+      "explanation": "الفاناديوم ($\\text{V}$) توزيعه الإلكتروني $[\\text{Ar}]^{18} 4\\text{s}^2 3\\text{d}^3$. بفقد إلكترونات المستويين $\\text{s}$ و $\\text{d}$ معاً (مجموعها $5$ إلكترونات)، يمكنه الوصول إلى أقصى حالة تأكسد له وهي $+5$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "يتشابه المركب 1-أمينو البروبان مع مركب N-ميثيل أمينو الإيثان في عدد:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ذرات $\\text{H}$"},
+        {"identifier": "B", "text": "ذرات $\\text{C}$"},
+        {"identifier": "C", "text": "ذرات $\\text{N}$"},
+        {"identifier": "D", "text": "جميع ما سبق صحيح"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مشتقات الهيدروكربونات (الأيزومرات في الأمينات)",
+      "explanation": "المركبان أيزومرات وظيفية بتركيبة جزيئية موحدة ($\\text{C}_3\\text{H}_9\\text{N}$)، لذا يتطابقان في عدد ذرات الكربون، الهيدروجين، والنيتروجين."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "تصل نسبة الكربوهيدرات في جسم النبات ما يقارب .......... من وزن النبات:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "50%"},
+        {"identifier": "B", "text": "70%"},
+        {"identifier": "C", "text": "80%"},
+        {"identifier": "D", "text": "96%"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (أهمية الكربوهيدرات)",
+      "explanation": "تشكل الكربوهيدرات (كالسليلوز والنشا) حوالي 70% من الوزن الجاف للنباتات."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "عدد مجموعات الألكيل في الأمين الثانوي هي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "مجموعة واحدة"},
+        {"identifier": "B", "text": "مجموعتين"},
+        {"identifier": "C", "text": "ثلاث مجموعات"},
+        {"identifier": "D", "text": "أربع مجموعات"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مشتقات الهيدروكربونات (تصنيف الأمينات)",
+      "explanation": "يُصنف الأمين كثانوي ($\\text{R}_2\\text{NH}$) عندما ترتبط ذرة النيتروجين بمجموعتي ألكيل."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عناصر المجموعة الانتقالية التالية (فانديوم – نيوبيوم – تانتالوم) تتميز بأنها:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "مقاومة للتآكل"},
+        {"identifier": "B", "text": "تتأثر بالعوامل المؤكسدة القوية"},
+        {"identifier": "C", "text": "لا تتأثر بالأحماض المعدنية القوية"},
+        {"identifier": "D", "text": "أكثر الفلزات الانتقالية نشاطاً"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (المجموعة الخامسة VB)",
+      "explanation": "عناصر المجموعة الخامسة ($\\text{V, Nb, Ta}$) تتميز بصلابتها ومقاومتها الشديدة للأحماض المعدنية القوية في الظروف العادية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "مركبات عند تأكسدها تمد الجسم بأكثر من نصف الطاقة التي يحتاجها جسم الكائن الحي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الفيتامينات"},
+        {"identifier": "B", "text": "الكربوهيدرات"},
+        {"identifier": "C", "text": "البروتينات"},
+        {"identifier": "D", "text": "الإنزيمات"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (وظائف الكربوهيدرات)",
+      "explanation": "الكربوهيدرات هي المصدر الرئيسي لإنتاج الطاقة، وتوفر أكثر من 50% من السعرات الحرارية اليومية للجسم."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "يتميز عنصر النيكل ($_{28}\\text{Ni}$) بوجود 8 إلكترونات في المستوى الفرعي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$3\\text{d}$"},
+        {"identifier": "B", "text": "$4\\text{d}$"},
+        {"identifier": "C", "text": "$5\\text{d}$"},
+        {"identifier": "D", "text": "$6\\text{d}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (التوزيع الإلكتروني)",
+      "explanation": "التوزيع الإلكتروني للنيكل هو: $[\\text{Ar}]^{18} 4\\text{s}^2 3\\text{d}^8$، لذا يحتوي على $8$ إلكترونات في المستوى $3\\text{d}$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "تزداد جهود الاختزال للأيونات الموجبة بـ:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ينقص تركيز المحلول"},
+        {"identifier": "B", "text": "بزيادة تركيز المحلول"},
+        {"identifier": "C", "text": "كل من A و B"},
+        {"identifier": "D", "text": "كل ما سبق"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (معادلة نيرنست)",
+      "explanation": "وفقاً لمعادلة نيرنست، توجد علاقة طردية بين جهد الاختزال وتركيز الأيونات الموجبة في المحلول."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عدد تأكسد النيتروجين في ($\\text{NO}_3^-$) هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$-7$"},
+        {"identifier": "B", "text": "$-5$"},
+        {"identifier": "C", "text": "$+7$"},
+        {"identifier": "D", "text": "$+5$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (حساب أعداد التأكسد)",
+      "explanation": "في أيون $\\text{NO}_3^-$: $\\text{N} + 3(-2) = -1$، بالتالي $\\text{N} - 6 = -1$، أي أن $\\text{N} = +5$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "مركب يحتوي على مجموعة كربونيل واحدة وخمس مجموعات هيدروكسيل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حمض جلوكويك"},
+        {"identifier": "B", "text": "حمض طرطريك"},
+        {"identifier": "C", "text": "فركتوز"},
+        {"identifier": "D", "text": "حمض جليكوليك"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (تركيب الكربوهيدرات)",
+      "explanation": "الفركتوز ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) يحتوي على مجموعة كيتون واحدة (كربونيل) وخمس مجموعات هيدروكسيل ($\\text{-OH}$)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "جميع الخواص التالية تميز الإشعاعات ما عدا:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "لها تأثير على الألواح والأوراق الحساسة"},
+        {"identifier": "B", "text": "لها القدرة على تأين الغازات"},
+        {"identifier": "C", "text": "لها تأثيرات خطيرة ومدمرة على جسم الكائن الحي"},
+        {"identifier": "D", "text": "يتأثر معدل صدور هذه الإشعاعات بالضغط أو درجة الحرارة"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (خواص النشاط الإشعاعي)",
+      "explanation": "النشاط الإشعاعي ظاهرة نووية تلقائية لا تتأثر بالعوامل الفيزيائية الخارجية مثل الضغط أو الحرارة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "يتفاعل أكسيد الحديد اللامائي مع أول أكسيد الكربون لينتج:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الهيماتيت"},
+        {"identifier": "B", "text": "الماجنيتيت"},
+        {"identifier": "C", "text": "الليمونيت"},
+        {"identifier": "D", "text": "السيدريت"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية (اختزال أكاسيد الحديد)",
+      "explanation": "يتم اختزال الهيماتيت ($\\text{Fe}_2\\text{O}_3$) جزئياً بواسطة $\\text{CO}$ عند درجات حرارة ($230-300$) $^\\circ\\text{C}$ لينتج الماجنيتيت ($\\text{Fe}_3\\text{O}_4$)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": ".......... هو عبارة عن معدن سميك لمنع تسرب الإشعاعات خارج التفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الدرع الواقي"},
+        {"identifier": "B", "text": "قضبان التحكم"},
+        {"identifier": "C", "text": "المهدئ"},
+        {"identifier": "D", "text": "المبرد"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (مكونات المفاعل النووي)",
+      "explanation": "الدرع الواقي يصنع من الرصاص أو الخرسانة الكثيفة لحماية البيئة من الإشعاعات النووية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "يمثل ثاني أكسيد المنجنيز المهبط في:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "خلية الزئبق"},
+        {"identifier": "B", "text": "الخلية القاعدية"},
+        {"identifier": "C", "text": "خلية الوقود"},
+        {"identifier": "D", "text": "المركم الرصاصي"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (الخلايا الجلفانية الأولية)",
+      "explanation": "في الخلية الجافة القاعدية (Alkaline)، يتكون المهبط (الكاثود) من ثاني أكسيد المنجنيز ($\\text{MnO}_2$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "تختزل بعض السكريات الثنائية محلول فهلنج مثل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "المالتوز"},
+        {"identifier": "B", "text": "النشا"},
+        {"identifier": "C", "text": "المالتوز والنشا"},
+        {"identifier": "D", "text": "السكروز"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (خواص الكربوهيدرات)",
+      "explanation": "المالتوز سكر ثنائي مختزل لأنه يمتلك مجموعة كربونيل حرة قادرة على اختزال محلول فهلنج."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "يحتوي حمض جلوتاميك على .......... هيدروجين:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "عشر ذرات"},
+        {"identifier": "B", "text": "تسع ذرات"},
+        {"identifier": "C", "text": "ثمان ذرات"},
+        {"identifier": "D", "text": "أربع ذرات"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (تركيب الأحماض الأمينية)",
+      "explanation": "الصيغة الجزيئية لحمض الجلوتاميك هي $\\text{C}_5\\text{H}_9\\text{NO}_4$، لذا يحتوي على $9$ ذرات هيدروجين."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "زيت كبد الحوت من الزيوت:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "غير المتطايرة النباتية"},
+        {"identifier": "B", "text": "المتطايرة النباتية"},
+        {"identifier": "C", "text": "غير المتطايرة الحيوانية"},
+        {"identifier": "D", "text": "المعدنية"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (الليبيدات وتصنيف الزيوت)",
+      "explanation": "زيت كبد الحوت هو زيت حيواني ثابت (غير متطاير) يستخلص من الكائنات البحرية."
+    }
+  ]
+}

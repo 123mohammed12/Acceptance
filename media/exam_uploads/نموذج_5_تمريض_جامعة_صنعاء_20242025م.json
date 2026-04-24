@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "NUR",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "العالم الذي اكتشف الجسيمات السالبة هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "دالتون"},
+        {"identifier": "B", "text": "تومسون"},
+        {"identifier": "C", "text": "رذرفورد"},
+        {"identifier": "D", "text": "بوهر"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تطور النموذج الذري",
+      "explanation": "طومسون هو من اكتشف الإلكترونات (الجسيمات السالبة) من خلال تجارب تفريغ الكهرباء في الغازات (أشعة المهبط)."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "الضغط في أنبوبة أشعة الكاثود (أشعة المهبط) .......... الضغط الجوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أكبر من الضغط الجوي"},
+        {"identifier": "B", "text": "يساوي الضغط الجوي"},
+        {"identifier": "C", "text": "أقل من الضغط الجوي"},
+        {"identifier": "D", "text": "أكبر من أو يساوي الضغط الجوي"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تجربة أشعة المهبط",
+      "explanation": "لكي يمر التيار الكهربائي في الغازات وتتولد أشعة المهبط، يجب أن يكون ضغط الغاز داخل الأنبوبة منخفضاً جداً (أقل بكثير من الضغط الجوي) تحت فرق جهد عالٍ."
+    },
+    {
+      "grade_level": 10,
+      "unit": 3,
+      "text": "عنصر من عناصر المجموعة الرئيسية الثالثة توزيعه الإلكتروني: $[\\text{He}] 2\\text{s}^2 2\\text{p}^1$ هو:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{B}$"},
+        {"identifier": "B", "text": "$\\text{Al}$"},
+        {"identifier": "C", "text": "$\\text{Ga}$"},
+        {"identifier": "D", "text": "$\\text{In}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "التوزيع الإلكتروني والجدول الدوري",
+      "explanation": "التوزيع الإلكتروني $[\\text{He}] 2\\text{s}^2 2\\text{p}^1$ يعني أن العدد الذري = $2$ (للهيليوم) $+ 2 + 1 = 5$. العنصر الذي عدده الذري $5$ هو البورون ($\\text{B}$)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "إذا كانت حرارة تكوين مركب الميثان تساوي $+74$ كيلوجول/مول فإن حرارة انحلاله تساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$+74$"},
+        {"identifier": "B", "text": "$-74$"},
+        {"identifier": "C", "text": "$-37$"},
+        {"identifier": "D", "text": "$-148$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية",
+      "explanation": "بناءً على قانون لافوازييه ولابلاس، حرارة الانحلال (التفكك) لمركب تساوي حرارة تكوينه في المقدار وتخالفه في الإشارة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 2,
+      "text": "عدد الأرقام المعنوية في العدد $0.00950$ يساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ستة أرقام معنوية"},
+        {"identifier": "B", "text": "خمسة أرقام معنوية"},
+        {"identifier": "C", "text": "ثلاثة أرقام معنوية"},
+        {"identifier": "D", "text": "رقمين معنويين"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الأرقام المعنوية",
+      "explanation": "الأصفار على يسار أول رقم غير صفري ($9$) لا تُعد أرقاماً معنوية. بينما يُحسب الصفر الموجود على يمين الـ $5$ لأنه يقع بعد العلامة العشرية ويدل على الدقة، لذا الأرقام المعنوية هي $9$، $5$، $0$ (ثلاثة أرقام)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "حمض أميني ثنائي الأمينو أحادي الكربوكسيل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أرجنين"},
+        {"identifier": "B", "text": "ميثيونين"},
+        {"identifier": "C", "text": "ألانين"},
+        {"identifier": "D", "text": "جلوتاميك"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (الأحماض الأمينية)",
+      "explanation": "الأرجينين من الأحماض الأمينية القاعدية، حيث يحتوي على أكثر من مجموعة أمينية (مجموعة جوانيدينو في السلسلة الجانبية) ومجموعة كربوكسيل واحدة."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "تعتمد التصادمات المثمرة على تصادم:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الذرات"},
+        {"identifier": "B", "text": "الجزيئات"},
+        {"identifier": "C", "text": "الأيونات"},
+        {"identifier": "D", "text": "كل ما سبق صحيح"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الحركية الكيميائية (نظرية التصادم)",
+      "explanation": "تنص نظرية التصادم على أن التفاعل الكيميائي يحدث نتيجة تصادم دقائق المواد المتفاعلة مع بعضها، وهذه الدقائق قد تكون ذرات أو جزيئات أو أيونات."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "عدد المستويات الفرعية في مستوى الطاقة الرئيسي الرابع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$4$"},
+        {"identifier": "B", "text": "$8$"},
+        {"identifier": "C", "text": "$9$"},
+        {"identifier": "D", "text": "$16$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "أعداد الكم الذرية",
+      "explanation": "عدد المستويات الفرعية في أي مستوى طاقة رئيسي $(n)$ يساوي رقم هذا المستوى. فالمستوى الرابع $(n = 4)$ يحتوي على $4$ مستويات فرعية ($4\\text{s}, 4\\text{p}, 4\\text{d}, 4\\text{f}$)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "العناصر التي ينتهي توزيعها الإلكتروني بـ $n\\text{s}^2$:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الهالوجينات"},
+        {"identifier": "B", "text": "الخاملة"},
+        {"identifier": "C", "text": "الفلزات القلوية"},
+        {"identifier": "D", "text": "الفلزات القلوية الأرضية"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الجدول الدوري (عناصر الفئة s)",
+      "explanation": "عناصر المجموعة الثانية (IIA) والتي تُعرف بالفلزات القلوية الأرضية تمتلك إلكترونين في غلاف تكافؤها الخارجي، وينتهي توزيعها دائماً بالمستوى الفرعي $n\\text{s}^2$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "يتفاعل البروم مع الإيثيلين (الإيثين) مكوناً:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "رباعي بروميد الإيثيلين"},
+        {"identifier": "B", "text": "ثلاثي بروميد الإيثيلين"},
+        {"identifier": "C", "text": "ثنائي بروميد الإيثيلين"},
+        {"identifier": "D", "text": "أحادي بروميد الإيثيلين"}
+      ],
+      "correct_identifier": "A",
+      "certain": "0",
+      "Potential_identifier": "C",
+      "topic": "تفاعلات الألكينات (الإضافة)",
+      "explanation": "علمياً، يتفاعل الإيثيلين ($\\text{C}_2\\text{H}_4$) بالإضافة مع مول واحد من البروم ($\\text{Br}_2$) لكسر الرابطة المزدوجة وتكوين $1,2$-ثنائي برومو إيثان (ثنائي بروميد الإيثيلين). تفاعل تكوين 'الرباعي' يخص الألكاينات كالأسيتيلين. لكن نموذج الإجابة الرسمي المرفق اعتمد الخيار (أ) كإجابة صحيحة بشكل خاطئ."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يستخدم النشادر في صناعة:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأسمدة"},
+        {"identifier": "B", "text": "المبيدات"},
+        {"identifier": "C", "text": "الأصباغ"},
+        {"identifier": "D", "text": "الأدوية"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (النيتروجين ومركباته)",
+      "explanation": "الاستخدام الصناعي الأكبر لغاز النشادر (الأمونيا $\\text{NH}_3$) هو في إنتاج الأسمدة النيتروجينية كاليوريا ونترات الأمونيوم لتغذية النباتات."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "يحتوي مستوى الطاقة الرئيسي الثالث على المستويات الفرعية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{s}$"},
+        {"identifier": "B", "text": "$\\text{p} , \\text{s}$"},
+        {"identifier": "C", "text": "$\\text{d} , \\text{p} , \\text{s}$"},
+        {"identifier": "D", "text": "$\\text{f} , \\text{d} , \\text{p} , \\text{s}$"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "أعداد الكم والتوزيع الإلكتروني",
+      "explanation": "المستوى الرئيسي الثالث $(n = 3)$ يحتوي على ثلاثة مستويات فرعية فقط، وهي: $3\\text{s}$ و $3\\text{p}$ و $3\\text{d}$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "أحد الصيغ التالية صيغة ألكان:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{C}_6\\text{H}_6$"},
+        {"identifier": "B", "text": "$\\text{C}_7\\text{H}_{16}$"},
+        {"identifier": "C", "text": "$\\text{C}_7\\text{H}_{14}$"},
+        {"identifier": "D", "text": "$\\text{C}_6\\text{H}_{10}$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات الأليفاتية (الألكانات)",
+      "explanation": "الألكانات تتبع الصيغة العامة $\\text{C}_n\\text{H}_{2n+2}$. بتطبيق الصيغة على الهبتان ($7$ ذرات كربون): عدد ذرات الهيدروجين = $(2 \\times 7) + 2 = 16$، إذاً $\\text{C}_7\\text{H}_{16}$ هو الألكان."
+    },
+    {
+      "grade_level": 10,
+      "unit": 2,
+      "text": "من التفاعل الآتي: $\\text{SO}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{SO}_3(g)$ (علماً أن: $\\text{S} = 32$ ، $\\text{O} = 16 \\text{ g/mol}$) فإن الوزن الجزيئي للأكسجين اللازم لإنتاج مول واحد من $\\text{SO}_3$ يساوي .......... جرام/مول:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$16$"},
+        {"identifier": "B", "text": "$24$"},
+        {"identifier": "C", "text": "$32$"},
+        {"identifier": "D", "text": "$48$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الحسابات الكيميائية المبنية على المعادلات",
+      "explanation": "من المعادلة، لإنتاج $1$ مول من $\\text{SO}_3$ نحتاج إلى $\\frac{1}{2}$ مول من جزيئات الأكسجين $\\text{O}_2$. الكتلة المولية لـ $\\text{O}_2$ هي $32$ جم/مول. إذن كتلة $\\frac{1}{2}$ مول تساوي $\\frac{1}{2} \\times 32 = 16$ جرام."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "أي من عناصر المجموعة الرئيسية السادسة يوجد حراً في القشرة الأرضية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأكسجين"},
+        {"identifier": "B", "text": "الكبريت"},
+        {"identifier": "C", "text": "السيلينيوم"},
+        {"identifier": "D", "text": "البولونيوم"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (المجموعة السادسة)",
+      "explanation": "يتميز الكبريت عن باقي عناصر مجموعته بوجوده بصورة حرة (منفردة) في الطبيعة داخل القشرة الأرضية، خاصة في المناطق البركانية، بالإضافة لوجوده كمركبات."
+    }
+  ]
+}

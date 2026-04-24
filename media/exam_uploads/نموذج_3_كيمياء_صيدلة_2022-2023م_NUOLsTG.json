@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "PHA",
+    "subject_code": "CHE",
+    "exam_year": 2023,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "عند التعرض للبنزين لفترة طويلة يحدث ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تليف الكبد"},
+        {"identifier": "B", "text": "سرطان دم"},
+        {"identifier": "C", "text": "فشل قلبي"},
+        {"identifier": "D", "text": "كل ما سبق"}
+      ],
+      "correct_identifier": "D",
+      "certain": "0",
+      "Potential_identifier": "B",
+      "topic": "الهيدروكربونات الأروماتية (البنزين)",
+      "explanation": "منهجياً، استنشاق البنزين يسبب سرطان الدم (اللوكيميا). الفهرس اعتمد (د) 'كل ما سبق' باعتبار التأثيرات السمية الشاملة على المدى الطويل."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "كلمة كيمياء يقال أنها ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "هندية"},
+        {"identifier": "B", "text": "عربية"},
+        {"identifier": "C", "text": "لاتينية"},
+        {"identifier": "D", "text": "ليس مما سبق"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "علم الكيمياء عبر العصور",
+      "explanation": "كلمة كيمياء مشتقة من الفعل العربي (كمى)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 1,
+      "text": "نظرية بوهر في المرحلة ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الثالثة"},
+        {"identifier": "B", "text": "الرابعة"},
+        {"identifier": "C", "text": "الخامسة"},
+        {"identifier": "D", "text": "السادسة"}
+      ],
+      "correct_identifier": "D",
+      "certain": "0",
+      "Potential_identifier": "B",
+      "topic": "تطور النموذج الذري",
+      "explanation": "المراحل المنهجية هي: 1. دالتون 2. طومسون 3. رذرفورد 4. بور. الفهرس اعتبرها السادسة (ربما باحتساب فلاسفة الإغريق وبدايات أخرى كمراحل منفصلة)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "تبدأ الدورة الرابعة الانتقالية بالمستوى ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "3d"},
+        {"identifier": "B", "text": "4d"},
+        {"identifier": "C", "text": "6d"},
+        {"identifier": "D", "text": "7d"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية",
+      "explanation": "السلسلة الانتقالية الأولى تقع في الدورة الرابعة، وفيها يتم ملء المستوى الفرعي 3d."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "الغاز الذي يحتل أعلى نسبة من حجم الغازات الخاملة في الهواء الجوي :",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأرجون"},
+        {"identifier": "B", "text": "الرادون"},
+        {"identifier": "C", "text": "النيون"},
+        {"identifier": "D", "text": "الزينون"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الغازات النبيلة",
+      "explanation": "الأرجون هو الغاز النبيل الأكثر وفرة في الغلاف الجوي."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "في التفاعل المتزن 2NO2 ↔ N2O4 اذا كان ثابت الاتزان 0.212 وتركيز الناتج 0.20 M فإن تركيز المتفاعل = ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "1.89 × 10^-1 M"},
+        {"identifier": "B", "text": "1.89 × 10^-4 M"},
+        {"identifier": "C", "text": "1.89 × 10^-3 M"},
+        {"identifier": "D", "text": "1.89 M"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الكيميائي",
+      "explanation": "Kc = [NO2]^2 / [N2O4]، إذن 0.212 = (0.20)^2 / x، ومنه x ≈ 1.89 × 10^-1."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "من المعادلة 2HCl → Cl2 + H2 إذا كان جهد اختزال الكلور يساوي 1.36 فولت فإن ق.د.ك = ...",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "1.36 فولت"},
+        {"identifier": "B", "text": "صفر"},
+        {"identifier": "C", "text": "1 فولت"},
+        {"identifier": "D", "text": "- 1.36 فولت"}
+      ],
+      "correct_identifier": "A",
+      "certain": "0",
+      "Potential_identifier": "D",
+      "topic": "الكيمياء الكهربية",
+      "explanation": "منهجياً: الكلور تأكسد، وجهد الأكسدة هو عكس جهد الاختزال (-1.36). ق.د.ك = -1.36 + 0 = -1.36 فولت. الفهرس اعتمد القيمة المطلقة الموجبة 1.36 (أ)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "النيكوتيناميد يعتبر من :",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "النيتريلات"},
+        {"identifier": "B", "text": "الكحولات"},
+        {"identifier": "C", "text": "الأميدات"},
+        {"identifier": "D", "text": "الأمينات"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مشتقات الهيدروكربونات",
+      "explanation": "ينتمي إلى الأميدات."
+    },
+    {
+      "grade_level": 11,
+      "unit": 1,
+      "text": "من خلال تسليط دقائق الفا على رقيقة الذهب تم التوصل إلى أن الذرة ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "مصمته لا تحتوي أي مكونات."},
+        {"identifier": "B", "text": "تتكون من نواة موجبة الشحنة وتدور الإلكترونات حولها."},
+        {"identifier": "C", "text": "تتوزع فيها الشحنة الموجبة وتكون الإلكترونات فيها منغمسة."},
+        {"identifier": "D", "text": "تتكون من نواة موجبة وتدور الإلكترونات حولها في مستويات طاقة."}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "بنية الذرة (تجربة رذرفورد)",
+      "explanation": "نموذج رذرفورد."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "من احتياطات الأمان في المفاعلات النووية ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ارتداء الملابس الواقية من الاشعاع."},
+        {"identifier": "B", "text": "توفر أجهزة لقياس الاشعاع وارتداء الملابس الواقية."},
+        {"identifier": "C", "text": "التخلص من المخلفات الاشعاعية في المجاري."},
+        {"identifier": "D", "text": "توفر أجهزة لقياس الاشعاع."}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية",
+      "explanation": "الخيار الأكمل هو توفر الأجهزة الكاشفة مع ارتداء الملابس الواقية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "عدد عناصر المجموعة VIIIB ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "10"},
+        {"identifier": "B", "text": "9"},
+        {"identifier": "C", "text": "12"},
+        {"identifier": "D", "text": "11"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "العناصر الانتقالية",
+      "explanation": "حسب الكتاب الوزاري اليمني تُدرس على أنها 9 عناصر (في السلاسل الثلاث الأولى)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "التفاعل الكيميائي يتم نتيجة لتصادم مكونات المواد المتفاعلة من ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأيونات"},
+        {"identifier": "B", "text": "الذرات"},
+        {"identifier": "C", "text": "الجزيئات"},
+        {"identifier": "D", "text": "كل ما سبق"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الحركية الكيميائية",
+      "explanation": "نظرية التصادم تشمل جميع الجسيمات."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "الإلكتروليتات الضعيفة ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "تتأين كلياً"},
+        {"identifier": "B", "text": "تتأين جزئياً"},
+        {"identifier": "C", "text": "لا تتأين"},
+        {"identifier": "D", "text": "لا توجد اجابة"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الأيوني",
+      "explanation": "تتأين جزئياً في محاليلها المائية."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "مركب عضوي يحترق في الهواء بلهب مضيء وعند احتراقه ينتج دخان ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "بنزين"},
+        {"identifier": "B", "text": "أسيتيلين"},
+        {"identifier": "C", "text": "تولين"},
+        {"identifier": "D", "text": "فينول"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات الأروماتية",
+      "explanation": "البنزين يحترق بلهب مدخن لارتفاع نسبة الكربون."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يستخدم الهيليوم والأرجون في عمليات لحام بعض الفلزات لكي يتم ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "منع اختزالها"},
+        {"identifier": "B", "text": "تأكسدها وتفاعلها مع Ar"},
+        {"identifier": "C", "text": "منع تأكسدها"},
+        {"identifier": "D", "text": "اختزالها"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الغازات النبيلة",
+      "explanation": "توفر جواً خاملاً يمنع تأكسد الفلزات."
+    }
+  ]
+}

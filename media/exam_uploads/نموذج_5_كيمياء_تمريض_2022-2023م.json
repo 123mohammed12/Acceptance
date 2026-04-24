@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "NURS",
+    "subject_code": "CHE",
+    "exam_year": 2023,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "الطاقة التي تنتج من احتراق كمية من الدهون ....... احتراق نفس الكمية من الكربوهيدرات.",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أكبر من"},
+        {"identifier": "B", "text": "أقل من"},
+        {"identifier": "C", "text": "تساوي"},
+        {"identifier": "D", "text": "ليس مما سبق"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (الليبيدات)",
+      "explanation": "الدهون تعطي طاقة أعلى (حوالي 9 سعر حراري/جرام)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "النيتروجين يساعد في نقل المواد القابلة للاشتعال لأنه ...........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "لايساعد على الاشتعال فقط"},
+        {"identifier": "B", "text": "لايساعد على الاشتعال والتأكسد"},
+        {"identifier": "C", "text": "يساعد على الاشتعال دون التأكسد"},
+        {"identifier": "D", "text": "يساعد على التأكسد دون الاشتعال"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر المجموعة الخامسة",
+      "explanation": "النيتروجين غاز خامل نسبياً."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "ما هي الاحماض الذي تنظم البروتينات .........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أمينية"},
+        {"identifier": "B", "text": "نووية"},
+        {"identifier": "C", "text": "دهنية"},
+        {"identifier": "D", "text": "معدنية"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (البروتينات)",
+      "explanation": "البروتينات تتكون من أحماض أمينية."
+    },
+    {
+      "grade_level": 11,
+      "unit": 3,
+      "text": "يعتبر NH4+ ..........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حمض"},
+        {"identifier": "B", "text": "قاعدة"},
+        {"identifier": "C", "text": "حمض قرين"},
+        {"identifier": "D", "text": "قاعدة قرينة"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "نظريات الأحماض والقواعد",
+      "explanation": "أيون الأمونيوم هو الحمض المرافق للأمونيا."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يتفاعل هيدروكسيد الصوديوم مع ........ وينتج الهيدروجين .",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الماء"},
+        {"identifier": "B", "text": "الفلزات"},
+        {"identifier": "C", "text": "اللافلزات"},
+        {"identifier": "D", "text": "الكربونات"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "خواص القلويات",
+      "explanation": "يتفاعل مع الفلزات المترددة ليتصاعد الهيدروجين."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "اذا كانت حرارة المتفاعلات تساوي حرارة النواتج فإن حرارة التفاعل تساوي ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "موجب"},
+        {"identifier": "B", "text": "سالب"},
+        {"identifier": "C", "text": "صفر"},
+        {"identifier": "D", "text": "موجب وسالب"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية",
+      "explanation": "الفرق بينهما يساوي صفر."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "يتفاعل الجلايسين مع حمض النيتروز ليعطي حمض ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الميثيونين"},
+        {"identifier": "B", "text": "الجلايكوليك"},
+        {"identifier": "C", "text": "الجلوتاميك"},
+        {"identifier": "D", "text": "ليوسين"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تفاعلات الأحماض الأمينية",
+      "explanation": "ينتج حمض الجلايكوليك."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "بماذا يتميز الصوديوم على البوتاسيوم .......",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أقل سالبية"},
+        {"identifier": "B", "text": "أقل طاقة تأين"},
+        {"identifier": "C", "text": "أعلى سالبية"},
+        {"identifier": "D", "text": "أعلى عدد ذري"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "تدرج الخواص في الجدول الدوري",
+      "explanation": "الصوديوم أصغر حجماً لذا سالبيته أعلى."
+    },
+    {
+      "grade_level": 12,
+      "unit": 5,
+      "text": "نسبة الهيدروجين إلى الكربون في البنزين .........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "( 1 : 2 )"},
+        {"identifier": "B", "text": "( 2 : 1 )"},
+        {"identifier": "C", "text": "( 1 : 1 )"},
+        {"identifier": "D", "text": "( 1 : 4 )"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات الأروماتية",
+      "explanation": "C6H6 النسبة 1:1."
+    },
+    {
+      "grade_level": 12,
+      "unit": 6,
+      "text": "الكحولات التي لا تتأثر بالاكسدة ..........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الأولية"},
+        {"identifier": "B", "text": "الثانوية"},
+        {"identifier": "C", "text": "الثالثية"},
+        {"identifier": "D", "text": "كل الإجابات صحيحة"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "أكسدة الكحولات",
+      "explanation": "الكحولات الثالثية تقاوم الأكسدة."
+    },
+    {
+      "grade_level": 10,
+      "unit": 1,
+      "text": "العالم الذي يرتدي كمامة في أحد ابحاثه ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ابن سيناء"},
+        {"identifier": "B", "text": "الرازي"},
+        {"identifier": "C", "text": "ابو الحسن الهمداني"},
+        {"identifier": "D", "text": "الجلدكي"}
+      ],
+      "correct_identifier": "D",
+      "certain": "0",
+      "Potential_identifier": "B",
+      "topic": "إسهامات العلماء العرب",
+      "explanation": "منهجياً وتاريخياً، أبو بكر الرازي هو من أوصى بارتداء الكمامة. الفهرس اعتمد (د) 'الجلدكي' كإجابة لهذا السؤال، مما يجعله من الأسئلة التي يجب الانتباه لتباينها."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "القذائف النووية المستخدمة في التفاعل النووي الصناعي ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "بروتون"},
+        {"identifier": "B", "text": "نيترون"},
+        {"identifier": "C", "text": "الفا"},
+        {"identifier": "D", "text": "كل ما سبق"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "التحويل النووي الاصطناعي",
+      "explanation": "تستخدم قذائف متنوعة كجسيمات ألفا والبروتونات والنيوترونات."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "من عناصر المجموعة الثالثة والذي يكون طبقة من الأكاسيد تحميه من التأكسد ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "Mg"},
+        {"identifier": "B", "text": "Al"},
+        {"identifier": "C", "text": "B"},
+        {"identifier": "D", "text": "Ga"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر المجموعة الثالثة",
+      "explanation": "الألمنيوم يكوّن طبقة واقية من الأكسيد."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "عند رش الجير الحي بالماء ينتج ....",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الجير المطفأ"},
+        {"identifier": "B", "text": "هيدروكسيد الكالسيوم"},
+        {"identifier": "C", "text": "الجير المطفأ ، هيدروكسيد الكالسيوم"},
+        {"identifier": "D", "text": "الحجر الجيري"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مركبات الكالسيوم",
+      "explanation": "هيدروكسيد الكالسيوم هو الاسم العلمي، والجير المطفأ هو الاسم الشائع لنفس المركب."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "عند تسخين بيكربونات الصوديوم تتحول إلى كربونات الصوديوم و ........",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "ماء وهيدروجين"},
+        {"identifier": "B", "text": "ماء وثاني أكسيد كربون"},
+        {"identifier": "C", "text": "ثاني أكسيد كربون وهيدروجين"},
+        {"identifier": "D", "text": "ليس مما سبق"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "مركبات الصوديوم",
+      "explanation": "تنحل بالحرارة لتعطي كربونات الصوديوم وماء وثاني أكسيد الكربون."
+    }
+  ]
+}

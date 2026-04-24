@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "university_code": "SU",
+    "college_code": "MED",
+    "subject_code": "CHE",
+    "exam_year": 2024,
+    "source_type": "past_exam"
+  },
+  "questions": [
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "إذا علمت أن 1 فاراداي = 96500 كولوم لترسيب 20 جم من $\\text{Ca}^{2+}$ ($\\text{Ca} = 40$) فإن كمية الكهرباء المارة تساوي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "1 فاراداي"},
+        {"identifier": "B", "text": "90000 فاراداي"},
+        {"identifier": "C", "text": "93400 فاراداي"},
+        {"identifier": "D", "text": "ليس أي مما سبق"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (قوانين فاراداي)",
+      "explanation": "الكتلة المكافئة للكالسيوم = الكتلة الذرية ÷ التكافؤ = $40 \\div 2 = 20$ جم. وبما أن 1 فاراداي يرسب كتلة مكافئة جرامية واحدة (20 جم)، إذن كمية الكهرباء اللازمة هي 1 فاراداي."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "إذا علمت أن التفاعل الآتي: $3\\text{O}_2(g) \\rightleftharpoons 2\\text{O}_3(g)$ متزن، وقيمة تراكيز المواد المكونة للنظام هي: $[\\text{O}_3] = 0.60 \\text{ M}$ ، $[\\text{O}_2] = 0.50 \\text{ M}$ احسب قيمة ثابت الاتزان:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "1.44"},
+        {"identifier": "B", "text": "2.88"},
+        {"identifier": "C", "text": "0.347"},
+        {"identifier": "D", "text": "ليس أي مما سبق"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الاتزان الكيميائي",
+      "explanation": "ثابت الاتزان $K_c = \\frac{[\\text{النواتج}]}{[\\text{المتفاعلات}]}$ مرفوعة لمعاملاتها. $K_c = \\frac{[\\text{O}_3]^2}{[\\text{O}_2]^3} = \\frac{(0.60)^2}{(0.50)^3} = \\frac{0.36}{0.125} = 2.88$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 2,
+      "text": "إذا كانت الكتلة تساوي 23 جم والحرارة النوعية تساوي 1.9 جول/جم·°م وكمية الحرارة الممتصة تساوي 900 جول فإن مقدار التغير في درجة الحرارة يساوي .......... درجة مئوية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "15"},
+        {"identifier": "B", "text": "10"},
+        {"identifier": "C", "text": "20.59"},
+        {"identifier": "D", "text": "25"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الديناميكا الحرارية الكيميائية (السعة الحرارية)",
+      "explanation": "كمية الحرارة $(q)$ = الكتلة $(m)$ × الحرارة النوعية $(c)$ × التغير في درجة الحرارة $(\\Delta T)$. ومنه: $\\Delta T = \\frac{q}{m \\times c} = \\frac{900}{23 \\times 1.9} = \\frac{900}{43.7} \\approx 20.59 ^\\circ\\text{C}$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 7,
+      "text": "تصنف الكربوهيدرات أو السكريات إلى:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "أحادية"},
+        {"identifier": "B", "text": "محدودة"},
+        {"identifier": "C", "text": "عديدة"},
+        {"identifier": "D", "text": "كل ما سبق صحيح"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الحيوية (الكربوهيدرات)",
+      "explanation": "تصنف الكربوهيدرات بناءً على عدد الوحدات البنائية (السكريات الأحادية) المكونة لها إلى: سكريات أحادية، محدودة (ثنائية وثلاثية)، وعديدة."
+    },
+    {
+      "grade_level": 11,
+      "unit": 2,
+      "text": "تميل العناصر التي أعلى حزام الاستقرار إلى إطلاق:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\alpha$"},
+        {"identifier": "B", "text": "$\\beta^-$"},
+        {"identifier": "C", "text": "$\\gamma$"},
+        {"identifier": "D", "text": "$^1_0\\text{n}$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء النووية (حزام الاستقرار)",
+      "explanation": "النظائر التي تقع أعلى حزام الاستقرار تمتلك نسبة نيوترونات إلى بروتونات $(n/p)$ عالية، لذا تميل لتقليل هذه النسبة بتحول نيوترون إلى بروتون مع إطلاق جسيم بيتا السالب (إلكترون)."
+    },
+    {
+      "grade_level": 12,
+      "unit": 3,
+      "text": "أحد المواد الآتية يعتبر عامل مؤكسد:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{H}_2\\text{S}$"},
+        {"identifier": "B", "text": "$\\text{FeSO}_4$"},
+        {"identifier": "C", "text": "$\\text{KIO}_3$"},
+        {"identifier": "D", "text": "$\\text{Al}$"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الكيمياء الكهربية (الأكسدة والاختزال)",
+      "explanation": "يودات البوتاسيوم $(\\text{KIO}_3)$ تحتوي على اليود في حالة تأكسد عالية (+5)، مما يجعله قابلاً للاختزال بسهولة، وبالتالي يعمل كعامل مؤكسد قوي."
+    },
+    {
+      "grade_level": 12,
+      "unit": 1,
+      "text": "تتناسب سرعة التفاعل .......... مع مساحة السطح المعرض للتفاعل:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "لا تتأثر"},
+        {"identifier": "B", "text": "طردي"},
+        {"identifier": "C", "text": "عكسي"},
+        {"identifier": "D", "text": "لا توجد علاقة"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الحركية الكيميائية (العوامل المؤثرة على سرعة التفاعل)",
+      "explanation": "بزيادة مساحة السطح المعرض للتفاعل، يزداد عدد الجسيمات المعرضة للتصادم، مما يؤدي إلى زيادة (طردية) في سرعة التفاعل الكيميائي."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "عنصران من عناصر المجموعة الرئيسية الرابعة لازمهما القدرة على الارتباط مع بعضها البعض:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{C} , \\text{Si}$"},
+        {"identifier": "B", "text": "$\\text{Si} , \\text{Sn}$"},
+        {"identifier": "C", "text": "$\\text{C} , \\text{As}$"},
+        {"identifier": "D", "text": "$\\text{Sn} , \\text{Pb}$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (المجموعة الرابعة)",
+      "explanation": "الكربون $(\\text{C})$ والسيليكون $(\\text{Si})$ يتميزان بقدرتهما الفريدة على تشكيل روابط تساهمية مع ذراتهما نفسها لتكوين سلاسل أو شبكات طويلة (خاصية التسلسل - Catenation)."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "في المجموعة الرابعة تظهر الأكاسيد القاعدية مع العنصرين:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{C} , \\text{Si}$"},
+        {"identifier": "B", "text": "$\\text{Si} , \\text{Sn}$"},
+        {"identifier": "C", "text": "$\\text{C} , \\text{Sn}$"},
+        {"identifier": "D", "text": "$\\text{Sn} , \\text{Pb}$"}
+      ],
+      "correct_identifier": "D",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (المجموعة الرابعة)",
+      "explanation": "الصفة الفلزية تزداد بالانتقال لأسفل المجموعة. القصدير $(\\text{Sn})$ والرصاص $(\\text{Pb})$ فلزات، وتتميز أكاسيدها (وإن كانت أمفوتيرية في بعض الحالات) بظهور الصفات القاعدية الواضحة مقارنة بالكربون والسيليكون."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يعتبر من عناصر الفلزات القلوية الأرضية:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الصوديوم"},
+        {"identifier": "B", "text": "السكانديوم"},
+        {"identifier": "C", "text": "الاسترانشيوم"},
+        {"identifier": "D", "text": "الألومنيوم"}
+      ],
+      "correct_identifier": "C",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة s (المجموعة الثانية)",
+      "explanation": "الفلزات القلوية الأرضية هي عناصر المجموعة الثانية (IIA) وتشمل: البريليوم، الماغنيسيوم، الكالسيوم، الاسترانشيوم، الباريوم، والراديوم."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "يمكن تحضير غاز الميثان بتفاعل الماء مع:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "كربونات الألومنيوم"},
+        {"identifier": "B", "text": "كربيد الألومنيوم"},
+        {"identifier": "C", "text": "كلوريد الألومنيوم"},
+        {"identifier": "D", "text": "هيدروكسيد الألومنيوم"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات الأليفاتية (تحضير الألكانات)",
+      "explanation": "يُحضر غاز الميثان مخبرياً بالتحلل المائي لكربيد الألومنيوم $(\\text{Al}_4\\text{C}_3)$ وفق المعادلة: $\\text{Al}_4\\text{C}_3 + 12\\text{H}_2\\text{O} \\rightarrow 4\\text{Al(OH)}_3 + 3\\text{CH}_4$."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يعد الكالسيوم أكثر نشاطاً كيميائياً من:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "الماغنيسيوم"},
+        {"identifier": "B", "text": "الاسترانشيوم"},
+        {"identifier": "C", "text": "الباريوم"},
+        {"identifier": "D", "text": "الراديوم"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة s (نشاط المجموعة الثانية)",
+      "explanation": "في مجموعة الفلزات القلوية الأرضية، يزداد النشاط الكيميائي بالانتقال من أعلى إلى أسفل لسهولة فقد إلكترونات التكافؤ. لذلك، الكالسيوم $(\\text{Ca})$ أكثر نشاطاً من الماغنيسيوم $(\\text{Mg})$ الذي يسبقه."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يحترق الباريوم مع الأكسجين ويكون فوق أكسيد الباريوم والصيغة الكيميائية له هي:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{BaO}_2$"},
+        {"identifier": "B", "text": "$\\text{BaO}$"},
+        {"identifier": "C", "text": "$\\text{Ba}_2\\text{O}$"},
+        {"identifier": "D", "text": "$\\text{Ba}_2\\text{O}_3$"}
+      ],
+      "correct_identifier": "A",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة s (مركبات الباريوم)",
+      "explanation": "يحترق الباريوم مع الأكسجين ليعطي مركبات فوق الأكسيد، حيث يتحد أيون الباريوم $(\\text{Ba}^{2+})$ مع أيون فوق الأكسيد $(\\text{O}_2^{2-})$ لتكوين الصيغة $\\text{BaO}_2$."
+    },
+    {
+      "grade_level": 12,
+      "unit": 4,
+      "text": "عند احتراق الأسيتيلين احتراقاً تاماً في وجود الأكسجين النقي ينتج:",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "$\\text{C} + \\text{H}_2\\text{O}$"},
+        {"identifier": "B", "text": "$\\text{CO}_2 + \\text{H}_2\\text{O}$"},
+        {"identifier": "C", "text": "$\\text{CO} + \\text{H}_2\\text{O}$"},
+        {"identifier": "D", "text": "$\\text{O}_2 + \\text{H}_2\\text{O}$"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "الهيدروكربونات الأليفاتية (تفاعلات الألكاينات)",
+      "explanation": "الاحتراق التام للأسيتيلين (في وفرة من الأكسجين) ينتج عنه غاز ثاني أكسيد الكربون $(\\text{CO}_2)$ وبخار الماء $(\\text{H}_2\\text{O})$ مع انطلاق طاقة حرارية هائلة تُستخدم في لحام المعادن."
+    },
+    {
+      "grade_level": 11,
+      "unit": 4,
+      "text": "يعتبر أكسيد الألومنيوم Al (ويُقصد به $\\text{Al}_2\\text{O}_3$):",
+      "image_url": null,
+      "options": [
+        {"identifier": "A", "text": "حمضي"},
+        {"identifier": "B", "text": "أمفوتيري"},
+        {"identifier": "C", "text": "قاعدي"},
+        {"identifier": "D", "text": "متعادل"}
+      ],
+      "correct_identifier": "B",
+      "certain": "1",
+      "Potential_identifier": "",
+      "topic": "عناصر الفئة p (مركبات الألومنيوم)",
+      "explanation": "أكسيد الألومنيوم $(\\text{Al}_2\\text{O}_3)$ هو من الأكاسيد المترددة (الأمفوتيرية)؛ أي أنه يسلك سلوكاً قاعدياً عند تفاعله مع الأحماض، وسلوكاً حمضياً عند تفاعله مع القواعد."
+    }
+  ]
+}
