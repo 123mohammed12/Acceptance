@@ -398,6 +398,27 @@ class FlashcardDocxUpload(models.Model):
     def __str__(self):
         return f"{self.deck_name} — {self.subject.name} ({self.uploaded_at.strftime('%Y-%m-%d')})"
 
+# --------------------------------------------------------
+# نظام الإشعارات (Notifications)
+# --------------------------------------------------------
+
+class AppNotification(models.Model):
+    """إشعارات عامة لجميع المستخدمين (مثال: تم إضافة كذا، تحديث جديد)"""
+    title = models.CharField(max_length=255, verbose_name='عنوان الإشعار')
+    body = models.TextField(verbose_name='محتوى الإشعار')
+    icon_name = models.CharField(max_length=50, blank=True, verbose_name='اسم الأيقونة',
+                                  help_text="مثال: science, computer, notification")
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='تاريخ النشر')
+    is_active = models.BooleanField(default=True, verbose_name='نشط (يظهر للمستخدمين)')
+
+    class Meta:
+        verbose_name = 'إشعار'
+        verbose_name_plural = 'الإشعارات والإعلانات'
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.title} ({self.created_at.strftime('%Y-%m-%d')})"
+
 
 # --------------------------------------------------------
 # دليل المراجعة للمواضيع المتكررة (Study Guide per Subject/College)

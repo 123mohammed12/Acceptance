@@ -8,6 +8,7 @@ from .models import (
     ActivationCode, ExamDataJSONUpload,
     Deck, Flashcard, UserFlashcardProgress, FlashcardDocxUpload,
     CollegeStudyGuide, CollegeStudyGuideUpload,
+    AppNotification,
 )
 
 # ... (the rest of the classes stay untouched, I need to append at the bottom)
@@ -440,3 +441,14 @@ class CollegeStudyGuideUploadAdmin(admin.ModelAdmin):
             except Exception as e:
                 obj.log = f"❌ خطأ: {str(e)}"
                 obj.save()
+
+# --------------------------------------------------------
+# نظام الإشعارات (Notifications Admin)
+# --------------------------------------------------------
+
+@admin.register(AppNotification)
+class AppNotificationAdmin(admin.ModelAdmin):
+    list_display = ('title', 'created_at', 'is_active')
+    list_filter = ('is_active', 'created_at')
+    search_fields = ('title', 'body')
+    list_editable = ('is_active',)

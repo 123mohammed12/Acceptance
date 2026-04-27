@@ -1,6 +1,11 @@
 import random
 from rest_framework import serializers
-from .models import University, College, Subject, Question, Option, PDFResource, TestSession, StudentAnswer, FavoriteQuestion, Deck, Flashcard
+from .models import University, College, Subject, Question, Option, PDFResource, TestSession, StudentAnswer, FavoriteQuestion, Deck, Flashcard, AppNotification
+
+class AppNotificationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AppNotification
+        fields = ['id', 'title', 'body', 'icon_name', 'created_at']
 
 class UniversitySerializer(serializers.ModelSerializer):
     class Meta:

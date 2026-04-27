@@ -19,23 +19,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
+# ... (BASE_DIR تعريف الـ يظل كما هو)
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# نستخدم متغير بيئة للمفتاح السري، وفي حال عدم وجوده نستخدم مفتاح افتراضي (للتطوير فقط)
-SECRET_KEY = os.environ.get('JAMATY_SECRET_KEY', 'django-insecure-)=#dq&r7gmqf8irs7%8vejqo*aa*##h!8yr%_6o!v)h)^5u4zq')
+# إعدادات الأمان المرنة
+# سيبحث جانغو عن المفتاح في السيرفر، وإذا لم يجده (مثل جهازك) سيستخدم المفتاح الاحتياطي
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-local-development-key-12345')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-# اجعلها False عند النشر الفعلي على الاستضافة
+# سيبحث عن وضع التصوير، وإذا لم يجده سيفترض أنه True (للجهاز المحلي)
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
-# تحديد النطاقات المسموح بها لتجنب ثغرات Host Header
-if DEBUG:
-    ALLOWED_HOSTS = ['*']
-else:
-    # عند النشر على PythonAnywhere
-    ALLOWED_HOSTS = ['.pythonanywhere.com']
-
-
+# تأكد من إضافة الدومين الخاص بك هنا ليعمل الموقع في الاستضافة
+ALLOWED_HOSTS = ['mohammedalhmziprogramme.pythonanywhere.com', '127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [

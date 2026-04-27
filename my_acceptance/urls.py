@@ -24,6 +24,7 @@ from .views import (
     question_analysis,
     college_study_guide,
     set_target_college,
+    NotificationListView,
 )
 
 router = DefaultRouter()
@@ -61,4 +62,6 @@ urlpatterns = [
     path('study-guide/', college_study_guide, name='college_study_guide'),
     # Target College
     path('set-target-college/', set_target_college, name='set_target_college'),
+    # Notifications
+    path('notifications/', NotificationListView.as_view(), name='notifications_list'),
 ]
