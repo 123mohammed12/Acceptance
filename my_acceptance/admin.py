@@ -7,6 +7,7 @@ from .models import (
     TestSession, StudentAnswer, UserProfile, FavoriteQuestion,
     ActivationCode, ExamDataJSONUpload,
     Deck, Flashcard, UserFlashcardProgress, FlashcardDocxUpload,
+    CollegeStudyGuide, CollegeStudyGuideUpload,
 )
 
 # ... (the rest of the classes stay untouched, I need to append at the bottom)
@@ -371,6 +372,69 @@ class FlashcardDocxUploadAdmin(admin.ModelAdmin):
 
                 obj.processed = True
                 obj.log = f"✅ نجاح: تم إضافة {added} بطاقة إلى مجموعة «{deck.name}» — مادة {obj.subject.name}"
+                obj.save()
+
+            except Exception as e:
+                obj.log = f"❌ خطأ: {str(e)}"
+                obj.save()
+
+
+# --------------------------------------------------------
+# دليل المراجعة (Study Guide Admin)
+# --------------------------------------------------------
+
+@admin.register(CollegeStudyGuide)
+class CollegeStudyGuideAdmin(admin.ModelAdmin):
+    list_display = ('title', 'college', 'subject', 'is_active', 'updated_at')
+    list_filter = ('college', 'subject', 'is_active')
+    search_fields = ('title', 'content')
+    list_editable = ('is_active',)
+
+
+@admin.register(CollegeStudyGuideUpload)
+class CollegeStudyGuideUploadAdmin(admin.ModelAdmin):
+    list_display = ('guide_title', 'college', 'subject', 'uploaded_at', 'processed')
+    readonly_fields = ('processed', 'log')
+
+    def save_model(self, request, obj, form, change):
+        super().save_model(request, obj, form, change)
+        if not obj.processed and obj.file:
+            try:
+                from docx import Document
+                import io
+
+                obj.file.open('rb')
+                file_bytes = obj.file.read()
+                obj.file.close()
+
+                doc = Document(io.BytesIO(file_bytes))
+
+                # استخراج النص من الملف مع الحفاظ على البنية
+                lines = []
+                for para in doc.paragraphs:
+                    text = para.text.strip()
+                    if text:
+                        lines.append(text)
+
+                if not lines:
+                    raise Exception("الملف فارغ أو لا يحتوي على نصوص.")
+
+                content = '\n'.join(lines)
+
+                # إنشاء أو تحديث الدليل
+                guide, created = CollegeStudyGuide.objects.update_or_create(
+                    college=obj.college,
+                    subject=obj.subject,
+                    defaults={
+                        'title': obj.guide_title.strip(),
+                        'content': content,
+                        'is_active': True,
+                    }
+                )
+
+                action = "إنشاء" if created else "تحديث"
+                obj.processed = True
+                obj.log = f"✅ تم {action} دليل «{guide.title}» بنجاح — {len(lines)} سطر."
                 obj.save()
 
             except Exception as e:

@@ -1,14 +1,16 @@
 from rest_framework import permissions, status
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, throttle_classes
 from rest_framework.response import Response
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 import re
 
 from ..models import UserProfile, ActivationCode, College
+from ..throttling import AuthThrottle
 
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
+@throttle_classes([AuthThrottle])
 def register_user(request):
     """
     إنشاء حساب جديد.
@@ -65,11 +67,14 @@ def register_user(request):
         'full_name': full_name,
         'free_past_exam_remaining': 2,
         'free_challenge_remaining': 2,
+        'target_college_id': None,
+        'target_college_name': None,
     }, status=status.HTTP_201_CREATED)
 
 
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
+@throttle_classes([AuthThrottle])
 def login_with_device(request):
     """
     تسجيل الدخول باسم المستخدم أو البريد أو رقم الهاتف مع بصمة الجهاز.
@@ -98,7 +103,7 @@ def login_with_device(request):
     if profile.device_id and profile.device_id != device_id:
         return Response({
             'detail': 'هذا الحساب مسجّل دخوله حالياً من جهاز آخر. يرجى تسجيل الخروج من الجهاز الآخر أولاً.',
-            'code': 'DEVICE_CONFLICT'
+            'code': 'DEVICE_ERROR'
         }, status=status.HTTP_403_FORBIDDEN)
 
     profile.device_id = device_id
@@ -112,6 +117,8 @@ def login_with_device(request):
         'full_name': user.first_name,
         'free_past_exam_remaining': max(0, 2 - profile.free_past_exam_trials),
         'free_challenge_remaining': max(0, 2 - profile.free_challenge_trials),
+        'target_college_id': profile.target_college_id,
+        'target_college_name': profile.target_college.name if profile.target_college else None,
     })
 
 @api_view(['POST'])

@@ -47,11 +47,7 @@ class PDFResourceViewSet(viewsets.ReadOnlyModelViewSet):
         if college_id:
             try:
                 college = College.objects.get(id=college_id)
-                related_uni_ids = College.objects.filter(code=college.code).values_list('university_id', flat=True)
-                queryset = queryset.filter(
-                    Q(college__code=college.code) |
-                    Q(college__isnull=True, university_id__in=related_uni_ids)
-                )
+                queryset = queryset.filter(college__code=college.code)
             except College.DoesNotExist:
                 queryset = queryset.filter(college_id=college_id)
         if subject_id:

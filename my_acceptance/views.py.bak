@@ -806,7 +806,7 @@ def flashcard_due_cards(request):
     profile, _ = UserProfile.objects.get_or_create(user=request.user)
     if not profile.is_premium:
         return Response({
-            'detail': 'هذه الميزة متاحة للمشتركين فقط. يرجى تفعيل اشتراكك للوصول لنظام المراجعة الذكية.',
+            'detail': 'للحصول على كافه مزايا التطبيق يرجى تفعيل النسخة.',
             'code': 'PAYMENT_REQUIRED'
         }, status=status.HTTP_403_FORBIDDEN)
 

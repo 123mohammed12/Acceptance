@@ -163,6 +163,7 @@ class UserProfile(models.Model):
     is_premium = models.BooleanField(default=False, help_text="تفعيل الاشتراك الشامل للطالب", verbose_name='حساب مدفوع (Premium)')
     free_past_exam_trials = models.IntegerField(default=0, help_text="عدد اختبارات القبول التفاعلية المجانية المستخدمة (الحد: 2)", verbose_name='محاولات اختبارات القبول المجانية')
     free_challenge_trials = models.IntegerField(default=0, help_text="عدد التحديات المجانية المستخدمة (الحد: 2)", verbose_name='محاولات التحديات المجانية')
+    target_college = models.ForeignKey('College', null=True, blank=True, on_delete=models.SET_NULL, related_name='targeting_students', verbose_name='الكلية المستهدفة', help_text='كلية أحلام الطالب للتوصيات المخصصة')
 
     class Meta:
         verbose_name = 'ملف الطالب (الاشتراك)'
@@ -396,4 +397,45 @@ class FlashcardDocxUpload(models.Model):
 
     def __str__(self):
         return f"{self.deck_name} — {self.subject.name} ({self.uploaded_at.strftime('%Y-%m-%d')})"
+
+
+# --------------------------------------------------------
+# دليل المراجعة للمواضيع المتكررة (Study Guide per Subject/College)
+# --------------------------------------------------------
+
+class CollegeStudyGuide(models.Model):
+    """دليل مراجعة يحتوي على المواضيع المتكررة والتوصيات لمادة معينة في كلية محددة"""
+    college = models.ForeignKey(College, on_delete=models.CASCADE, related_name='study_guides', verbose_name='الكلية')
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE, related_name='study_guides', verbose_name='المادة')
+    title = models.CharField(max_length=255, verbose_name='عنوان الدليل', help_text='مثال: دليل مراجعة الكيمياء — طب بشري')
+    content = models.TextField(verbose_name='المحتوى', help_text='المحتوى المُستخرج من ملف الوورد')
+    is_active = models.BooleanField(default=True, verbose_name='مفعل')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='تاريخ الإنشاء')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='تاريخ التحديث')
+
+    class Meta:
+        verbose_name = 'دليل مراجعة'
+        verbose_name_plural = 'أدلة المراجعة'
+        unique_together = ('college', 'subject')
+
+    def __str__(self):
+        return f"{self.title} — {self.college.name}"
+
+
+class CollegeStudyGuideUpload(models.Model):
+    """رفع ملف Word يحتوي على دليل مراجعة لمادة في كلية"""
+    file = models.FileField(upload_to='study_guide_uploads/', verbose_name='ملف Word (.docx)')
+    college = models.ForeignKey(College, on_delete=models.CASCADE, verbose_name='الكلية')
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE, verbose_name='المادة')
+    guide_title = models.CharField(max_length=255, verbose_name='عنوان الدليل')
+    uploaded_at = models.DateTimeField(auto_now_add=True, verbose_name='تاريخ الرفع')
+    processed = models.BooleanField(default=False, verbose_name='تمت المعالجة')
+    log = models.TextField(blank=True, verbose_name='سجل المعالجة')
+
+    class Meta:
+        verbose_name = 'رفع دليل مراجعة من ملف Word'
+        verbose_name_plural = 'رفع أدلة المراجعة من ملفات Word'
+
+    def __str__(self):
+        return f"{self.guide_title} — {self.subject.name} ({self.uploaded_at.strftime('%Y-%m-%d')})"
 

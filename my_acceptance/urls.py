@@ -22,6 +22,8 @@ from .views import (
     flashcard_review,
     flashcard_summary,
     question_analysis,
+    college_study_guide,
+    set_target_college,
 )
 
 router = DefaultRouter()
@@ -55,4 +57,8 @@ urlpatterns = [
     path('flashcards/summary/', flashcard_summary, name='flashcard_summary'),
     # Analysis
     path('question-analysis/', question_analysis, name='question_analysis'),
+    # Study Guide
+    path('study-guide/', college_study_guide, name='college_study_guide'),
+    # Target College
+    path('set-target-college/', set_target_college, name='set_target_college'),
 ]

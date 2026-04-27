@@ -21,12 +21,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)=#dq&r7gmqf8irs7%8vejqo*aa*##h!8yr%_6o!v)h)^5u4zq'
+# نستخدم متغير بيئة للمفتاح السري، وفي حال عدم وجوده نستخدم مفتاح افتراضي (للتطوير فقط)
+SECRET_KEY = os.environ.get('JAMATY_SECRET_KEY', 'django-insecure-)=#dq&r7gmqf8irs7%8vejqo*aa*##h!8yr%_6o!v)h)^5u4zq')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# اجعلها False عند النشر الفعلي على الاستضافة
+DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']
+# تحديد النطاقات المسموح بها لتجنب ثغرات Host Header
+if DEBUG:
+    ALLOWED_HOSTS = ['*']
+else:
+    # عند النشر على PythonAnywhere
+    ALLOWED_HOSTS = ['.pythonanywhere.com']
 
 
 # Application definition
@@ -55,7 +62,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'my_acceptance.security_middleware.AppSecretMiddleware', # إضافة الحماية المخصصة للتطبيق
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+
+# تم حذف CORS_ALLOW_ALL_ORIGINS = True لأن تطبيق الهاتف لا يحتاجها وهي تشكل ثغرة أمنية
 
 ROOT_URLCONF = 'main.urls'
 
@@ -91,8 +99,8 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle'
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '20/min', # حماية من روبوتات الاختراق لمن يطلب بدون تسجيل
-        'user': '150/min' # حماية من عمليات تحميل البيانات بشكل مكثف (Scraping)
+        'anon': '60/min', # حماية من روبوتات الاختراق لمن يطلب بدون تسجيل
+        'user': '300/min' # حماية من عمليات تحميل البيانات بشكل مكثف (Scraping)
     }
 }
 
@@ -155,4 +163,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # مهم جداً للاست
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] # لمجلد ملفاتك أثناء التطوير
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

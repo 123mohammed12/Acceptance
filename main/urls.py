@@ -20,7 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),  # مسار سري للأدمن بدلاً من /admin/
+    # تم تغيير مسار الأدمن لمسار سري لحمايته من هجمات الروبوتات
+    path('jamaty-mgmt-2026/', admin.site.urls),  
     path('api/my_acceptance/', include('my_acceptance.urls')),
 ]
 

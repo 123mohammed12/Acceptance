@@ -7,7 +7,7 @@ from ..models import UserProfile, Deck, Flashcard, UserFlashcardProgress
 from ..serializers import DeckSerializer, FlashcardSerializer
 
 @api_view(['GET'])
-@permission_classes([permissions.AllowAny])
+@permission_classes([permissions.IsAuthenticated])
 def flashcard_decks(request):
     """
     عرض مجموعات البطاقات المتاحة لمادة معينة.
@@ -27,14 +27,14 @@ def flashcard_due_cards(request):
     """
     جلب البطاقات المستحقة للمراجعة اليوم لمجموعة معينة.
     فلتر: ?deck=<id>
-    ميزة مدفوعة: يجب أن يكون المستخدم Premium.
+    ميزة تتطلب تفعيل النسخة الكاملة.
     """
     # فحص الاشتراك
     profile, _ = UserProfile.objects.get_or_create(user=request.user)
     if not profile.is_premium:
         return Response({
-            'detail': 'هذه الميزة متاحة للمشتركين فقط. يرجى تفعيل اشتراكك للوصول لنظام المراجعة الذكية.',
-            'code': 'PAYMENT_REQUIRED'
+            'detail': 'للحصول على كافه مزايا التطبيق يرجى تفعيل النسخة.',
+            'code': 'ACTIVATION_REQUIRED'
         }, status=status.HTTP_403_FORBIDDEN)
 
     deck_id = request.query_params.get('deck')
@@ -97,8 +97,8 @@ def flashcard_review(request):
     profile, _ = UserProfile.objects.get_or_create(user=request.user)
     if not profile.is_premium:
         return Response({
-            'detail': 'هذه الميزة متاحة للمشتركين فقط.',
-            'code': 'PAYMENT_REQUIRED'
+            'detail': 'للحصول على كافه مزايا التطبيق يرجى تفعيل النسخة.',
+            'code': 'ACTIVATION_REQUIRED'
         }, status=status.HTTP_403_FORBIDDEN)
 
     flashcard_id = request.data.get('flashcard_id')

@@ -54,11 +54,12 @@ class PDFResourceSerializer(serializers.ModelSerializer):
     college_name = serializers.ReadOnlyField(source='college.name')
     subject_name = serializers.ReadOnlyField(source='subject.name')
     university_name = serializers.ReadOnlyField(source='college.university.name')
+    university = serializers.ReadOnlyField(source='college.university.id')
 
     class Meta:
         model = PDFResource
         fields = ['id', 'college', 'college_name', 'subject', 'subject_name',
-                  'university_name', 'title', 'resource_type', 'year', 'file']
+                  'university', 'university_name', 'title', 'resource_type', 'year', 'file']
 
 class StudentAnswerSerializer(serializers.ModelSerializer):
     class Meta:

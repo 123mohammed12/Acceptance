@@ -2,7 +2,7 @@ from rest_framework import permissions, status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from django.db.models import Count, Avg, Case, When
-from ..models import Question, FavoriteQuestion, TestSession, StudentAnswer
+from ..models import Question, FavoriteQuestion, TestSession, StudentAnswer, UserProfile, College
 from ..serializers import FavoriteQuestionSerializer
 
 @api_view(['GET'])
@@ -105,4 +105,33 @@ def performance_stats(request):
         'favorites_count': favs,
         'total_questions_answered': total_q,
         'total_correct': total_correct,
+    })
+
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def set_target_college(request):
+    """حفظ أو تحديث الكلية المستهدفة (كلية الأحلام) للطالب"""
+    college_id = request.data.get('college_id')
+
+    profile, _ = UserProfile.objects.get_or_create(user=request.user)
+
+    if college_id is None:
+        # مسح الكلية المستهدفة
+        profile.target_college = None
+        profile.save()
+        return Response({'detail': 'تم مسح الكلية المستهدفة.', 'target_college_id': None, 'target_college_name': None})
+
+    try:
+        college = College.objects.get(id=college_id)
+    except College.DoesNotExist:
+        return Response({'error': 'الكلية غير موجودة'}, status=status.HTTP_404_NOT_FOUND)
+
+    profile.target_college = college
+    profile.save()
+
+    return Response({
+        'detail': f'تم تحديد «{college.name}» ككلية مستهدفة! 🎯',
+        'target_college_id': college.id,
+        'target_college_name': college.name,
     })

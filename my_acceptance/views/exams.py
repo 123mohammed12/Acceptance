@@ -16,7 +16,7 @@ class TestSessionViewSet(viewsets.ReadOnlyModelViewSet):
         return TestSession.objects.filter(student=self.request.user).order_by('-created_at')
 
 @api_view(['GET'])
-@permission_classes([permissions.AllowAny])
+@permission_classes([permissions.IsAuthenticated])
 def available_templates(request):
     college_id = request.query_params.get('college')
     subject_id = request.query_params.get('subject')
@@ -93,16 +93,16 @@ def generate_exam(request):
         if exam_category == 'past_exam':
             if profile.free_past_exam_trials >= 2:
                 return Response({
-                    'detail': 'لقد استنفدت المحاولات المجانية لاختبارات القبول التفاعلية. يرجى الاشتراك للوصول إلى كافة الاختبارات.',
-                    'code': 'PAYMENT_REQUIRED'
+                    'detail': 'للحصول على كافه مزايا التطبيق يرجى تفعيل النسخة.',
+                    'code': 'ACTIVATION_REQUIRED'
                 }, status=status.HTTP_403_FORBIDDEN)
             profile.free_past_exam_trials += 1
             profile.save()
         elif exam_category == 'challenge':
             if profile.free_challenge_trials >= 2:
                 return Response({
-                    'detail': 'لقد استنفدت المحاولات المجانية للتحديات. يرجى الاشتراك للوصول إلى كافة التحديات.',
-                    'code': 'PAYMENT_REQUIRED'
+                    'detail': 'للحصول على كافه مزايا التطبيق يرجى تفعيل النسخة.',
+                    'code': 'ACTIVATION_REQUIRED'
                 }, status=status.HTTP_403_FORBIDDEN)
             profile.free_challenge_trials += 1
             profile.save()
@@ -175,12 +175,29 @@ def generate_exam(request):
             random.shuffle(qs)
         questions = qs[:limit]
 
-    elif test_type == 'most_repeated' and subject_id:
-        filters = {'subject_id': subject_id}
-        if unit_num:
-            filters['unit'] = unit_num
-        qs = list(Question.objects.filter(**filters).order_by('-times_appeared'))
-        questions = qs[:limit]
+    elif test_type == 'most_repeated':
+        if subject_id:
+            # فلترة حسب المادة (السلوك الأصلي)
+            filters = {'subject_id': subject_id}
+            if unit_num:
+                filters['unit'] = unit_num
+            qs = list(Question.objects.filter(**filters).order_by('-times_appeared'))
+            questions = qs[:limit]
+        elif college_id:
+            # تجميع الأسئلة الأكثر تكراراً لجميع مواد الكلية
+            try:
+                college = College.objects.get(id=college_id)
+                college_subject_ids = college.subjects.values_list('id', flat=True)
+                qs = list(
+                    Question.objects.filter(
+                        subject_id__in=college_subject_ids,
+                        times_appeared__gt=0
+                    ).order_by('-times_appeared')
+                )
+                questions = qs[:limit]
+            except College.DoesNotExist:
+                pass
+
 
     elif test_type == 'bank' and subject_id and years_str:
         try:
@@ -298,7 +315,10 @@ def question_analysis(request):
     if exam_year:
         qs = qs.filter(exam_year=exam_year)
 
-    by_unit = list(qs.values('unit').annotate(count=Count('id'), avg_times=Avg('times_appeared')).order_by('-count'))
+    by_unit = list(qs.values('unit', 'grade_level').annotate(count=Count('id'), avg_times=Avg('times_appeared')).order_by('-count'))
+    grade_labels = {9: 'التاسع', 10: 'أول ثانوي', 11: 'ثاني ثانوي', 12: 'ثالث ثانوي'}
+    for item in by_unit:
+        item['grade_name'] = grade_labels.get(item['grade_level'], f"الصف {item['grade_level']}")
     by_grade = list(qs.values('grade_level').annotate(count=Count('id')).order_by('grade_level'))
     grade_labels = {9: 'التاسع', 10: 'أول ثانوي', 11: 'ثاني ثانوي', 12: 'ثالث ثانوي'}
     for item in by_grade:
